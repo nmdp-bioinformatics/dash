@@ -12,3 +12,4 @@ Hackathon attendees should be prepared to provide feedback on:
 * elements that need fixing (and fix them),
 * additional elements required to qualify as a MIBBI
 
+The hackathon’s success will be measured by our ability to achieve interoperability for the community and a vetted MIRING and HML 1.0. 
