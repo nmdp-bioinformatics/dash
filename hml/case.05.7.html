@@ -1,0 +1,140 @@
+<html>
+  <head>
+    <title>
+      Example 5.7
+    </title>
+  </head>
+
+  <body>
+    <h3> Example 5.7 </h3>
+    <p>
+      Lab 333 typed a sample for center 789 for the High Res project. <br>
+      They performed an SBT test.
+      The allele-level typing was performed on Jan 23, 2004. <br>
+      They wish to report the test they used, the sequence revealed by the test, and their interpretation of that test. <br>
+      <br>
+      The results are: <br>
+      <pre>
+    NMDP ID: 8888-6666-4  B*070201 , B*350101/B*350103/B*3540N/B*3557/B*3542
+                          B*0709   , B*3534
+                          B*0712   , B*3551
+                          B*0718   , B*3505
+                          B*0724   , B*3515
+                          B*0726   , B*3508
+      </pre>
+      The SBT test used was: <br>
+    <pre>
+L964.K1.V1.GENB-EX2-3
+    </pre>
+
+    <hr>
+
+    <h3> Resulting HML Code </h3>
+    <pre>
+  &lt;!DOCTYPE hml PUBLIC "-//NMDP//DTD HML 0.3//EN" "http://www.nmdp.org/DTD/hml-0.3.dtd"&gt;
+  &lt;hml version="0.3">
+    &lt;project name="HR">
+      &lt;reporting-center code="333"/>
+      &lt;sample id="8888-6666-4" center-code="789"> 
+        &lt;typing>
+          &lt;interpretation date="20040123">
+            &lt;genotype-list db="HLADB" version="2.10.0">
+              &lt;diploid-combination>
+                &lt;locus-block>
+                  &lt;allele-list>
+                    &lt;allele>B*070201&lt;/allele>
+                  &lt;/allele-list>
+                &lt;/locus-block>
+                &lt;locus-block>
+                  &lt;allele-list>
+                    &lt;allele>B*350101&lt;/allele>
+                    &lt;allele>B*350103&lt;/allele>
+                    &lt;allele>B*3540N&lt;/allele>
+                    &lt;allele>B*3557&lt;/allele>
+                    &lt;allele>B*3542&lt;/allele>
+                  &lt;/allele-list>
+                &lt;/locus-block>
+              &lt;/diploid-combination>
+              &lt;diploid-combination>
+                &lt;locus-block>
+                  &lt;allele-list>
+                    &lt;allele>B*0709&lt;/allele>
+                  &lt;/allele-list>
+                &lt;/locus-block>
+                &lt;locus-block>
+                  &lt;allele-list>
+                    &lt;allele>B*3534&lt;/allele>
+                  &lt;/allele-list>
+                &lt;/locus-block>
+              &lt;/diploid-combination>
+              &lt;diploid-combination>
+                &lt;locus-block>
+                  &lt;allele-list>
+                    &lt;allele>B*0712&lt;/allele>
+                  &lt;/allele-list>
+                &lt;/locus-block>
+                &lt;locus-block>
+                  &lt;allele-list>
+                    &lt;allele>B*3551&lt;/allele>
+                  &lt;/allele-list>
+                &lt;/locus-block>
+              &lt;/diploid-combination>
+              &lt;diploid-combination>
+                &lt;locus-block>
+                  &lt;allele-list>
+                    &lt;allele>B*0718&lt;/allele>
+                  &lt;/allele-list>
+                &lt;/locus-block>
+                &lt;locus-block>
+                  &lt;allele-list>
+                    &lt;allele>B*3505&lt;/allele>
+                  &lt;/allele-list>
+                &lt;/locus-block>
+              &lt;/diploid-combination>
+              &lt;diploid-combination>
+                &lt;locus-block>
+                  &lt;allele-list>
+                    &lt;allele>B*0724&lt;/allele>
+                  &lt;/allele-list>
+                &lt;/locus-block>
+                &lt;locus-block>
+                  &lt;allele-list>
+                    &lt;allele>B*3515&lt;/allele>
+                  &lt;/allele-list>
+                &lt;/locus-block>
+              &lt;/diploid-combination>
+              &lt;diploid-combination>
+                &lt;locus-block>
+                  &lt;allele-list>
+                    &lt;allele>B*0726&lt;/allele>
+                  &lt;/allele-list>
+                &lt;/locus-block>
+                &lt;locus-block>
+                  &lt;allele-list>
+                    &lt;allele>B*3508&lt;/allele>
+                  &lt;/allele-list>
+                &lt;/locus-block>
+              &lt;/diploid-combination>
+            &lt;/genotype-list>
+          &lt;/interpretation>
+          &lt;sbt name="L789.K1.V1.GENB" score="8">
+            &lt;sequence>
+              GCTCCCACTCCATGAGGTATTTCTACACCACCTTGTCCCGGCCCGGCCGCGGGGAGCCCC
+              GCTTCATCACAGTGGGCTACGTGGACGACACCCAGTTCGTGAGGTTCGACAGCGACGCCG
+              CGAGTCCGAGTTGGGAGCCACGGGCGCCTTGGATAGAGCAGGAGGGGCCGGAGTATTGGG
+              ACCGGAACACACAGATCTCCAAGTCCGAATCACAGACTAACCGAGAGAGCCTGCGGAACC
+              TGCGCGGCTACTACAACCAGAGCGAGGCCGGGTCTCACACCGTCCAGAGAATGTACGGCT
+              GCGACATGGGGCCAGACGGGCGCCTCCTCCGCGGGCATGACCAGTCCGCCTACGACGGCA
+              AGGATTACATCGCCCTGAACGAGGACCTGGGCTCCTGGACCGCAGCGGACACAGCGGCTC
+              AGATCACCCAGCGCAAGTGGGAGGCGGCCCGTGCGGCGGAGCAGCAGAGAGCCTACCTGG
+              AGGGCACGTGCGTGGAGTGGCTCCGCAGATACCTGGAGAACGGGAAGGAAAGGCTGAAGC
+              GCGCAG
+            &lt;/sequence>
+          &lt;/sbt>
+        &lt;/typing>
+      &lt;/sample>
+    &lt;/project>
+  &lt;/hml>
+    </pre>
+  </body>
+</html>

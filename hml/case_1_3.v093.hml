@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<hml project-name="ABDR" version="0.9.3">
+    <reporting-center code="999"/>
+    <sample center-code="789" id="444-333-2">
+        <typing gene-family="HLA">
+            <interpretation allele-db="HLADB" allele-version="2.0.0" date="2004-01-23">
+                <genotype-list>
+                	<diploid-combination locus="HLA-A">
+                		<locus-block>
+                			<allele-list>
+                				<allele present="Y">010101</allele>
+                				<allele present="Y">0102</allele>
+                			</allele-list>
+                			<allele-list>
+                				<allele present="Y">0205</allele>
+                				<allele present="Y">0208</allele>
+                				<allele present="Y">0214</allele>
+                			</allele-list>
+            			</locus-block>
+            		</diploid-combination>
+            	</genotype-list>
+            </interpretation>
+        </typing>
+    </sample>
+</hml>

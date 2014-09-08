@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <title>
+      Example 4.1
+    </title>
+  </head>
+
+  <body>
+    <h3> Example 4.1 </h3>
+    <p>
+      An example of reporting results of typing a sample at multiple loci.
+    </p>
+    <hr>
+
+    <h3> Resulting HML Code </h3>
+    <pre>
+  &lt;!DOCTYPE hml PUBLIC "-//NMDP//DTD HML 0.2//EN"
+   "http://www.nmdp.org/DTD/hml-0.2.dtd"&gt;
+  &lt;hml version="0.2">
+    &lt;project name="ABDR">
+      &lt;reporting-center code="999"/>
+      &lt;sample id="444-333-2" center-code="123">
+        &lt;hla-typing>
+          &lt;interpretation date="20040123">
+            &lt;haploid locus="A" method="DNA" type="03CK"/>
+            &lt;haploid locus="A" method="DNA" type="25AB"/>
+          &lt;/interpretation>
+          &lt;sso ref-id="A-probes" scores="1811"/>
+        &lt;/hla-typing>
+        &lt;hla-typing>
+          &lt;interpretation date="20040123">
+            &lt;haploid locus="B" method="DNA" type="18XX"/>
+            &lt;haploid locus="B" method="DNA" type="40XMC"/>
+          &lt;/interpretation>
+          &lt;sso ref-id="B-probes" scores="18118"/>
+        &lt;/hla-typing>
+        &lt;hla-typing>
+          &lt;interpretation date="20040123">
+            &lt;haploid locus="C" method="DNA" type="03GFW"/>
+            &lt;haploid locus="C" method="DNA" type="12NP"/>
+          &lt;/interpretation>
+          &lt;sso ref-id="C-probes" scores="181"/>
+        &lt;/hla-typing>
+      &lt;/sample>
+      &lt;typing-test-names ref-id="A-probes">
+        &lt;typing-test-name name="L999.K1.V1.Aprobe1"/>
+        &lt;typing-test-name name="L999.K1.V1.Aprobe2"/>
+        &lt;typing-test-name name="L999.K1.V1.Aprobe3"/>
+        &lt;typing-test-name name="L999.K1.V1.Aprobe4"/>
+      &lt;/typing-test-names>
+      &lt;typing-test-names ref-id="B-probes">
+        &lt;typing-test-name name="L999.K1.V1.Bprobe1"/>
+        &lt;typing-test-name name="L999.K1.V1.Bprobe2"/>
+        &lt;typing-test-name name="L999.K1.V1.Bprobe3"/>
+        &lt;typing-test-name name="L999.K1.V1.Bprobe4"/>
+        &lt;typing-test-name name="L999.K1.V1.Bprobe5"/>
+      &lt;/typing-test-names>
+      &lt;typing-test-names ref-id="C-probes">
+        &lt;typing-test-name name="L999.K1.V1.Cprobe1"/>
+        &lt;typing-test-name name="L999.K1.V1.Cprobe2"/>
+        &lt;typing-test-name name="L999.K1.V1.Cprobe3"/>
+      &lt;/typing-test-names>
+    &lt;/project>
+  &lt;/hml>
+    </pre>
+
+  </body>
+</html>

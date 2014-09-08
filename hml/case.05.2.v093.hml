@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<hml project-name="ABDR" version="0.9.3">
+    <reporting-center code="999"/>
+    <sample center-code="789" id="444-333-2">
+        <typing gene-family="HLA">
+            <interpretation allele-db="HLADB" allele-version="2.4.0" date="2004-01-23">
+                <genotype-list>
+	              <diploid-combination locus="DRB1">
+	                <locus-block>
+	                  <allele-list>
+	                    <allele>DRB1*0304</allele>
+	                  </allele-list>
+	                </locus-block>
+	                <locus-block>
+	                  <allele-list>
+	                    <allele>DRB1*0304</allele>
+	                  </allele-list>
+	                </locus-block>
+	              </diploid-combination>
+	              <diploid-combination locus="DRB1">
+	                <locus-block>
+	                  <allele-list>
+	                    <allele>DRB1*010101</allele>
+	                  </allele-list>
+	                </locus-block>
+	                <locus-block>
+	                  <allele-list>
+	                    <allele>DRB1*0306</allele>
+	                  </allele-list>
+	                  <allele-list>
+	                    <allele>DRB3*0102</allele>
+	                  </allele-list>
+	                </locus-block>
+	              </diploid-combination>
+	              <diploid-combination locus="DRB1">
+	                <locus-block>
+	                  <allele-list>
+	                    <allele>DRB1*010201</allele>
+	                  </allele-list>
+	                </locus-block>
+	                <locus-block>
+	                  <allele-list>
+	                    <allele>DRB1*0303</allele>
+	                  </allele-list>
+	                  <allele-list>
+	                    <allele>DRB3*0103</allele>
+	                  </allele-list>
+	                </locus-block>
+	              </diploid-combination>
+	            </genotype-list>
+            </interpretation>
+        </typing>
+    </sample>
+</hml>

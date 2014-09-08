@@ -1,0 +1,38 @@
+<!DOCTYPE hml PUBLIC "-//NMDP//DTD HML 0.2//EN"
+   "http://www.nmdp.org/DTD/hml-0.2.dtd">
+  <hml version="1.0" project-name="ABDR">
+      <reporting-center code="743"/>
+      <sample id="8888-6666-1" center-code="88">
+        <typing gene-family="HLA">
+          <interpretation date="20031208">
+            <haploid locus="HLA-DRB1" method="DNA" type="01RY"/>
+            <haploid locus="HLA-DRB1" method="DNA" type="13GPE"/>
+          </interpretation>
+          <sso test_id_source="ref-id" test_id="410" scores="8811111181118181181111181181181888111811111811811118111111118"/>
+        </typing>
+      </sample>
+      <sample id="8888-6666-2" center-code="88">
+        <hla-typing>
+          <interpretation date="20031208">
+            <haploid locus="HLA-RB1" method="DNA" type="03WKH"/>
+            <haploid locus="HLA-DRB1" method="DNA" type="04AFMT"/>
+          </interpretation>
+          <sso test_id_source="ref-id" test_id="410" scores="8181111181818118181811111181881181181111118181111811181111118"/>
+        </hla-typing>
+      </sample>
+      <sample id="8888-6666-3" center-code="88">
+        <hla-typing>
+          <interpretation date="20031208">
+            <haploid locus="HLA-DRB1" method="DNA" type="04AFMK"/>
+            <haploid locus="HLA-DRB1" method="DNA" type="04AGDC"/>
+          </interpretation>
+          <sso test_id_source="ref-id" test_id="410" scores="8181111111818181111811111181181118111811118111118111118111111"/>
+        </hla-typing>
+      </sample>
+	  <!-- 	The ref-id in each sample should reference something within the document.  It does not in this example.
+			I have added dummy code for this -->
+	  <typing-test-names ref-id="410">
+		<typing-test-name name="insert.test.name.here"/>
+	  </typing-test-names>
+  </hml>
+    

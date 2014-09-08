@@ -1,0 +1,107 @@
+<html><head>
+    <title>Example 5.2</title></head>
+  <body>
+    <h3> Example 5.2 </h3>
+      Lab 999 typed a sample for center 789 for the ABDR project. <br>
+      The typing was performed on Jan 23, 2004.  This was a <code>DRB1</code>
+      typing in which the presence of the <code>DRB3</code> allele is
+      associated in some cases:
+      </p>
+      <pre>
+      NMDP ID: 444-333-2   DRB1*010101, DRB1*0304
+                           DRB1*010101, DRB1*0306, DRB3*0102
+                           DRB1*010201, DRB1*0303, DRB3*0103
+      </pre>
+    <hr>
+      Using allele codes this result would be reported as
+      <pre>
+      DRB1*01AB, DRB1*03NR
+      DRB3*01BC
+      </pre>
+      using the following xml:
+
+<pre>
+  &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+  &lt;!DOCTYPE hml PUBLIC "-//NMDP//DTD HML 0.3//EN" "http://www.nmdp.org/DTD/hml-0.3.dtd"&gt;
+  &lt;hml version="0.3">
+    &lt;project name="ABDR">
+      &lt;reporting-center code="999"/>
+      &lt;sample id="444-333-2" center-code="123">
+        &lt;typing>
+          &lt;interpretation date="20040123">
+            <b>&lt;haploid locus="DRB1" method="DNA" type="01AB"/>
+            &lt;haploid locus="DRB1" method="DNA" type="03NR"/>
+            &lt;haploid locus="DRB3" method="DNA" type="01BC"/></b>
+          &lt;/interpretation>
+        &lt;/typing>
+      &lt;/sample>
+    &lt;/project>
+  &lt;/hml>
+</pre>
+<hr>
+Starting in HML 0.3, this result can be reported as a genotype list, using the
+following xml:
+<br>
+<b>(Note:  methods have been used that establish phase between loci this can be
+represented by including multiple loci within one locus block)</b>
+    <pre>
+  &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+  &lt;!DOCTYPE hml PUBLIC "-//NMDP//DTD HML 0.3//EN" "http://www.nmdp.org/DTD/hml-0.3.dtd"&gt;
+  &lt;hml version="0.3"&gt;
+    &lt;project name="ABDR"&gt;
+      &lt;reporting-center code="999"/&gt;
+      &lt;sample id="444-333-2" center-code="789"&gt;
+        &lt;typing&gt;
+          &lt;interpretation date="20040123"&gt;
+            <b>&lt;genotype-list db="HLADB" version="2.4.0"&gt;
+              &lt;diploid-combination&gt;
+                &lt;locus-block&gt;
+                  &lt;allele-list&gt;
+                    &lt;allele&gt;DRB1*0304&lt;/allele&gt;
+                  &lt;/allele-list&gt;
+                &lt;/locus-block&gt;
+                &lt;locus-block&gt;
+                  &lt;allele-list&gt;
+                    &lt;allele&gt;DRB1*0304&lt;/allele&gt;
+                  &lt;/allele-list&gt;
+                &lt;/locus-block&gt;
+              &lt;/diploid-combination&gt;
+              &lt;diploid-combination&gt;
+                &lt;locus-block&gt;
+                  &lt;allele-list&gt;
+                    &lt;allele&gt;DRB1*010101&lt;/allele&gt;
+                  &lt;/allele-list&gt;
+                &lt;/locus-block&gt;
+                &lt;locus-block&gt;
+                  &lt;allele-list&gt;
+                    &lt;allele&gt;DRB1*0306&lt;/allele&gt;
+                  &lt;/allele-list&gt;
+                  &lt;allele-list&gt;
+                    &lt;allele&gt;DRB3*0102&lt;/allele&gt;
+                  &lt;/allele-list&gt;
+                &lt;/locus-block&gt;
+              &lt;/diploid-combination&gt;
+              &lt;diploid-combination&gt;
+                &lt;locus-block&gt;
+                  &lt;allele-list&gt;
+                    &lt;allele&gt;DRB1*010201&lt;/allele&gt;
+                  &lt;/allele-list&gt;
+                &lt;/locus-block&gt;
+                &lt;locus-block&gt;
+                  &lt;allele-list&gt;
+                    &lt;allele&gt;DRB1*0303&lt;/allele&gt;
+                  &lt;/allele-list&gt;
+                  &lt;allele-list&gt;
+                    &lt;allele&gt;DRB3*0103&lt;/allele&gt;
+                  &lt;/allele-list&gt;
+                &lt;/locus-block&gt;
+              &lt;/diploid-combination&gt;
+            &lt;/genotype-list&gt;</b>
+          &lt;/interpretation&gt;
+        &lt;/typing&gt;
+      &lt;/sample&gt;
+    &lt;/project&gt;
+  &lt;/hml&gt;
+    </pre>
+
+  </body></html>

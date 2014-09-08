@@ -1,0 +1,232 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0100)file://C:\Documents and Settings\cvierra\Local Settings\Temporary Internet Files\OLKE\case 06 2.html -->
+<!-- $Id: case.06.2.html,v 1.1 2009/01/07 15:50:27 droe Exp $ --><HTML><HEAD><TITLE>Example 6.2</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="MSHTML 6.00.2900.3492" name=GENERATOR></HEAD>
+<BODY>
+<H3>Example 6.2 </H3>
+<P>Lab 999 typed a sample for center 789 for a project entitled "KIR". <BR>The 
+typing was performed on Sep 8, 2008. <BR>They tested fourteen KIR genes and 
+reported presence/absence for each, along with the probe information. <BR>For 
+each sample (one, in this case), all loci were reported in a single 
+'interpretation' element. <BR>The results are: <BR><PRE>    NMDP ID: 444-333-2   2DL1        Present
+                         2DL2        Present
+                         2DL3        Not present
+                         2DL4        Not present
+                         2DL5        Not present
+                         2DS1        Not present
+                         2DS2        Not present
+                         2DS3        Present 
+                         2DS4        Not present
+                         2DS5        Not present
+                         3DL1        Present
+                         3DL2        Not present
+                         3DL3        Not present
+                         3DS1        Present
+      </PRE>
+<HR>
+<PRE>  &lt;!DOCTYPE hml PUBLIC "-//NMDP//DTD HML 0.3//EN" "http://www.nmdp.org/DTD/hml-0.3.dtd"&gt;
+  &lt;hml version="0.3"&gt;
+    &lt;project name="KIR"&gt;
+      &lt;reporting-center code="999"/&gt;
+      &lt;sample id="444-333-2" center-code="789"&gt;
+        &lt;typing&gt;
+          &lt;interpretation date="2008-09-08"&gt;
+            &lt;genotype-list db="KIR" version="2.0.0"&gt;
+              &lt;diploid-combination&gt;
+                &lt;locus-block&gt;
+                  &lt;allele-list&gt;
+                    &lt;allele present="Y"&gt;2DL1&lt;/allele&gt;
+                  &lt;/allele-list&gt;
+                &lt;/locus-block&gt;
+              &lt;/diploid-combination&gt;
+            &lt;/genotype-list&gt;
+            &lt;genotype-list db="KIR" version="2.0.0"&gt;
+              &lt;diploid-combination&gt;
+                &lt;locus-block&gt;
+                  &lt;allele-list&gt;
+                    &lt;allele present="Y"&gt;2DL2&lt;/allele&gt;
+                  &lt;/allele-list&gt;
+                &lt;/locus-block&gt;
+              &lt;/diploid-combination&gt;
+            &lt;/genotype-list&gt;
+            &lt;genotype-list db="KIR" version="2.0.0"&gt;
+              &lt;diploid-combination&gt;
+                &lt;locus-block&gt;
+                  &lt;allele-list&gt;
+                    &lt;allele present="N"&gt;2DL3&lt;/allele&gt;
+                  &lt;/allele-list&gt;
+                &lt;/locus-block&gt;
+              &lt;/diploid-combination&gt;
+            &lt;/genotype-list&gt;
+            &lt;genotype-list db="KIR" version="2.0.0"&gt;
+              &lt;diploid-combination&gt;
+                &lt;locus-block&gt;
+                  &lt;allele-list&gt;
+                    &lt;allele present="N"&gt;2DL4&lt;/allele&gt;
+                  &lt;/allele-list&gt;
+                &lt;/locus-block&gt;
+              &lt;/diploid-combination&gt;
+            &lt;/genotype-list&gt;
+            &lt;genotype-list db="KIR" version="2.0.0"&gt;
+              &lt;diploid-combination&gt;
+                &lt;locus-block&gt;
+                  &lt;allele-list&gt;
+                    &lt;allele present="N"&gt;2DL5&lt;/allele&gt;
+                  &lt;/allele-list&gt;
+                &lt;/locus-block&gt;
+              &lt;/diploid-combination&gt;
+            &lt;/genotype-list&gt;
+            &lt;genotype-list db="KIR" version="2.0.0"&gt;
+              &lt;diploid-combination&gt;
+                &lt;locus-block&gt;
+                  &lt;allele-list&gt;
+                    &lt;allele present="N"&gt;2DS1&lt;/allele&gt;
+                  &lt;/allele-list&gt;
+                &lt;/locus-block&gt;
+              &lt;/diploid-combination&gt;
+            &lt;/genotype-list&gt;
+            &lt;genotype-list db="KIR" version="2.0.0"&gt;
+              &lt;diploid-combination&gt;
+                &lt;locus-block&gt;
+                  &lt;allele-list&gt;
+                    &lt;allele present="N"&gt;2DS2&lt;/allele&gt;
+                  &lt;/allele-list&gt;
+                &lt;/locus-block&gt;
+              &lt;/diploid-combination&gt;
+            &lt;/genotype-list&gt;
+            &lt;genotype-list db="KIR" version="2.0.0"&gt;
+              &lt;diploid-combination&gt;
+                &lt;locus-block&gt;
+                  &lt;allele-list&gt;
+                    &lt;allele present="Y"&gt;2DS3&lt;/allele&gt;
+                  &lt;/allele-list&gt;
+                &lt;/locus-block&gt;
+              &lt;/diploid-combination&gt;
+            &lt;/genotype-list&gt;
+            &lt;genotype-list db="KIR" version="2.0.0"&gt;
+              &lt;diploid-combination&gt;
+                &lt;locus-block&gt;
+                  &lt;allele-list&gt;
+                    &lt;allele present="N"&gt;2DS4&lt;/allele&gt;
+                  &lt;/allele-list&gt;
+                &lt;/locus-block&gt;
+              &lt;/diploid-combination&gt;
+            &lt;/genotype-list&gt;
+            &lt;genotype-list db="KIR" version="2.0.0"&gt;
+              &lt;diploid-combination&gt;
+                &lt;locus-block&gt;
+                  &lt;allele-list&gt;
+                    &lt;allele present="N"&gt;2DS5&lt;/allele&gt;
+                  &lt;/allele-list&gt;
+                &lt;/locus-block&gt;
+              &lt;/diploid-combination&gt;
+            &lt;/genotype-list&gt;
+            &lt;genotype-list db="KIR" version="2.0.0"&gt;
+              &lt;diploid-combination&gt;
+                &lt;locus-block&gt;
+                  &lt;allele-list&gt;
+                    &lt;allele present="Y"&gt;3DL1&lt;/allele&gt;
+                  &lt;/allele-list&gt;
+                &lt;/locus-block&gt;
+              &lt;/diploid-combination&gt;
+            &lt;/genotype-list&gt;
+            &lt;genotype-list db="KIR" version="2.0.0"&gt;
+              &lt;diploid-combination&gt;
+                &lt;locus-block&gt;
+                  &lt;allele-list&gt;
+                    &lt;allele present="N"&gt;3DL2&lt;/allele&gt;
+                  &lt;/allele-list&gt;
+                &lt;/locus-block&gt;
+              &lt;/diploid-combination&gt;
+            &lt;/genotype-list&gt;
+            &lt;genotype-list db="KIR" version="2.0.0"&gt;
+              &lt;diploid-combination&gt;
+                &lt;locus-block&gt;
+                  &lt;allele-list&gt;
+                    &lt;allele present="N"&gt;3DL3&lt;/allele&gt;
+                  &lt;/allele-list&gt;
+                &lt;/locus-block&gt;
+              &lt;/diploid-combination&gt;
+            &lt;/genotype-list&gt;
+            &lt;genotype-list db="KIR" version="2.0.0"&gt;
+              &lt;diploid-combination&gt;
+                &lt;locus-block&gt;
+                  &lt;allele-list&gt;
+                    &lt;allele present="Y"&gt;3DS1&lt;/allele&gt;
+                  &lt;/allele-list&gt;
+                &lt;/locus-block&gt;
+              &lt;/diploid-combination&gt;
+            &lt;/genotype-list&gt;
+          &lt;/interpretation&gt;
+          &lt;sso ref-id="XYZO1A_010N_00" scores="188111888181181811881188818118811181111111111881111111181118181188"/&gt;
+        &lt;/typing&gt;
+      &lt;/sample&gt;
+      &lt;typing-test-names ref-id="XYZO1A_010N_00"&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4103"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4905G"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4046LT"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4065"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4066"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4031LT"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4029"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4431"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4335"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4041LT"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4063"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4102"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4101"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_DR105"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4723"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4133"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4038LT"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4751G"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4043LT"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4104"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4044LT"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4348"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_DR108G"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4096"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4356"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4037LT"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4082LT"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4105"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4093"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4131"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4039LT"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4333"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4086"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4042"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4900"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4047LT"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4134"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4045"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_DR112G"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_DR101G"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4048"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4049"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4338"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4043"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4032"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4888"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4061"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4283"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4088LT"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4355"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4753G"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4343"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4040"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4028LT"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4064"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4020LT"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4327"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_DR118G"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4087"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4132"/&gt;
+        &lt;typing-test-name name="XYZ01A_010N_00_ZYX4034LT"/&gt;
+      &lt;/typing-test-names&gt;
+    &lt;/project&gt;
+  &lt;/hml&gt;
+    </PRE>
+<HR>
+<!-- hhmts start -->Last modified: Wed Jan 7 09:58:44 CST 2009 <!-- hhmts end --></BODY></HTML>

@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <title>
+      Example 5.3
+    </title>
+  </head>
+
+  <body>
+    <h3> Example 5.3 </h3>
+      Lab 999 typed a sample for center 123 for the ABDR project. <br>
+      The allele-level typing was performed on Jan 23, 2004. <br>
+      The results are: <br>
+      <pre>
+    NMDP ID: 444-333-2   A*0102, A*0202
+      </pre>
+    <hr>
+      Using <code>haploid</code> elements, this result is reported using the
+      following xml:
+
+<pre>
+  &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+  &lt;!DOCTYPE hml PUBLIC "-//NMDP//DTD HML 0.3//EN" "http://www.nmdp.org/DTD/hml-0.3.dtd"&gt;
+  &lt;hml version="0.3">
+    &lt;project name="ABDR">
+      &lt;reporting-center code="999"/>
+      &lt;sample id="444-333-2" center-code="123">
+        &lt;typing>
+          &lt;interpretation date="20040123">
+            <b>&lt;haploid locus="A" method="DNA" type="0102"/>
+            &lt;haploid locus="A" method="DNA" type="0202"/></b>
+          &lt;/interpretation>
+        &lt;/typing>
+      &lt;/sample>
+    &lt;/project>
+  &lt;/hml>
+</pre>
+    <hr>
+This result can also be reported using a genotype list:
+    <pre>
+  &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+  &lt;!DOCTYPE hml PUBLIC "-//NMDP//DTD HML 0.3//EN" "http://www.nmdp.org/DTD/hml-0.3.dtd"&gt;
+  &lt;hml version="0.3">
+    &lt;project name="ABDR">
+      &lt;reporting-center code="999"/>
+      &lt;sample id="444-333-2" center-code="123">
+        &lt;typing>
+          &lt;interpretation date="2004-01-23">
+            <b>&lt;genotype-list db="HLADB" version="2.4.0">
+              &lt;diploid-combination>
+                &lt;locus-block>
+                  &lt;allele-list>
+                    &lt;allele>A*0102&lt;/allele>
+                  &lt;/allele-list>
+                &lt;/locus-block>
+                &lt;locus-block>
+                  &lt;allele-list>
+                    &lt;allele>A*0202&lt;/allele>
+                  &lt;/allele-list>
+                &lt;/locus-block>
+              &lt;/diploid-combination>
+            &lt;/genotype-list></b>
+          &lt;/interpretation>
+        &lt;/typing>
+      &lt;/sample>
+    &lt;/project>
+  &lt;/hml>
+    </pre>
+
+  </body>
+</html>
+

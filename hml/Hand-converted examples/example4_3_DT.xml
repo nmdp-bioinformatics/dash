@@ -1,0 +1,51 @@
+<!DOCTYPE hml PUBLIC "-//NMDP//DTD HML 0.3.3//EN" "http://www.nmdp.org/DTD/hml-0.3.3.dtd">
+<hml version="1.0" project-name="HR">
+    <reporting-center code="333"/>
+    <sample id="8888-6666-4" center-code="789"> 
+      <typing allele-family="HLA">
+        <interpretation date="20110123" allele-db="HLADB" allele-version="3.0.0">
+          <genotype-list >
+            <diploid-combination locus="B">
+              <locus-block>
+                <allele-list>
+                  <allele present="Y">B*07:02</allele>
+                  <allele present="Y">B*07:06</allele>
+                </allele-list>
+                <allele-list>
+                  <allele present="Y">B*44:02</allele>
+                  <allele present="Y">B*44:05</allele>
+                </allele-list>
+              </locus-block>
+            </diploid-combination>
+          </genotype-list>
+        </interpretation>
+        <sbt-sanger test-id-source="GTR" test-id="L123.K1.V1.sbtTestKitName">
+          <amplification registered-name="L789.K1.V1.GENB">
+			  GCTCCCACTCCATGAGGTATTTCTACACCACCTTGTCCCGGCCCGGCCGCGGGGAGCCCC
+              GCTTCATCACAGTGGGCTACGTGGACGACACCCAGTTCGTGAGGTTCGACAGCGACGCCG
+              CGAGTCCGAGTTGGGAGCCACGGGCGCCTTGGATAGAGCAGGAGGGGCCGGAGTATTGGG
+              ACCGGAACACACAGATCTCCAAGTCCGAATCACAGACTAACCGAGAGAGCCTGCGGAACC
+              TGCGCGGCTACTACAACCAGAGCGAGGCCGGGTCTCACACCGTCCAGAGAATGTACGGCT
+              GCGACATGGGGCCAGACGGGCGCCTCCTCCGCGGGCATGACCAGTCCGCCTACGACGGCA
+              AGGATTACATCGCCCTGAACGAGGACCTGGGCTCCTGGACCGCAGCGGACACAGCGGCTC
+              AGATCACCCAGCGCAAGTGGGAGGCGGCCCGTGCGGCGGAGCAGCAGAGAGCCTACCTGG
+              AGGGCACGTGCGTGGAGTGGCTCCGCAGATACCTGGAGAACGGGAAGGAAAGGCTGAAGC
+              GCGCAG
+          </amplification>
+          <!-- example showing GSSP as sequence instead of registered-name -->     
+          <gssp primer-sequence="ACGTACGTACGTACGT">
+			  GCTCCCACTCCATGAGGTATTTCTACACCACCTTGTCCCGGCCCGGCCGCGGGGAGCCCC
+              GCTTCATCACAGTGGGCTACGTGGACGACACCCAGTTCGTGAGGTTCGACAGCGACGCCG
+              CGAGTCCGAGTTGGGAGCCACGGGCGCCTTGGATAGAGCAGGAGGGGCCGGAGTATTGGG
+              ACCGGAACACACAGATCTCCAAGTCCGAATCACAGACTAACCGAGAGAGCCTGCGGAACC
+              TGCGCGGCTACTACAACCAGAGCGAGGCCGGGTCTCACACCGTCCAGAGAATGTACGGCT
+              GCGACATGGGGCCAGACGGGCGCCTCCTCCGCGGGCATGACCAGTCCGCCTACGACGGCA
+              AGGATTACATCGCCCTGAACGAGGACCTGGGCTCCTGGACCGCAGCGGACACAGCGGCTC
+              AGATCACCCAGCGCAAGTGGGAGGCGGCCCGTGCGGCGGAGCAGCAGAGAGCCTACCTGG
+              AGGGCACGTGCGTGGAGTGGCTCCGCAGATACCTGGAGAACGGGAAGGAAAGGCTGAAGC
+              GCGCAG
+          </gssp>
+        </sbt-sanger>
+      </typing>
+    </sample>
+</hml>

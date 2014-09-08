@@ -1,0 +1,91 @@
+<?xml version="1.0" ?>
+<hml project-name="HR" version="0.9.3">
+    <reporting-center code="333"/>
+    <sample center-code="789" id="8888-6666-4">
+        <typing gene-family="HLA">
+            <sbt-sanger locus="B" test-id="" test-id-source="">
+                <amplification registered-name="L789.K1.V1.GENB">GCTCCCACTCCATGAGGTATTTCTACACCACCTTGTCCCGGCCCGGCCGCGGGGAGCCCCGCTTCATCACAGTGGGCTACGTGGACGACACCCAGTTCGTGAGGTTCGACAGCGACGCCGCGAGTCCGAGTTGGGAGCCACGGGCGCCTTGGATAGAGCAGGAGGGGCCGGAGTATTGGGACCGGAACACACAGATCTCCAAGTCCGAATCACAGACTAACCGAGAGAGCCTGCGGAACCTGCGCGGCTACTACAACCAGAGCGAGGCCGGGTCTCACACCGTCCAGAGAATGTACGGCTGCGACATGGGGCCAGACGGGCGCCTCCTCCGCGGGCATGACCAGTCCGCCTACGACGGCAAGGATTACATCGCCCTGAACGAGGACCTGGGCTCCTGGACCGCAGCGGACACAGCGGCTCAGATCACCCAGCGCAAGTGGGAGGCGGCCCGTGCGGCGGAGCAGCAGAGAGCCTACCTGGAGGGCACGTGCGTGGAGTGGCTCCGCAGATACCTGGAGAACGGGAAGGAAAGGCTGAAGCGCGCAG</amplification>
+            </sbt-sanger>
+            <interpretation allele-db="HLADB" allele-version="2.10.0" date="2004-01-23">
+                <genotype-list>
+                    <diploid-combination locus="B">
+                        <locus-block>
+                            <allele-list>
+                                <allele>B*070201</allele>
+                            </allele-list>
+                        </locus-block>
+                        <locus-block>
+                              <allele-list>
+                                    <allele>B*350101</allele>
+                                    <allele>B*350103</allele>
+                                    <allele>B*3540N</allele>
+                                    <allele>B*3557</allele>
+                                    <allele>B*3542</allele>
+                              </allele-list>
+                        </locus-block>
+                    </diploid-combination>
+                    <diploid-combination locus="B">
+                        <locus-block>
+                            <allele-list>
+                                <allele>B*0709</allele>
+                            </allele-list>
+                        </locus-block>
+                        <locus-block>
+                            <allele-list>
+                                <allele>B*3534</allele>
+                            </allele-list>
+                        </locus-block>
+                    </diploid-combination>
+                    <diploid-combination locus="B">
+                        <locus-block>
+                            <allele-list>
+                                <allele>B*0712</allele>
+                            </allele-list>
+                        </locus-block>
+                        <locus-block>
+                            <allele-list>
+                                <allele>B*3551</allele>
+                            </allele-list>
+                        </locus-block>
+                    </diploid-combination>
+                    <diploid-combination locus="B">
+                        <locus-block>
+                            <allele-list>
+                                <allele>B*0718</allele>
+                            </allele-list>
+                        </locus-block>
+                        <locus-block>
+                            <allele-list>
+                                <allele>B*3505</allele>
+                            </allele-list>
+                        </locus-block>
+                    </diploid-combination>
+                    <diploid-combination locus="B">
+                        <locus-block>
+                            <allele-list>
+                                <allele>B*0724</allele>
+                            </allele-list>
+                        </locus-block>
+                        <locus-block>
+                            <allele-list>
+                                <allele>B*3515</allele>
+                            </allele-list>
+                        </locus-block>
+                    </diploid-combination>
+                    <diploid-combination locus="B">
+                        <locus-block>
+                            <allele-list>
+                                <allele>B*0726</allele>
+                            </allele-list>
+                        </locus-block>
+                        <locus-block>
+                            <allele-list>
+                                <allele>B*3508</allele>
+                            </allele-list>
+                        </locus-block>
+                    </diploid-combination>
+                </genotype-list>
+            </interpretation>
+        </typing>
+    </sample>
+</hml>

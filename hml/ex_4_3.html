@@ -1,0 +1,52 @@
+<html>
+  <head><title>Example 4.3</title></head>
+  <body>
+    <pre>&lt;!DOCTYPE hml PUBLIC "-//NMDP//DTD HML 0.3.3//EN" "http://www.nmdp.org/DTD/hml-0.3.3.dtd"&gt;
+&lt;hml version="0.3.3"&gt;
+  &lt;project name="HR"&gt;
+    &lt;reporting-center code="333"/&gt;
+    &lt;sample id="8888-6666-4" center-code="789"&gt; 
+      &lt;typing&gt;
+        &lt;interpretation date="20110123"&gt;
+          &lt;genotype-list db="HLADB" version="3.0.0"&gt;
+            &lt;diploid-combination&gt;
+              &lt;locus-block&gt;
+                &lt;allele-list&gt;
+                  &lt;allele&gt;B*07:02&lt;/allele&gt;
+                  &lt;allele&gt;B*07:06&lt;/allele&gt;
+                &lt;/allele-list&gt;
+                &lt;allele-list&gt;
+                  &lt;allele&gt;B*44:02&lt;/allele&gt;
+                  &lt;allele&gt;B*44:05&lt;/allele&gt;
+                &lt;/allele-list&gt;
+              &lt;/locus-block&gt;
+            &lt;/diploid-combination&gt;
+          &lt;/genotype-list&gt;
+        &lt;/interpretation&gt;
+
+        &lt;sbt&gt;
+          &lt;amplification-primer&gt;
+            &lt;registered-name&gt;L789.K1.V1.GENB&lt;/registered-name&gt;
+            &lt;score&gt;8&lt;/score&gt;
+          &lt;/amplification-primer&gt;
+          &lt;!-- example showing GSSP as sequence instead of registered-name --&gt;     
+          &lt;gssp&gt;
+            &lt;sequence&gt;ACGTACGTACGTACGT&lt;/sequence&gt;
+          &lt;/gssp&gt;
+          &lt;sequence&gt;
+              GCTCCCACTCCATGAGGTATTTCTACACCACCTTGTCCCGGCCCGGCCGCGGGGAGCCCC
+              GCTTCATCACAGTGGGCTACGTGGACGACACCCAGTTCGTGAGGTTCGACAGCGACGCCG
+              CGAGTCCGAGTTGGGAGCCACGGGCGCCTTGGATAGAGCAGGAGGGGCCGGAGTATTGGG
+              ACCGGAACACACAGATCTCCAAGTCCGAATCACAGACTAACCGAGAGAGCCTGCGGAACC
+              TGCGCGGCTACTACAACCAGAGCGAGGCCGGGTCTCACACCGTCCAGAGAATGTACGGCT
+              GCGACATGGGGCCAGACGGGCGCCTCCTCCGCGGGCATGACCAGTCCGCCTACGACGGCA
+              AGGATTACATCGCCCTGAACGAGGACCTGGGCTCCTGGACCGCAGCGGACACAGCGGCTC
+              AGATCACCCAGCGCAAGTGGGAGGCGGCCCGTGCGGCGGAGCAGCAGAGAGCCTACCTGG
+              AGGGCACGTGCGTGGAGTGGCTCCGCAGATACCTGGAGAACGGGAAGGAAAGGCTGAAGC
+              GCGCAG
+          &lt;/sequence&gt;
+        &lt;/sbt&gt;
+      &lt;/typing&gt;
+    &lt;/sample&gt;
+  &lt;/project&gt;
+&lt;/hml&gt;</pre></body></html>

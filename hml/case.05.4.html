@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>
+      Example 5.4
+    </title>
+  </head>
+
+  <body>
+    <h3> Example 5.4 </h3>
+    <p>
+      Lab 999 typed a sample for center 123 for the ABDR project. <br>
+      The allele-level typing was performed on Jan 23, 2004. <br>
+      The results are: <br>
+      <pre>
+    NMDP ID: 444-333-2   A*0102, A*0202
+      </pre>
+      Additionally, the sender wants to include a <b>document</b>-level
+      property that is expected and meaningful to the receiver but doesn't fit
+      anywhere else in the HML document.
+    </p>
+    <hr>
+    <pre>
+  &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+  &lt;!DOCTYPE hml PUBLIC "-//NMDP//DTD HML 0.3//EN" "http://www.nmdp.org/DTD/hml-0.3.dtd"&gt;
+  &lt;hml version="0.3">
+    <b>&lt;property name="approved-by" value="John Doe"/></b>
+    &lt;project name="ABDR">
+      &lt;reporting-center code="999"/>
+      &lt;sample id="444-333-2" center-code="123">
+        &lt;typing>
+          &lt;interpretation date="2004-01-23">
+            &lt;genotype-list db="HLADB" version="2.4.0">
+              &lt;diploid-combination>
+                &lt;locus-block>
+                  &lt;allele-list>
+                    &lt;allele>A*0102&lt;/allele>
+                  &lt;/allele-list>
+                &lt;/locus-block>
+                &lt;locus-block>
+                  &lt;allele-list>
+                    &lt;allele>A*0202&lt;/allele>
+                  &lt;/allele-list>
+                &lt;/locus-block>
+              &lt;/diploid-combination>
+            &lt;/genotype-list>
+          &lt;/interpretation>
+        &lt;/typing>
+      &lt;/sample>
+    &lt;/project>
+  &lt;/hml>
+    </pre>
+
+  </body>
+</html>
+

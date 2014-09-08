@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<hml project-name="HR" version="0.9.3">
+	<reporting-center code="123"/>
+    <sample center-code="123" id="444-333-2">
+        <typing gene-family="HLA">
+            <interpretation date="2004-01-23">
+                <haploid locus="A" method="DNA" type="0101"/>
+                <haploid locus="A" method="DNA" type="0202"/>
+            </interpretation>
+        </typing>
+    </sample>
+</hml>

@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<hml project-name="ABDR" version="0.9.3">
+    <reporting-center code="743"/>
+    <sample center-code="88" id="8888-6666-1">
+        <typing gene-family="HLA">
+            <sso locus="DRB1" scores="8811111181118181181111181181181888111811111811811118111111118" test-id="410" test-id-source="nmdp-refid"/>
+            <interpretation date="2003-12-08">
+                <haploid locus="DRB1" method="DNA" type="01RY"/>
+                <haploid locus="DRB1" method="DNA" type="13GPE"/>
+            </interpretation>
+        </typing>
+    </sample>
+    <sample center-code="88" id="8888-6666-2">
+        <typing gene-family="HLA">
+            <sso locus="DRB1" scores="8181111181818118181811111181881181181111118181111811181111118" test-id="410" test-id-source="nmdp-refid"/>
+            <interpretation date="2003-12-08">
+                <haploid locus="DRB1" method="DNA" type="03WKH"/>
+                <haploid locus="DRB1" method="DNA" type="04AFMT"/>
+            </interpretation>
+        </typing>
+    </sample>
+    <sample center-code="88" id="8888-6666-3">
+        <typing gene-family="HLA">
+            <sso locus="DRB1" scores="8181111111818181111811111181181118111811118111118111118111111" test-id="410" test-id-source="nmdp-refid"/>
+            <interpretation date="2003-12-08">
+                <haploid locus="DRB1" method="DNA" type="04AFMK"/>
+                <haploid locus="DRB1" method="DNA" type="04AGDC"/>
+            </interpretation>
+        </typing>
+    </sample>
+</hml>

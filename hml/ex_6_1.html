@@ -1,0 +1,48 @@
+<html>
+  <head><title>Example 6.1</title></head>
+  <body>
+    <pre>&lt;!DOCTYPE hml PUBLIC "-//NMDP//DTD HML 0.3.3//EN" "http://www.nmdp.org/DTD/hml-0.3.3.dtd"&gt;
+&lt;hml version="0.3.3"&gt;
+  &lt;project name="HR"&gt;
+    &lt;reporting-center code="333"/&gt;
+    &lt;sample id="8888-6666-4" center-code="789"&gt; 
+      &lt;typing&gt;
+        &lt;interpretation date="20110123"&gt;
+          &lt;genotype-list db="HLADB" version="3.0.0"&gt;
+            &lt;diploid-combination&gt;
+              &lt;locus-block&gt;
+                &lt;allele-list&gt;
+                  &lt;allele&gt;DRB1*13:02:01&lt;/allele&gt;
+                &lt;/allele-list&gt;
+              &lt;/locus-block&gt;
+              &lt;locus-block&gt;
+                &lt;allele-list&gt;
+                  &lt;allele&gt;DRB1*13:02:01&lt;/allele&gt;
+                &lt;/allele-list&gt;
+              &lt;/locus-block&gt;
+            &lt;/diploid-combination&gt;
+          &lt;/genotype-list&gt;
+        &lt;/interpretation&gt;
+        &lt;!-- This is a homozygous sample with no generic sequence --&gt;
+        &lt;sbt&gt;
+           &lt;!-- This is up-front GSSP that is DR13 specific--&gt;     
+           &lt;gssp&gt;
+            &lt;registered-name&gt;REG-GSSP-DR13&lt;/registered-name&gt;
+          &lt;/gssp&gt;
+          &lt;sequence&gt;
+              GCTCCCACTCCATGAGGTATTTCTACACCACCTTGTCCCGGCCCGGCCGCGGGGAGCCCC
+              GCTTCATCACAGTGGGCTACGTGGACGACACCCAGTTCGTGAGGTTCGACAGCGACGCCG
+              CGAGTCCGAGTTGGGAGCCACGGGCGCCTTGGATAGAGCAGGAGGGGCCGGAGTATTGGG
+              ACCGGAACACCCAGATCTCCAAGTCCGAATCACAGACTAACCGAGAGAGCCTGCGGAACC
+              TGCGCGGCTACTACAACCAGAGCGAGGCCGGGTCTCACACCGTCCAGAGAATGTACGGCT
+              GCGACATGGGGCCAGACGGGCGCCTCCTCCGCGGGCATGACCAGTCCGCCTACGACGGCA
+              AGGATTACATCGCCCTGAACGAGGACCTGGGCTCCTGGACCGCAGCGGACACAGCGGCTC
+              AGATCACCCAGCGCAAGTGGGAGGCGGCCCGGGCGGCGGAGCAGCAGAGAGCCTACCTGG
+              AGGGCACGTGCGTGGAGTGGCTCCGCAGATACCTGGAGAACGGGAAGGAAAGGCTGAAGC
+              GCGCAG
+          &lt;/sequence&gt;
+        &lt;/sbt&gt;
+      &lt;/typing&gt;
+    &lt;/sample&gt;
+  &lt;/project&gt;
+&lt;/hml&gt;</pre></body></html>

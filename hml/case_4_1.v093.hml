@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<hml project-name="ABDR" version="0.9.3">
+    <reporting-center code="999"/>
+	<typing-test-names ref-id="A-probes">
+        <typing-test-name name="L999.K1.V1.Aprobe1"/>
+        <typing-test-name name="L999.K1.V1.Aprobe2"/>
+        <typing-test-name name="L999.K1.V1.Aprobe3"/>
+        <typing-test-name name="L999.K1.V1.Aprobe4"/>
+    </typing-test-names>
+    <typing-test-names ref-id="B-probes">
+        <typing-test-name name="L999.K1.V1.Bprobe1"/>
+        <typing-test-name name="L999.K1.V1.Bprobe2"/>
+        <typing-test-name name="L999.K1.V1.Bprobe3"/>
+        <typing-test-name name="L999.K1.V1.Bprobe4"/>
+        <typing-test-name name="L999.K1.V1.Bprobe5"/>
+    </typing-test-names>
+    <typing-test-names ref-id="C-probes">
+        <typing-test-name name="L999.K1.V1.Cprobe1"/>
+        <typing-test-name name="L999.K1.V1.Cprobe2"/>
+        <typing-test-name name="L999.K1.V1.Cprobe3"/>
+    </typing-test-names>
+    <sample center-code="123" id="444-333-2">
+        <typing gene-family="HLA">
+            <sso locus="A" scores="1811" test-id="A-probes" test-id-source="ref-id"/>
+            <sso locus="B" scores="18118" test-id="B-probes" test-id-source="ref-id"/>
+            <sso locus="C" scores="181" test-id="B-probes" test-id-source="ref-id"/>
+            <interpretation date="2004-01-23">
+                <haploid locus="A" method="DNA" type="03CK"/>
+                <haploid locus="A" method="DNA" type="25AB"/>
+                <haploid locus="B" method="DNA" type="18XX"/>
+                <haploid locus="B" method="DNA" type="40XMC"/>
+                <haploid locus="C" method="DNA" type="03GFW"/>
+	            <haploid locus="C" method="DNA" type="12NP"/>
+            </interpretation>
+        </typing>
+    </sample>
+</hml>

@@ -1,0 +1,265 @@
+<?xml version="1.0" ?>
+<hml project-name="KIR" version="0.9.3">
+    <reporting-center code="999"/>
+    <sample center-code="789" id="444-333-2">
+        <typing gene-family="KIR">
+            <sso locus="wrbe" scores="8811118881811818118811888181188111811888111118811111111811181811111" test-id="XYZO1A_010N_00" test-id-source="ref-id"/>
+            <interpretation allele-db="KIR" allele-version="2.0.0" date="2008-09-08">
+                <genotype-list>
+		              <diploid-combination>
+		                <locus-block>
+		                  <allele-list>
+		                    <allele present="Y">2DL1</allele>
+		                  </allele-list>
+		                </locus-block>
+		              </diploid-combination>
+            		</genotype-list>
+            </interpretation>
+        </typing>
+        <typing gene-family="KIR">
+        	<sso scores="188111888181181811881188818118811181111111111881111111181118181188" test-id="XYZO1A_010N_00" test-id-source="ref-id"/>
+        	<interpretation allele-db="KIR" allele-version="2.0.0" date="2008-09-08">
+                <genotype-list>
+		              <diploid-combination>
+		                <locus-block>
+		                  <allele-list>
+		                    <allele present="Y">2DL2</allele>
+		                  </allele-list>
+		                </locus-block>
+		              </diploid-combination>
+            		</genotype-list>
+            </interpretation>
+        </typing>
+        <typing gene-family="KIR">
+        	<sso scores="188111888181181811881188818118811181111111111881111111181118181188" test-id="XYZO1A_010N_00" test-id-source="ref-id"/>
+        	<interpretation allele-db="KIR" allele-version="2.0.0" date="2008-09-08">
+                <genotype-list>
+		              <diploid-combination>
+		                <locus-block>
+		                  <allele-list>
+		                    <allele present="N">2DL3</allele>
+		                  </allele-list>
+		                </locus-block>
+		              </diploid-combination>
+            		</genotype-list>
+            </interpretation>
+        </typing>
+        <typing gene-family="KIR">
+        	<sso scores="188111888181181811881188818118811181111111111881111111181118181188" test-id="XYZO1A_010N_00" test-id-source="ref-id"/>
+        	<interpretation allele-db="KIR" allele-version="2.0.0" date="2008-09-08">
+                <genotype-list>
+		              <diploid-combination>
+		                <locus-block>
+		                  <allele-list>
+		                    <allele present="N">2DL4</allele>
+		                  </allele-list>
+		                </locus-block>
+		              </diploid-combination>
+            		</genotype-list>
+            </interpretation>
+        </typing>
+        <typing gene-family="KIR">
+        	<sso scores="188111888181181811881188818118811181111111111881111111181118181188" test-id="XYZO1A_010N_00" test-id-source="ref-id"/>
+        	<interpretation allele-db="KIR" allele-version="2.0.0" date="2008-09-08">
+                <genotype-list>
+		              <diploid-combination>
+		                <locus-block>
+		                  <allele-list>
+		                    <allele present="N">2DL5</allele>
+		                  </allele-list>
+		                </locus-block>
+		              </diploid-combination>
+            		</genotype-list>
+            </interpretation>
+        </typing>
+        <typing gene-family="KIR">
+        	<sso scores="188111888181181811881188818118811181111111111881111111181118181188" test-id="XYZO1A_010N_00" test-id-source="ref-id"/>
+        	<interpretation allele-db="KIR" allele-version="2.0.0" date="2008-09-08">
+                <genotype-list>
+		              <diploid-combination>
+		                <locus-block>
+		                  <allele-list>
+		                    <allele present="N">2DS1</allele>
+		                  </allele-list>
+		                </locus-block>
+		              </diploid-combination>
+            		</genotype-list>
+            </interpretation>
+        </typing>
+        <typing gene-family="KIR">
+        	<sso scores="188111888181181811881188818118811181111111111881111111181118181188" test-id="XYZO1A_010N_00" test-id-source="ref-id"/>
+        	<interpretation allele-db="KIR" allele-version="2.0.0" date="2008-09-08">
+                <genotype-list>
+		              <diploid-combination>
+		                <locus-block>
+		                  <allele-list>
+		                    <allele present="N">2DS2</allele>
+		                  </allele-list>
+		                </locus-block>
+		              </diploid-combination>
+            		</genotype-list>
+            </interpretation>
+        </typing>
+        <typing gene-family="KIR">
+        	<sso scores="188111888181181811881188818118811181111111111881111111181118181188" test-id="XYZO1A_010N_00" test-id-source="ref-id"/>
+        	<interpretation allele-db="KIR" allele-version="2.0.0" date="2008-09-08">
+                <genotype-list>
+		              <diploid-combination>
+		                <locus-block>
+		                  <allele-list>
+		                    <allele present="N">2DS3</allele>
+		                  </allele-list>
+		                </locus-block>
+		              </diploid-combination>
+            		</genotype-list>
+            </interpretation>
+        </typing>
+        <typing gene-family="KIR">
+        	<sso scores="188111888181181811881188818118811181111111111881111111181118181188" test-id="XYZO1A_010N_00" test-id-source="ref-id"/>
+        	<interpretation allele-db="KIR" allele-version="2.0.0" date="2008-09-08">
+                <genotype-list>
+		              <diploid-combination>
+		                <locus-block>
+		                  <allele-list>
+		                    <allele present="N">2DS4</allele>
+		                  </allele-list>
+		                </locus-block>
+		              </diploid-combination>
+            		</genotype-list>
+            </interpretation>
+        </typing>
+        <typing gene-family="KIR">
+        	<sso scores="188111888181181811881188818118811181111111111881111111181118181188" test-id="XYZO1A_010N_00" test-id-source="ref-id"/>
+        	<interpretation allele-db="KIR" allele-version="2.0.0" date="2008-09-08">
+                <genotype-list>
+		              <diploid-combination>
+		                <locus-block>
+		                  <allele-list>
+		                    <allele present="N">2DS5</allele>
+		                  </allele-list>
+		                </locus-block>
+		              </diploid-combination>
+            		</genotype-list>
+            </interpretation>
+        </typing>
+        <typing gene-family="KIR">
+        	<sso scores="188111888181181811881188818118811181111111111881111111181118181188" test-id="XYZO1A_010N_00" test-id-source="ref-id"/>
+        	<interpretation allele-db="KIR" allele-version="2.0.0" date="2008-09-08">
+                <genotype-list>
+		              <diploid-combination>
+		                <locus-block>
+		                  <allele-list>
+		                    <allele present="N">3DL1</allele>
+		                  </allele-list>
+		                </locus-block>
+		              </diploid-combination>
+            		</genotype-list>
+            </interpretation>
+        </typing>
+        <typing gene-family="KIR">
+        	<sso scores="188111888181181811881188818118811181111111111881111111181118181188" test-id="XYZO1A_010N_00" test-id-source="ref-id"/>
+        	<interpretation allele-db="KIR" allele-version="2.0.0" date="2008-09-08">
+                <genotype-list>
+		              <diploid-combination>
+		                <locus-block>
+		                  <allele-list>
+		                    <allele present="N">3DL2</allele>
+		                  </allele-list>
+		                </locus-block>
+		              </diploid-combination>
+            		</genotype-list>
+            </interpretation>
+        </typing>
+        <typing gene-family="KIR">
+        	<sso scores="188111888181181811881188818118811181111111111881111111181118181188" test-id="XYZO1A_010N_00" test-id-source="ref-id"/>
+        	<interpretation allele-db="KIR" allele-version="2.0.0" date="2008-09-08">
+                <genotype-list>
+		              <diploid-combination>
+		                <locus-block>
+		                  <allele-list>
+		                    <allele present="N">3DL3</allele>
+		                  </allele-list>
+		                </locus-block>
+		              </diploid-combination>
+            		</genotype-list>
+            </interpretation>
+        </typing>
+        <typing gene-family="KIR">
+        	<sso scores="188111888181181811881188818118811181111111111881111111181118181188" test-id="XYZO1A_010N_00" test-id-source="ref-id"/>
+        	<interpretation allele-db="KIR" allele-version="2.0.0" date="2008-09-08">
+                <genotype-list>
+		              <diploid-combination>
+		                <locus-block>
+		                  <allele-list>
+		                    <allele present="N">3DS1</allele>
+		                  </allele-list>
+		                </locus-block>
+		              </diploid-combination>
+            		</genotype-list>
+            </interpretation>
+        </typing>
+    </sample>
+    <typing-test-names ref-id="XYZO1A_010N_00">
+        <typing-test-name name="XYZ01A_010N_00_ZYX4103"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4905G"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4046LT"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4065"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4066"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4031LT"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4029"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4431"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4335"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4041LT"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4063"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4102"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4101"/>
+        <typing-test-name name="XYZ01A_010N_00_DR105"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4723"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4133"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4038LT"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4751G"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4043LT"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4104"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4044LT"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4348"/>
+        <typing-test-name name="XYZ01A_010N_00_DR108G"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4096"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4356"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4037LT"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4082LT"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4105"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4093"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4131"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4039LT"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4333"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4086"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4042"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4900"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4047LT"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4134"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4045"/>
+        <typing-test-name name="XYZ01A_010N_00_DR112G"/>
+        <typing-test-name name="XYZ01A_010N_00_DR101G"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4048"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4049"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4338"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4043"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4032"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4888"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4061"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4283"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4088LT"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4355"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4753G"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4343"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4040"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4028LT"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4064"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4020LT"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4327"/>
+        <typing-test-name name="XYZ01A_010N_00_DR118G"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4087"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4132"/>
+        <typing-test-name name="XYZ01A_010N_00_ZYX4034LT"/>
+      </typing-test-names>
+</hml>

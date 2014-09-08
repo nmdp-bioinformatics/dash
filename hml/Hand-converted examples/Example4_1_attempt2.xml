@@ -1,0 +1,60 @@
+<!DOCTYPE hml PUBLIC "-//NMDP//DTD HML 1.0.0//EN" "http://www.nmdp.org/DTD/hml-1.0.0dtd">
+<hml version="1.0" project-name="HR">						<!-- required attribute:  version	-->
+    <reporting-center code="333"/>							<!-- required attribute:  code	-->
+    <sample id="8888-6666-4" center-code="789"> 			<!-- required attributes:  id, center-code	-->
+      <typing gene-family="HLA">							<!-- required attribute:  gene-family	-->
+        <interpretation date="20110123" allele-db="HLADB" allele-version="3.0.0">	<!-- required attribute:  date	-->
+		<!--  The <genotype-list> element is being deprecated in HML 1.0.  --> 
+          <genotype-list>
+	            <diploid-combination locus="B">				<!-- required attribute:  locus	-->
+              <locus-block>
+                <allele-list>
+	                  <allele present="Y">B*07:02</allele>	<!-- required attribute:  present=Y|N|U	-->
+                </allele-list>
+               </locus-block>
+               <locus-block>
+                <allele-list>
+                  <allele present="Y">B*44:02</allele>		<!-- required attribute:  present=Y|N|U	-->
+                </allele-list>
+              </locus-block>
+            </diploid-combination>
+          </genotype-list>
+
+		<!-- Preferred element is <glstring>. Shown here as a comment. -->
+		<!--
+		  <glstring uri="an.external.reference.2glstring">
+			HLA-B*07:02+HLA-B*44:02
+		  </glstring>
+		-->
+        </interpretation>
+		<sbt-sanger test-id-source="GTR"  test-id="L123.K1.V1.rSBTtestName"> 	<!-- required attributes:  test-id and test-id-source	-->
+		  <!-- My second try at this after peaking at Katie's generated version
+		  -->
+		  <amplification registered-name="L789.K1.V1.nAmpPrimerName">			<!-- required attributes:  registered-name	-->	  
+              GCTCCCACTCCATGAGGTATTTCTACACCACCTTGTCCCGGCCCGGCCGCGGGGAGCCCC
+              GCTTCATCACAGTGGGCTACGTGGACGACACCCAGTTCGTGAGGTTCGACAGCGACGCCG
+              CGAGTCCGAGTTGGGAGCCACGGGCGCCTTGGATAGAGCAGGAGGGGCCGGAGTATTGGG
+              ACCGGAACACMCAGATCTCCAAGTCCGAATCACAGACTAACCGAGAGAGCCTGCGGAACC
+              TGCGCGGCTACTACAACCAGAGCGAGGCCGGGTCTCACACCGTCCAGAGAATGTACGGCT
+              GCGACATGGGGCCAGACGGGCGCCTCCTCCGCGGGCATGACCAGTCCGCCTACGACGGCA
+              AGGATTACATCGCCCTGAACGAGGACCTGGGCTCCTGGACCGCAGCGGACACAGCGGCTC
+              AGATCACCCAGCGCAAGTGGGAGGCGGCCCGRGCGGCGGAGCAGCAGAGAGCCTACCTGG
+              AGGGCACGTGCGTGGAGTGGCTCCGCAGATACCTGGAGAACGGGAAGGAAAGGCTGAAGC
+              GCGCAG
+          </amplification>
+		  <gssp registered-name="L345.K1.V1.gsspAmpPrimerName">				<!-- required attributes:  PICK ONE: primer-sequence OR primer-target OR registered-name	-->
+              GCTCCCACTCCATGAGGTATTTCTACACCACCTTGTCCCGGCCCGGCCGCGGGGAGCCCC
+              GCTTCATCACAGTGGGCTACGTGGACGACACCCAGTTCGTGAGGTTCGACAGCGACGCCG
+              CGAGTCCGAGTTGGGAGCCACGGGCGCCTTGGATAGAGCAGGAGGGGCCGGAGTATTGGG
+              ACCGGAACACACAGATCTCCAAGTCCGAATCACAGACTAACCGAGAGAGCCTGCGGAACC
+              TGCGCGGCTACTACAACCAGAGCGAGGCCGGGTCTCACACCGTCCAGAGAATGTACGGCT
+              GCGACATGGGGCCAGACGGGCGCCTCCTCCGCGGGCATGACCAGTCCGCCTACGACGGCA
+              AGGATTACATCGCCCTGAACGAGGACCTGGGCTCCTGGACCGCAGCGGACACAGCGGCTC
+              AGATCACCCAGCGCAAGTGGGAGGCGGCCCGAGCGGCGGAGCAGCAGAGAGCCTACCTGG
+              AGGGCACGTGCGTGGAGTGGCTCCGCAGATACCTGGAGAACGGGAAGGAAAGGCTGAAGC
+              GCGCAG
+          </gssp>
+        </sbt-sanger>
+      </typing>
+    </sample>
+</hml>

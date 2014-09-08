@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>
+      Example 1.1
+    </title>
+  </head>
+
+  <body>
+    <h3> Example 1.1 </h3>
+    <p>
+      Lab 999 typed a sample for center 123 for the ABDR project. <br>
+      The allele-level typing was performed on Jan 23, 2004. <br>
+      The results are: <br>
+      <pre>
+    NMDP ID: 444-333-2   A*0101, A*0202
+      </pre>
+    </p>
+    <hr>
+
+    <h3> Resulting HML Code </h3>
+    <pre>
+  &lt;!DOCTYPE hml PUBLIC "-//NMDP//DTD HML 0.2//EN"
+   "http://www.nmdp.org/DTD/hml-0.2.dtd"&gt;
+  &lt;hml version="0.2">
+    &lt;project name="ABDR">
+      &lt;reporting-center code="999"/>
+      &lt;sample id="444-333-2" center-code="123">
+        &lt;hla-typing>
+          &lt;interpretation date="20040123">
+            &lt;haploid locus="A" method="DNA" type="0101"/>
+            &lt;haploid locus="A" method="DNA" type="0202"/>
+          &lt;/interpretation>
+        &lt;/hla-typing>
+      &lt;/sample>
+    &lt;/project>
+  &lt;/hml>
+    </pre>
+
+  </body>
+</html>
+

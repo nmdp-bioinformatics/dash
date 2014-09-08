@@ -1,0 +1,14 @@
+  <!DOCTYPE hml PUBLIC "-//NMDP//DTD HML 0.2//EN"
+   "http://www.nmdp.org/DTD/hml-0.2.dtd">
+  <hml version="1.0" project-name="ABDR">
+      <reporting-center code="999"/>
+      <sample id="444-333-2" center-code="123">
+        <typing gene-family="HLA">
+          <interpretation date="20040123">
+            <haploid locus="HLA-A" method="DNA" type="0101"/>
+            <haploid locus="HLA-A" method="DNA" type="0202"/>
+          </interpretation>
+		  <!-- There is not enough information to include the required typing-method element here -->
+        </typing>
+      </sample>
+  </hml>

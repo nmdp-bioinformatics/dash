@@ -1,0 +1,66 @@
+<!DOCTYPE hml PUBLIC "-//NMDP//DTD HML 1.0.0//EN" "http://www.nmdp.org/DTD/hml-1.0.0dtd">
+<!--
+	CASE:
+	Lab 333 is reporting an HLA typing result for locus B.
+	The sample was typed on 01/23/2011 for center 789, High Res project using the SBT-Sanger typing method. 
+	Show sequence results for the initial amplification step and the group-specific sequencing primer.
+	Unambiguous results are reported for each haplotype.
+-->
+<hml version="1.0" project-name="HR">						
+    <reporting-center code="333"/>							<!-- Lab where typing was performed	-->
+    <sample id="8888-6666-4" center-code="789"> 			<!-- Specific sample used for typing and center requesting the typing	-->
+      <typing gene-family="HLA">							<!-- HLA gene system -->
+	  <!--	TYPING METHOD USED -->
+ 		<sbt-sanger test-id-source="GTR"  test-id="L123.K1.V1.rSBTtestName"> 	<!-- SBT-Sanger typing method used. Specific information about the specific test is available on the GTR.-->
+		  <amplification registered-name="L789.K1.V1.nAmpPrimerName">			<!-- Sequence representing the amplified region. -->	  
+              GCTCCCACTCCATGAGGTATTTCTACACCACCTTGTCCCGGCCCGGCCGCGGGGAGCCCC
+              GCTTCATCACAGTGGGCTACGTGGACGACACCCAGTTCGTGAGGTTCGACAGCGACGCCG
+              CGAGTCCGAGTTGGGAGCCACGGGCGCCTTGGATAGAGCAGGAGGGGCCGGAGTATTGGG
+              ACCGGAACACMCAGATCTCCAAGTCCGAATCACAGACTAACCGAGAGAGCCTGCGGAACC
+              TGCGCGGCTACTACAACCAGAGCGAGGCCGGGTCTCACACCGTCCAGAGAATGTACGGCT
+              GCGACATGGGGCCAGACGGGCGCCTCCTCCGCGGGCATGACCAGTCCGCCTACGACGGCA
+              AGGATTACATCGCCCTGAACGAGGACCTGGGCTCCTGGACCGCAGCGGACACAGCGGCTC
+              AGATCACCCAGCGCAAGTGGGAGGCGGCCCGRGCGGCGGAGCAGCAGAGAGCCTACCTGG
+              AGGGCACGTGCGTGGAGTGGCTCCGCAGATACCTGGAGAACGGGAAGGAAAGGCTGAAGC
+              GCGCAG
+          </amplification>
+		  <gssp registered-name="L345.K1.V1.gsspAmpPrimerName">					<!-- Sequence representing the results of the named group-specific sequencing primer -->
+              GCTCCCACTCCATGAGGTATTTCTACACCACCTTGTCCCGGCCCGGCCGCGGGGAGCCCC
+              GCTTCATCACAGTGGGCTACGTGGACGACACCCAGTTCGTGAGGTTCGACAGCGACGCCG
+              CGAGTCCGAGTTGGGAGCCACGGGCGCCTTGGATAGAGCAGGAGGGGCCGGAGTATTGGG
+              ACCGGAACACACAGATCTCCAAGTCCGAATCACAGACTAACCGAGAGAGCCTGCGGAACC
+              TGCGCGGCTACTACAACCAGAGCGAGGCCGGGTCTCACACCGTCCAGAGAATGTACGGCT
+              GCGACATGGGGCCAGACGGGCGCCTCCTCCGCGGGCATGACCAGTCCGCCTACGACGGCA
+              AGGATTACATCGCCCTGAACGAGGACCTGGGCTCCTGGACCGCAGCGGACACAGCGGCTC
+              AGATCACCCAGCGCAAGTGGGAGGCGGCCCGAGCGGCGGAGCAGCAGAGAGCCTACCTGG
+              AGGGCACGTGCGTGGAGTGGCTCCGCAGATACCTGGAGAACGGGAAGGAAAGGCTGAAGC
+              GCGCAG
+          </gssp>
+        </sbt-sanger>
+	   <!-- TYPING RESULTS -->
+       <interpretation date="20110123" allele-db="HLADB" allele-version="3.0.0">	<!-- Date of typing and the database/version used to interpret results	-->
+		<!--  The <genotype-list> element is being deprecated in HML 1.0.  --> 
+          <genotype-list>									<!-- Full, unambiguous list of all possible typings for this sample -->
+	        <diploid-combination locus="B">					<!-- Unambiguous list of all possible haplotypes for this locus that are the result of this test -->
+              <locus-block>
+                <allele-list>								<!-- Unambiguous alleles possible within a single hapotype -->
+	                <allele present="Y">B*07:02</allele>	<!-- Specific allele. Must specify presence/absence/unknown state of allele. -->
+                </allele-list>
+               </locus-block>
+               <locus-block>
+                <allele-list>
+                  <allele present="Y">B*44:02</allele>		
+                </allele-list>
+              </locus-block>
+            </diploid-combination>
+          </genotype-list>
+		<!-- Preferred element is <glstring>. Shown here as a comment. -->
+		<!--
+		  <glstring uri="an.external.reference.2glstring">
+			HLA-B*07:02+HLA-B*44:02
+		  </glstring>
+		-->
+        </interpretation>
+      </typing>
+    </sample>
+</hml>

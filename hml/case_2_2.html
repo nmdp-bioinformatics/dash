@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <title>
+      Example 2.2
+    </title>
+  </head>
+
+  <body>
+    <h3> Example 2.2 </h3>
+    <p>
+      Lab 999 typed three samples for center 789 for the ABDR project. <br>
+      The allele-level typing was performed on Dec 8, 2003. <br>
+      They performed a series of SSO tests. <br>
+      <br>
+      Rather than reporting a list of the tests used, the lab wants to report 
+      only a reference to a predetermined list of tests. <br>
+      <br>
+      Note that the test scores are different than the previous example. 
+      By using the reference to a list of tests, the order of the scores 
+      must match the order of the tests in the predetermined list. <br>
+
+      For each test performed on a sample, a score was given to indicate success (8) or failure (1).<br>
+      The results are: <br>
+      <pre>
+    NMDP ID: 8888-6666-1    DRB1*01RY, DRB1*13GPE
+    NMDP ID: 8888-6666-2    DRB1*03WKH, DRB1*04AFMT
+    NMDP ID: 8888-6666-3    DRB1*04AFMK, DRB1*04AGDC
+      </pre>
+    </p>
+    <hr>
+
+    <h3> Resulting HML Code </h3>
+    <pre>
+  &lt;!DOCTYPE hml PUBLIC "-//NMDP//DTD HML 0.2//EN"
+   "http://www.nmdp.org/DTD/hml-0.2.dtd"&gt;
+  &lt;hml version="0.2">
+    &lt;project name="ABDR">
+      &lt;reporting-center code="743"/>
+      &lt;sample id="8888-6666-1" center-code="88">
+        &lt;hla-typing>
+          &lt;interpretation date="20031208">
+            &lt;haploid locus="DRB1" method="DNA" type="01RY"/>
+            &lt;haploid locus="DRB1" method="DNA" type="13GPE"/>
+          &lt;/interpretation>
+          &lt;sso nmdp-refid="410" scores="8811111181118181181111181181181888111811111811811118111111118"/>
+        &lt;/hla-typing>
+      &lt;/sample>
+      &lt;sample id="8888-6666-2" center-code="88">
+        &lt;hla-typing>
+          &lt;interpretation date="20031208">
+            &lt;haploid locus="DRB1" method="DNA" type="03WKH"/>
+            &lt;haploid locus="DRB1" method="DNA" type="04AFMT"/>
+          &lt;/interpretation>
+          &lt;sso nmdp-refid="410" scores="8181111181818118181811111181881181181111118181111811181111118"/>
+        &lt;/hla-typing>
+      &lt;/sample>
+      &lt;sample id="8888-6666-3" center-code="88">
+        &lt;hla-typing>
+          &lt;interpretation date="20031208">
+            &lt;haploid locus="DRB1" method="DNA" type="04AFMK"/>
+            &lt;haploid locus="DRB1" method="DNA" type="04AGDC"/>
+          &lt;/interpretation>
+          &lt;sso nmdp-refid="410" scores="8181111111818181111811111181181118111811118111118111118111111"/>
+        &lt;/hla-typing>
+      &lt;/sample>
+    &lt;/project>
+  &lt;/hml>
+    </pre>
+  </body>
+</html>
