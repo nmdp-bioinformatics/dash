@@ -1,0 +1,194 @@
+Example 2.1
+^^^^^^^^^^^
+
+Lab 999 typed three samples for center 789 for the ABDR project. +
+ The allele-level typing was performed on Jan 23, 2004. +
+ They performed a series of SSO tests. +
+ They wish to report the tests they used, the results of the tests, and
+their interpretations of those tests. +
+ For each test performed on a sample, a score was given to indicate
+success (8) or failure (1). +
+ The results are: +
+
+----------------------------------------------------
+    NMDP ID: 8888-6666-1    DRB1*01RY, DRB1*13GPE
+    NMDP ID: 8888-6666-2    DRB1*03WKH, DRB1*04AFMT
+    NMDP ID: 8888-6666-3    DRB1*04AFMK, DRB1*04AGDC
+      
+----------------------------------------------------
+
+For each test performed on a sample, a score was given to indicate
+success (8) or failure (1). +
+ +
+ The tests used are:
+
+----------------------------------
+L5001.K1.V1.RSSO2B1_007N_OLR4103
+L5001.K1.V1.RSSO2B1_007N_OLR4905G
+L5001.K1.V1.RSSO2B1_007N_OLR4046LT
+L5001.K1.V1.RSSO2B1_007N_OLR4065
+L5001.K1.V1.RSSO2B1_007N_OLR4066
+L5001.K1.V1.RSSO2B1_007N_OLR4031LT
+L5001.K1.V1.RSSO2B1_007N_OLR4029
+L5001.K1.V1.RSSO2B1_007N_OLR4431
+L5001.K1.V1.RSSO2B1_007N_OLR4335
+L5001.K1.V1.RSSO2B1_007N_OLR4041LT
+L5001.K1.V1.RSSO2B1_007N_OLR4063
+L5001.K1.V1.RSSO2B1_007N_OLR4102
+L5001.K1.V1.RSSO2B1_007N_OLR4101
+L5001.K1.V1.RSSO2B1_007N_DR105
+L5001.K1.V1.RSSO2B1_007N_OLR4723
+L5001.K1.V1.RSSO2B1_007N_OLR4133
+L5001.K1.V1.RSSO2B1_007N_OLR4038LT
+L5001.K1.V1.RSSO2B1_007N_OLR4751G
+L5001.K1.V1.RSSO2B1_007N_OLR4043LT
+L5001.K1.V1.RSSO2B1_007N_OLR4104
+L5001.K1.V1.RSSO2B1_007N_OLR4044LT
+L5001.K1.V1.RSSO2B1_007N_OLR4348
+L5001.K1.V1.RSSO2B1_007N_DR108G
+L5001.K1.V1.RSSO2B1_007N_OLR4096
+L5001.K1.V1.RSSO2B1_007N_OLR4356
+L5001.K1.V1.RSSO2B1_007N_OLR4037LT
+L5001.K1.V1.RSSO2B1_007N_OLR4082LT
+L5001.K1.V1.RSSO2B1_007N_OLR4105
+L5001.K1.V1.RSSO2B1_007N_OLR4093
+L5001.K1.V1.RSSO2B1_007N_OLR4131
+L5001.K1.V1.RSSO2B1_007N_OLR4039LT
+L5001.K1.V1.RSSO2B1_007N_OLR4333
+L5001.K1.V1.RSSO2B1_007N_OLR4086
+L5001.K1.V1.RSSO2B1_007N_OLR4042
+L5001.K1.V1.RSSO2B1_007N_OLR4900
+L5001.K1.V1.RSSO2B1_007N_OLR4047LT
+L5001.K1.V1.RSSO2B1_007N_OLR4134
+L5001.K1.V1.RSSO2B1_007N_OLR4045
+L5001.K1.V1.RSSO2B1_007N_DR112G
+L5001.K1.V1.RSSO2B1_007N_DR101G
+L5001.K1.V1.RSSO2B1_007N_OLR4048
+L5001.K1.V1.RSSO2B1_007N_OLR4049
+L5001.K1.V1.RSSO2B1_007N_OLR4338
+L5001.K1.V1.RSSO2B1_007N_OLR4043
+L5001.K1.V1.RSSO2B1_007N_OLR4032
+L5001.K1.V1.RSSO2B1_007N_OLR4888
+L5001.K1.V1.RSSO2B1_007N_OLR4061
+L5001.K1.V1.RSSO2B1_007N_OLR4283
+L5001.K1.V1.RSSO2B1_007N_OLR4088LT
+L5001.K1.V1.RSSO2B1_007N_OLR4355
+L5001.K1.V1.RSSO2B1_007N_OLR4753G
+L5001.K1.V1.RSSO2B1_007N_OLR4343
+L5001.K1.V1.RSSO2B1_007N_OLR4040
+L5001.K1.V1.RSSO2B1_007N_OLR4028LT
+L5001.K1.V1.RSSO2B1_007N_OLR4064
+L5001.K1.V1.RSSO2B1_007N_OLR4020LT
+L5001.K1.V1.RSSO2B1_007N_OLR4327
+L5001.K1.V1.RSSO2B1_007N_DR118G
+L5001.K1.V1.RSSO2B1_007N_OLR4087
+L5001.K1.V1.RSSO2B1_007N_OLR4132
+L5001.K1.V1.RSSO2B1_007N_OLR4034LT
+    
+----------------------------------
+
+'''''
+
+Resulting HML Code
+^^^^^^^^^^^^^^^^^^
+
+----------------------------------------------------------------------------------------------------
+  <!DOCTYPE hml PUBLIC "-//NMDP//DTD HML 0.2//EN"
+   "http://www.nmdp.org/DTD/hml-0.2.dtd">
+  <hml version="0.2">
+    <project name="ABDR">
+      <reporting-center code="999"/>
+      <sample id="8888-6666-1" center-code="789">
+        <hla-typing>
+          <interpretation date="20040123">
+            <haploid locus="DRB1" method="DNA" type="01RY"/>
+            <haploid locus="DRB1" method="DNA" type="13GPE"/>
+          </interpretation>
+          <sso ref-id="one" scores="8811111181818181181111111181181888111811111111111111111111118"/>
+        </hla-typing>
+      </sample>
+      <sample id="8888-6666-2" center-code="789">
+        <hla-typing>
+          <interpretation date="20040123">
+            <haploid locus="DRB1" method="DNA" type="03WKH"/>
+            <haploid locus="DRB1" method="DNA" type="04AFMT"/>
+          </interpretation>
+          <sso ref-id="one" scores="8181111181818111111811111181881181181111118181111111111111118"/>
+        </hla-typing>
+      </sample>
+      <sample id="8888-6666-3" center-code="789">
+        <hla-typing>
+          <interpretation date="20040123">
+            <haploid locus="DRB1" method="DNA" type="04AFMK"/>
+            <haploid locus="DRB1" method="DNA" type="04AGDC"/>
+          </interpretation>
+          <sso ref-id="one" scores="8181111111818181111811111181181111111811118111111111111111111"/>
+        </hla-typing>
+      </sample>
+      <typing-test-names ref-id="one">
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4103"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4905G"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4046LT"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4065"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4066"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4031LT"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4029"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4431"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4335"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4041LT"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4063"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4102"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4101"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_DR105"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4723"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4133"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4038LT"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4751G"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4043LT"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4104"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4044LT"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4348"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_DR108G"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4096"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4356"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4037LT"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4082LT"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4105"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4093"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4131"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4039LT"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4333"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4086"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4042"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4900"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4047LT"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4134"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4045"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_DR112G"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_DR101G"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4048"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4049"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4338"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4043"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4032"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4888"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4061"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4283"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4088LT"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4355"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4753G"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4343"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4040"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4028LT"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4064"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4020LT"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4327"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_DR118G"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4087"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4132"/>
+        <typing-test-name name="L5001.K1.V1.RSSO2B1_007N_OLR4034LT"/>
+      </typing-test-names>
+    </project>
+  </hml>
+    
+----------------------------------------------------------------------------------------------------

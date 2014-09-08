@@ -1,0 +1,49 @@
+Example 5.5
+^^^^^^^^^^^
+
+Lab 999 typed a sample for center 123 for the ABDR project. +
+ The allele-level typing was performed on Jan 23, 2004. +
+ The results are: +
+
+---------------------------------------
+    NMDP ID: 444-333-2   A*0102, A*0202
+      
+---------------------------------------
+
+Additionally, the sender wants to include a **sample**-level property
+that is expected and meaningful to the receiver but doesn't fit anywhere
+else in the HML document.
+
+'''''
+
+----------------------------------------------------------------------------------------
+  <?xml version="1.0" encoding="UTF-8"?>
+  <!DOCTYPE hml PUBLIC "-//NMDP//DTD HML 0.3//EN" "http://www.nmdp.org/DTD/hml-0.3.dtd">
+  <hml version="0.3">
+    <project name="ABDR">
+      <reporting-center code="999"/>
+      <sample id="444-333-2" center-code="123">
+        <property name="color" value="red"/>
+        <typing>
+          <interpretation date="2004-01-23">
+            <genotype-list db="HLADB" version="2.4.0">
+              <diploid-combination>
+                <locus-block>
+                  <allele-list>
+                    <allele>A*0102</allele>
+                  </allele-list>
+                </locus-block>
+                <locus-block>
+                  <allele-list>
+                    <allele>A*0202</allele>
+                  </allele-list>
+                </locus-block>
+              </diploid-combination>
+            </genotype-list>
+          </interpretation>
+        </typing>
+      </sample>
+    </project>
+  </hml>
+    
+----------------------------------------------------------------------------------------

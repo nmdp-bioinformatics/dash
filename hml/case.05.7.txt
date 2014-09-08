@@ -1,0 +1,140 @@
+Example 5.7
+^^^^^^^^^^^
+
+Lab 333 typed a sample for center 789 for the High Res project. +
+ They performed an SBT test. The allele-level typing was performed on
+Jan 23, 2004. +
+ They wish to report the test they used, the sequence revealed by the
+test, and their interpretation of that test. +
+ +
+ The results are: +
+
+----------------------------------------------------------------------------
+    NMDP ID: 8888-6666-4  B*070201 , B*350101/B*350103/B*3540N/B*3557/B*3542
+                          B*0709   , B*3534
+                          B*0712   , B*3551
+                          B*0718   , B*3505
+                          B*0724   , B*3515
+                          B*0726   , B*3508
+      
+----------------------------------------------------------------------------
+
+The SBT test used was: +
+
+---------------------
+L964.K1.V1.GENB-EX2-3
+    
+---------------------
+
+'''''
+
+Resulting HML Code
+^^^^^^^^^^^^^^^^^^
+
+----------------------------------------------------------------------------------------
+  <!DOCTYPE hml PUBLIC "-//NMDP//DTD HML 0.3//EN" "http://www.nmdp.org/DTD/hml-0.3.dtd">
+  <hml version="0.3">
+    <project name="HR">
+      <reporting-center code="333"/>
+      <sample id="8888-6666-4" center-code="789"> 
+        <typing>
+          <interpretation date="20040123">
+            <genotype-list db="HLADB" version="2.10.0">
+              <diploid-combination>
+                <locus-block>
+                  <allele-list>
+                    <allele>B*070201</allele>
+                  </allele-list>
+                </locus-block>
+                <locus-block>
+                  <allele-list>
+                    <allele>B*350101</allele>
+                    <allele>B*350103</allele>
+                    <allele>B*3540N</allele>
+                    <allele>B*3557</allele>
+                    <allele>B*3542</allele>
+                  </allele-list>
+                </locus-block>
+              </diploid-combination>
+              <diploid-combination>
+                <locus-block>
+                  <allele-list>
+                    <allele>B*0709</allele>
+                  </allele-list>
+                </locus-block>
+                <locus-block>
+                  <allele-list>
+                    <allele>B*3534</allele>
+                  </allele-list>
+                </locus-block>
+              </diploid-combination>
+              <diploid-combination>
+                <locus-block>
+                  <allele-list>
+                    <allele>B*0712</allele>
+                  </allele-list>
+                </locus-block>
+                <locus-block>
+                  <allele-list>
+                    <allele>B*3551</allele>
+                  </allele-list>
+                </locus-block>
+              </diploid-combination>
+              <diploid-combination>
+                <locus-block>
+                  <allele-list>
+                    <allele>B*0718</allele>
+                  </allele-list>
+                </locus-block>
+                <locus-block>
+                  <allele-list>
+                    <allele>B*3505</allele>
+                  </allele-list>
+                </locus-block>
+              </diploid-combination>
+              <diploid-combination>
+                <locus-block>
+                  <allele-list>
+                    <allele>B*0724</allele>
+                  </allele-list>
+                </locus-block>
+                <locus-block>
+                  <allele-list>
+                    <allele>B*3515</allele>
+                  </allele-list>
+                </locus-block>
+              </diploid-combination>
+              <diploid-combination>
+                <locus-block>
+                  <allele-list>
+                    <allele>B*0726</allele>
+                  </allele-list>
+                </locus-block>
+                <locus-block>
+                  <allele-list>
+                    <allele>B*3508</allele>
+                  </allele-list>
+                </locus-block>
+              </diploid-combination>
+            </genotype-list>
+          </interpretation>
+          <sbt name="L789.K1.V1.GENB" score="8">
+            <sequence>
+              GCTCCCACTCCATGAGGTATTTCTACACCACCTTGTCCCGGCCCGGCCGCGGGGAGCCCC
+              GCTTCATCACAGTGGGCTACGTGGACGACACCCAGTTCGTGAGGTTCGACAGCGACGCCG
+              CGAGTCCGAGTTGGGAGCCACGGGCGCCTTGGATAGAGCAGGAGGGGCCGGAGTATTGGG
+              ACCGGAACACACAGATCTCCAAGTCCGAATCACAGACTAACCGAGAGAGCCTGCGGAACC
+              TGCGCGGCTACTACAACCAGAGCGAGGCCGGGTCTCACACCGTCCAGAGAATGTACGGCT
+              GCGACATGGGGCCAGACGGGCGCCTCCTCCGCGGGCATGACCAGTCCGCCTACGACGGCA
+              AGGATTACATCGCCCTGAACGAGGACCTGGGCTCCTGGACCGCAGCGGACACAGCGGCTC
+              AGATCACCCAGCGCAAGTGGGAGGCGGCCCGTGCGGCGGAGCAGCAGAGAGCCTACCTGG
+              AGGGCACGTGCGTGGAGTGGCTCCGCAGATACCTGGAGAACGGGAAGGAAAGGCTGAAGC
+              GCGCAG
+            </sequence>
+          </sbt>
+        </typing>
+      </sample>
+    </project>
+  </hml>
+    
+----------------------------------------------------------------------------------------

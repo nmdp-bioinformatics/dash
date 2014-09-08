@@ -1,0 +1,66 @@
+Example 2.2
+^^^^^^^^^^^
+
+Lab 999 typed three samples for center 789 for the ABDR project. +
+ The allele-level typing was performed on Dec 8, 2003. +
+ They performed a series of SSO tests. +
+ +
+ Rather than reporting a list of the tests used, the lab wants to report
+only a reference to a predetermined list of tests. +
+ +
+ Note that the test scores are different than the previous example. By
+using the reference to a list of tests, the order of the scores must
+match the order of the tests in the predetermined list. +
+ For each test performed on a sample, a score was given to indicate
+success (8) or failure (1). +
+ The results are: +
+
+----------------------------------------------------
+    NMDP ID: 8888-6666-1    DRB1*01RY, DRB1*13GPE
+    NMDP ID: 8888-6666-2    DRB1*03WKH, DRB1*04AFMT
+    NMDP ID: 8888-6666-3    DRB1*04AFMK, DRB1*04AGDC
+      
+----------------------------------------------------
+
+'''''
+
+Resulting HML Code
+^^^^^^^^^^^^^^^^^^
+
+--------------------------------------------------------------------------------------------------------
+  <!DOCTYPE hml PUBLIC "-//NMDP//DTD HML 0.2//EN"
+   "http://www.nmdp.org/DTD/hml-0.2.dtd">
+  <hml version="0.2">
+    <project name="ABDR">
+      <reporting-center code="743"/>
+      <sample id="8888-6666-1" center-code="88">
+        <hla-typing>
+          <interpretation date="20031208">
+            <haploid locus="DRB1" method="DNA" type="01RY"/>
+            <haploid locus="DRB1" method="DNA" type="13GPE"/>
+          </interpretation>
+          <sso nmdp-refid="410" scores="8811111181118181181111181181181888111811111811811118111111118"/>
+        </hla-typing>
+      </sample>
+      <sample id="8888-6666-2" center-code="88">
+        <hla-typing>
+          <interpretation date="20031208">
+            <haploid locus="DRB1" method="DNA" type="03WKH"/>
+            <haploid locus="DRB1" method="DNA" type="04AFMT"/>
+          </interpretation>
+          <sso nmdp-refid="410" scores="8181111181818118181811111181881181181111118181111811181111118"/>
+        </hla-typing>
+      </sample>
+      <sample id="8888-6666-3" center-code="88">
+        <hla-typing>
+          <interpretation date="20031208">
+            <haploid locus="DRB1" method="DNA" type="04AFMK"/>
+            <haploid locus="DRB1" method="DNA" type="04AGDC"/>
+          </interpretation>
+          <sso nmdp-refid="410" scores="8181111111818181111811111181181118111811118111118111118111111"/>
+        </hla-typing>
+      </sample>
+    </project>
+  </hml>
+    
+--------------------------------------------------------------------------------------------------------

@@ -1,0 +1,35 @@
+Example 1.1
+^^^^^^^^^^^
+
+Lab 999 typed a sample for center 123 for the ABDR project. +
+ The allele-level typing was performed on Jan 23, 2004. +
+ The results are: +
+
+---------------------------------------
+    NMDP ID: 444-333-2   A*0101, A*0202
+      
+---------------------------------------
+
+'''''
+
+Resulting HML Code
+^^^^^^^^^^^^^^^^^^
+
+---------------------------------------------------------
+  <!DOCTYPE hml PUBLIC "-//NMDP//DTD HML 0.2//EN"
+   "http://www.nmdp.org/DTD/hml-0.2.dtd">
+  <hml version="0.2">
+    <project name="ABDR">
+      <reporting-center code="999"/>
+      <sample id="444-333-2" center-code="123">
+        <hla-typing>
+          <interpretation date="20040123">
+            <haploid locus="A" method="DNA" type="0101"/>
+            <haploid locus="A" method="DNA" type="0202"/>
+          </interpretation>
+        </hla-typing>
+      </sample>
+    </project>
+  </hml>
+    
+---------------------------------------------------------

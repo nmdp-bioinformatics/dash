@@ -1,0 +1,61 @@
+Example 4.1
+^^^^^^^^^^^
+
+An example of reporting results of typing a sample at multiple loci.
+
+'''''
+
+Resulting HML Code
+^^^^^^^^^^^^^^^^^^
+
+----------------------------------------------------------
+  <!DOCTYPE hml PUBLIC "-//NMDP//DTD HML 0.2//EN"
+   "http://www.nmdp.org/DTD/hml-0.2.dtd">
+  <hml version="0.2">
+    <project name="ABDR">
+      <reporting-center code="999"/>
+      <sample id="444-333-2" center-code="123">
+        <hla-typing>
+          <interpretation date="20040123">
+            <haploid locus="A" method="DNA" type="03CK"/>
+            <haploid locus="A" method="DNA" type="25AB"/>
+          </interpretation>
+          <sso ref-id="A-probes" scores="1811"/>
+        </hla-typing>
+        <hla-typing>
+          <interpretation date="20040123">
+            <haploid locus="B" method="DNA" type="18XX"/>
+            <haploid locus="B" method="DNA" type="40XMC"/>
+          </interpretation>
+          <sso ref-id="B-probes" scores="18118"/>
+        </hla-typing>
+        <hla-typing>
+          <interpretation date="20040123">
+            <haploid locus="C" method="DNA" type="03GFW"/>
+            <haploid locus="C" method="DNA" type="12NP"/>
+          </interpretation>
+          <sso ref-id="C-probes" scores="181"/>
+        </hla-typing>
+      </sample>
+      <typing-test-names ref-id="A-probes">
+        <typing-test-name name="L999.K1.V1.Aprobe1"/>
+        <typing-test-name name="L999.K1.V1.Aprobe2"/>
+        <typing-test-name name="L999.K1.V1.Aprobe3"/>
+        <typing-test-name name="L999.K1.V1.Aprobe4"/>
+      </typing-test-names>
+      <typing-test-names ref-id="B-probes">
+        <typing-test-name name="L999.K1.V1.Bprobe1"/>
+        <typing-test-name name="L999.K1.V1.Bprobe2"/>
+        <typing-test-name name="L999.K1.V1.Bprobe3"/>
+        <typing-test-name name="L999.K1.V1.Bprobe4"/>
+        <typing-test-name name="L999.K1.V1.Bprobe5"/>
+      </typing-test-names>
+      <typing-test-names ref-id="C-probes">
+        <typing-test-name name="L999.K1.V1.Cprobe1"/>
+        <typing-test-name name="L999.K1.V1.Cprobe2"/>
+        <typing-test-name name="L999.K1.V1.Cprobe3"/>
+      </typing-test-names>
+    </project>
+  </hml>
+    
+----------------------------------------------------------

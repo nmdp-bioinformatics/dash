@@ -1,0 +1,69 @@
+Example 5.3
+^^^^^^^^^^^
+
+Lab 999 typed a sample for center 123 for the ABDR project. +
+ The allele-level typing was performed on Jan 23, 2004. +
+ The results are: +
+
+---------------------------------------
+    NMDP ID: 444-333-2   A*0102, A*0202
+      
+---------------------------------------
+
+'''''
+
+Using `haploid` elements, this result is reported using the following
+xml:
+
+----------------------------------------------------------------------------------------
+  <?xml version="1.0" encoding="UTF-8"?>
+  <!DOCTYPE hml PUBLIC "-//NMDP//DTD HML 0.3//EN" "http://www.nmdp.org/DTD/hml-0.3.dtd">
+  <hml version="0.3">
+    <project name="ABDR">
+      <reporting-center code="999"/>
+      <sample id="444-333-2" center-code="123">
+        <typing>
+          <interpretation date="20040123">
+            <haploid locus="A" method="DNA" type="0102"/>
+            <haploid locus="A" method="DNA" type="0202"/>
+          </interpretation>
+        </typing>
+      </sample>
+    </project>
+  </hml>
+----------------------------------------------------------------------------------------
+
+'''''
+
+This result can also be reported using a genotype list:
+
+----------------------------------------------------------------------------------------
+  <?xml version="1.0" encoding="UTF-8"?>
+  <!DOCTYPE hml PUBLIC "-//NMDP//DTD HML 0.3//EN" "http://www.nmdp.org/DTD/hml-0.3.dtd">
+  <hml version="0.3">
+    <project name="ABDR">
+      <reporting-center code="999"/>
+      <sample id="444-333-2" center-code="123">
+        <typing>
+          <interpretation date="2004-01-23">
+            <genotype-list db="HLADB" version="2.4.0">
+              <diploid-combination>
+                <locus-block>
+                  <allele-list>
+                    <allele>A*0102</allele>
+                  </allele-list>
+                </locus-block>
+                <locus-block>
+                  <allele-list>
+                    <allele>A*0202</allele>
+                  </allele-list>
+                </locus-block>
+              </diploid-combination>
+            </genotype-list>
+          </interpretation>
+        </typing>
+      </sample>
+    </project>
+  </hml>
+    
+----------------------------------------------------------------------------------------
