@@ -1,0 +1,58 @@
+<!DOCTYPE hml PUBLIC "-//NMDP//DTD HML 0.3.3//EN" "http://www.nmdp.org/DTD/hml-0.3.3.dtd">
+<hml version="0.3.3">
+  <project name="HR">
+    <reporting-center code="333"/>
+    <sample id="8888-6666-4" center-code="789"> 
+      <typing>
+        <interpretation date="20110123">
+          <genotype-list db="HLADB" version="3.0.0">
+            <diploid-combination>
+              <locus-block>
+                <allele-list>
+                  <allele>B*07:02</allele>
+                  <allele>B*07:06</allele>
+                </allele-list>
+                <allele-list>
+                  <allele>B*44:02</allele>
+                  <allele>B*44:05</allele>
+                </allele-list>
+              </locus-block>
+            </diploid-combination>
+          </genotype-list>
+        </interpretation>
+        <sbt>          
+          <sequence>
+              GCTCCCACTCCATGAGGTATTTCTACACCACCTTGTCCCGGCCCGGCCGCGGGGAGCCCC
+              GCTTCATCACAGTGGGCTACGTGGACGACACCCAGTTCGTGAGGTTCGACAGCGACGCCG
+              CGAGTCCGAGTTGGGAGCCACGGGCGCCTTGGATAGAGCAGGAGGGGCCGGAGTATTGGG
+              ACCGGAACACMCAGATCTCCAAGTCCGAATCACAGACTAACCGAGAGAGCCTGCGGAACC
+              TGCGCGGCTACTACAACCAGAGCGAGGCCGGGTCTCACACCGTCCAGAGAATGTACGGCT
+              GCGACATGGGGCCAGACGGGCGCCTCCTCCGCGGGCATGACCAGTCCGCCTACGACGGCA
+              AGGATTACATCGCCCTGAACGAGGACCTGGGCTCCTGGACCGCAGCGGACACAGCGGCTC
+              AGATCACCCAGCGCAAGTGGGAGGCGGCCCGRGCGGCGGAGCAGCAGAGAGCCTACCTGG
+              AGGGCACGTGCGTGGAGTGGCTCCGCAGATACCTGGAGAACGGGAAGGAAAGGCTGAAGC
+              GCGCAG
+          </sequence>
+        </sbt>
+
+        <sbt>
+          <!-- In this case there is an intronic or exon1 gSSP reagent that is uninformative for our local interpretation -->
+          <!-- The gssp tag with no contents is an indicator of a hemi-zygous product-->
+          <gssp/>
+          <sequence>
+              GCTCCCACTCCATGAGGTATTTCTACACCACCTTGTCCCGGCCCGGCCGCGGGGAGCCCC
+              GCTTCATCACAGTGGGCTACGTGGACGACACCCAGTTCGTGAGGTTCGACAGCGACGCCG
+              CGAGTCCGAGTTGGGAGCCACGGGCGCCTTGGATAGAGCAGGAGGGGCCGGAGTATTGGG
+              ACCGGAACACACAGATCTCCAAGTCCGAATCACAGACTAACCGAGAGAGCCTGCGGAACC
+              TGCGCGGCTACTACAACCAGAGCGAGGCCGGGTCTCACACCGTCCAGAGAATGTACGGCT
+              GCGACATGGGGCCAGACGGGCGCCTCCTCCGCGGGCATGACCAGTCCGCCTACGACGGCA
+              AGGATTACATCGCCCTGAACGAGGACCTGGGCTCCTGGACCGCAGCGGACACAGCGGCTC
+              AGATCACCCAGCGCAAGTGGGAGGCGGCCCGAGCGGCGGAGCAGCAGAGAGCCTACCTGG
+              AGGGCACGTGCGTGGAGTGGCTCCGCAGATACCTGGAGAACGGGAAGGAAAGGCTGAAGC
+              GCGCAG
+          </sequence>
+        </sbt>
+      </typing>
+    </sample>
+  </project>
+</hml>
