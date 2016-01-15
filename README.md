@@ -4,7 +4,8 @@ DaSH 2016
 We will definitely work on <br>
 (i) The Feature service that is currently available (http://feature.nmdp-bioinformatics.org/) (https://github.com/nmdp-bioinformatics/service-feature), with the aim that this service can serve as the hub for a set of services for recording and describing sequence features; some of those services and tools can be  developed/prototyped at the Hackathon.<br> 
 (ii) Standardized reporting using GL string, e.g., DRB3/4/5 results.  We suggest that the GL String service should be regarded as the format for reporting HLA genotypes rather than the NMDP format. How should we expand GL string and MIRING to areas not adequately covered e.g. copy number, missing loci, loci not tested.
-<br>
+
+
 These other topics can be regarded as options; with it being a Hackathon the topics covered are often steered by the people in the room.<br>
 (a) Persisting amino acids.<br>
 (b) Converting to and from VCF and to and from PED formats.<br>
