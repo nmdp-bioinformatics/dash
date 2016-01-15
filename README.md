@@ -1,24 +1,21 @@
-DaSH 2015
-========
+DaSH 2016
+=========
 
 Data Standards Hackathon for NGS based typing of HLA &amp; KIR
 
-The goal of the 2015 hackathon is to:
-* produce a service that will interpret novel alleles automatically and utilize HML 1.0 to manage novel variations.
+We will definitely work on 
+(i) The Feature service that is currently available (http://feature.nmdp-bioinformatics.org/) (https://github.com/nmdp-bioinformatics/service-feature), with the aim that this service can serve as the hub for a set of services for recording and describing sequence features; some of those services and tools can be  developed/prototyped at the Hackathon. 
+(ii) Standardized reporting using GL string, e.g., DRB3/4/5 results.  We suggest that the GL String service should be regarded as the format for reporting HLA genotypes rather than ìthe NMDP formatî. How should we expand GL string and MIRING to areas not adequately covered e.g. copy number, missing loci, loci not tested.
 
-Hackathon attendees should be prepared to either code or discuss issues.
+These other topics can be regarded as options; with it being a Hackathon the topics covered are often steered by the people in the room.
+(a) Persisting amino acids.
+(b) Converting to and from VCF and to and from PED formats.
+(c) Phase issues and how to represent them/collect un-phased data in consensus sequences.
+(d) Finishing the last mile of implementation: authentication, etc.
+(e) A tool for applying coordinate systems to consensus sequence, and then identifying the input parameters for the feature service. 
+(f) Accepting/annotating sequence blocks, and annotating the potential matches
+(g) Predicting known splice errors/variants for HLA, and providing some annotation for that.
+(h) Graph based assembly (FASTG, GA4GH, etc.).
+(i) New features, other tools for applying additional constraints or parsing
 
-<b>The coding will concentrate on:</b>
-*	Adapting, enhancing, modifying our pipeline to process IHIWS samples into <br>
-(i)	consensus sequences and HLA nomenclature <br>
-(ii)	HML 1.0<br>
-(iii)	Enumerated Gene Features (http://igdawg.org/enumeration.html) <br>
-(iv)	Variant, variant effects, and functional/clinical annotation
-*	Validating the HML, possibly using either or both of these options.<br>
-(i)	Check/hack existing validation code produced by NMDP.<br>
-(ii)	Consume HML from the above processing, and check that everyone ends up with the same result.
-
-<b>The discussion will concentrate on how to deal with Novel Variation.</b><br>
-HLA is one of the most medically relevant gene systems in humans. While rare variants are important determinants of disease, common polymorphisms - especially prevalent in HLA - are more important for histocompatibility and donor-recipient matching. Can we build data standards and pipelines that accommodate both?
-
-As the name 'hackathon' implies, the meeting is geared to 'implementers,' and less so to 'talkers' and 'directors.'  
+As the name 'hackathon' implies, the meeting is geared to 'implementers,' and less so to 'talkers' and 'directors.' 
