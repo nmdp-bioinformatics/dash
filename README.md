@@ -1,6 +1,4 @@
-![Image of DaSH EU banner](https://cloud.githubusercontent.com/assets/8570385/19779491/f8e4c816-9c46-11e6-9e16-a5eea6da15a6.png)
-DaSH EU 2016
-=========
+<img src="https://cloud.githubusercontent.com/assets/8570385/19779491/f8e4c816-9c46-11e6-9e16-a5eea6da15a6.png" alt="DaSH EU 2016" />
 
 #History:
 Three DaSH events have been held, in Bethesda, La Jolla and Minneapolis.<br />
