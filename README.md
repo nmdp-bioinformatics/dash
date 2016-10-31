@@ -39,6 +39,13 @@ For some introductory information, see the Proposed Standard for Trial Use 3 (ST
 - Non-coding variation such as the HLA-C miRNA
   - Mining and reporting known functional variants from outside codons.
   - Automated annotation of non-coding features.
+- HLA Nomenclature and HL7 FHIR
+  - representation of nomenclature-level HLA data within a HL7 framework (as coded data)
+    - code systems and value sets
+    - post-coordinated expressions
+  - prototype HL7 FHIR terminology service
+    - lookup and validation of coded data
+    - translation between IMGT/HLA nomenclature and NMDP multiple-allele codes (MAC)
 # When: 
 The meeting will start with an informal event on Thursday night, November 3rd. We will work from 8:00 am on Friday 4th, finishing at 4:00 pm on Saturday 5th November 2016, stopping when appropriate to eat and drink and socialize.
 
