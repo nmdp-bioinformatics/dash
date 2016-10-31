@@ -46,6 +46,7 @@ For some introductory information, see the Proposed Standard for Trial Use 3 (ST
   - prototype HL7 FHIR terminology service
     - lookup and validation of coded data
     - translation between IMGT/HLA nomenclature and NMDP multiple-allele codes (MAC)
+
 # When: 
 The meeting will start with an informal event on Thursday night, November 3rd. We will work from 8:00 am on Friday 4th, finishing at 4:00 pm on Saturday 5th November 2016, stopping when appropriate to eat and drink and socialize.
 
