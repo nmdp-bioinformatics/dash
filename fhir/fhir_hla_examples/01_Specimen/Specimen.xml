@@ -1,0 +1,42 @@
+<Specimen>
+
+    <text>
+        <div>buccal swab from John Doe</div>
+    </text>
+
+    <!--  a specimen identifier - e.g. assigned when the specimen was taken -->
+    <identifier>  
+        <system value="http://myorg.com"/>
+        <value value="123"/>
+    </identifier>
+
+    <!-- edit the subject reference value to point to one that you know exists-->
+    <subject>
+        <reference value="Patient/27/_history/1"/>
+    </subject>
+
+    <!-- accessionIdentifier not always used, but when it is, it's usually assigned by the lab -->
+    <accessionIdentifier> 
+        <system value="http://mylab.com"/>
+        <value value="456"/>
+    </accessionIdentifier>
+
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="258564008"/>
+            <display value="Buccal smear sample"/>
+        </coding>
+    </type>
+
+    <!-- collected by swab -->
+    <collection>
+        <method>
+            <coding>
+                <system value="http://hl7.org/fhir/v2/0488"/>
+                <code value="SWA"/>
+            </coding>
+        </method>
+    </collection>
+    
+</Specimen>

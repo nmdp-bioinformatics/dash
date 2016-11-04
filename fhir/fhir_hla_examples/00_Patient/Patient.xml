@@ -1,0 +1,12 @@
+<Patient>
+    <text>
+        <div>Some narrative about the Patient, John Doe</div>
+    </text>
+    <name>
+        <use value="official"/>
+        <family value="Doe"/>
+        <given value="John"/>
+    </name>
+    <gender value="male"/>
+    <birthDate value="1974-12-25"/>
+</Patient>
