@@ -126,12 +126,12 @@ Transaction bundle that creates and links:
                 <windowStart value="0"/>
                 <windowEnd value="3503"/>
             </referenceSeq>
-            <variation>
+            <variant>
                 <start value="5"/>
                 <end value="6"/>
                 <referenceAllele value="G"/>
                 <observedAllele value="T"/>
-            </variation>
+            </variant>
         </Sequence>
     </resource>
   <!--    transaction details    -->
@@ -184,9 +184,13 @@ Transaction bundle that creates and links:
                     </coding>
                 </valueCodeableConcept>
             </extension>
-            <extension xmlns="http://hl7.org/fhir" url="http://hl7.org/fhir/StructureDefinition/observation-geneticsSequence" >
-                <valueReference value="urn:uuid:5c37cf69-8ef6-44fb-bebe-ca9ca0ae520f"/>
-            </extension>
+            <related>
+                <type value="derived-from"/>
+                <target>
+                    <reference value="urn:uuid:5c37cf69-8ef6-44fb-bebe-ca9ca0ae520f"/>
+                    <display value="Sequence data"/>
+                </target>
+            </related>
         </Observation>
     </resource>
   <!--    transaction details    -->
