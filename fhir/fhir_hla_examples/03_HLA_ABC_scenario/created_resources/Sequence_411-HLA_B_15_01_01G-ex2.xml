@@ -1,0 +1,35 @@
+<Sequence xmlns="http://hl7.org/fhir">
+   <id value="411"/>
+   <meta>
+      <versionId value="1"/>
+      <lastUpdated value="2016-12-19T05:48:53.000+00:00"/>
+   </meta>
+   <text>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <pre>&quot;HLA-B*15:01:01:01, exon 2&quot;</pre> 
+      </div>
+   </text>
+   <type value="DNA"/>
+   <coordinateSystem value="0"/>
+   <patient>
+      <reference value="Patient/402"/>
+      <display value="Mary Chalmers"/>
+   </patient>
+   <specimen>
+      <reference value="Specimen/403"/>
+      <display value="buccal swab from Mary Chalmers"/>
+   </specimen>
+   <referenceSeq>
+      <referenceSeqId>
+         <coding>
+            <system value="http://www.ebi.ac.uk/ipd/imgt/hla/"/>
+            <version value="3.23"/>
+            <code value="HLA00162"/>
+         </coding>
+         <text value="HLA-B*15:01:01:01"/>
+      </referenceSeqId>
+      <windowStart value="486"/>
+      <windowEnd value="756"/>
+   </referenceSeq>
+   <observedSeq value="GCTCCCACTCCATGAGGTATTTCTACACCGCCATGTCCCGGCCCGGCCGCGGGGAGCCCCGCTTCATCGCAGTGGGCTACGTGGACGACACCCAGTTCGTGAGGTTCGACAGCGACGCCGCGAGTCCGAGGATGGCGCCCCGGGCGCCATGGATAGAGCAGGAGGGGCCGGAGTATTGGGACCGGGAGACACAGATCTCCAAGACCAACACACAGACTTACCGAGAGAGCCTGCGGAACCTGCGCGGCTACTACAACCAGAGCGAGGCCG"/>
+</Sequence>

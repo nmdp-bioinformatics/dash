@@ -1,0 +1,49 @@
+<Specimen xmlns="http://hl7.org/fhir">
+   <id value="403"/>
+   <meta>
+      <versionId value="1"/>
+      <lastUpdated value="2016-12-19T05:35:50.000+00:00"/>
+   </meta>
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <pre>a buccal swab</pre>
+      </div>
+   </text>
+   <identifier>
+      <system value="http://myorgsurl.com"/>
+      <value value="123"/>
+   </identifier>
+   <accessionIdentifier>
+      <system value="http://mylabsurl.com"/>
+      <value value="456"/>
+   </accessionIdentifier>
+   <type>
+      <coding>
+         <system value="http://snomed.info/sct"/>
+         <code value="258564008"/>
+         <display value="Buccal smear sample"/>
+      </coding>
+   </type>
+   <subject>
+      <reference value="Patient/402"/>
+      <display value="Mary Chalmers"/>
+   </subject>
+   <collection>
+      <collectedDateTime value="2016-11-10"/>
+      <method>
+         <coding>
+            <system value="http://hl7.org/fhir/v2/0488"/>
+            <code value="SWA"/>
+         </coding>
+      </method>
+      <bodySite>
+         <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="261063000"/>
+            <display value="Buccal space"/>
+         </coding>
+         <text value="Buccal space"/>
+      </bodySite>
+   </collection>
+</Specimen>

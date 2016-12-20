@@ -1,0 +1,25 @@
+<Organization xmlns="http://hl7.org/fhir">
+   <id value="404"/>
+   <meta>
+      <versionId value="1"/>
+      <lastUpdated value="2016-12-19T05:35:50.000+00:00"/>
+   </meta>
+   <name value="aTypingLab Inc"/>
+   <alias value="aTL"/>
+   <telecom>
+      <system value="phone"/>
+      <value value="1-800-555-1234"/>
+      <use value="work"/>
+      <rank value="1"/>
+   </telecom>
+   <address>
+      <use value="work"/>
+      <type value="both"/>
+      <text value="123 Main St, Sometown, ND 99999"/>
+      <line value="123 Main St"/>
+      <city value="Sometown"/>
+      <state value="ND"/>
+      <postalCode value="99999"/>
+      <country value="USA"/>
+   </address>
+</Organization>

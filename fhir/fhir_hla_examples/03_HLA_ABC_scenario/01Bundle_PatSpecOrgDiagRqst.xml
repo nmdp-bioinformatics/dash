@@ -1,0 +1,220 @@
+<!--
+Bob Milius - NMDP - 2016-12-01
+
+Assume these are already created ahead of time before the HLA report bundle is created.
+You would use the resources created here for those in the report bundle.
+Transaction bundle that creates and links:
++ Patient (potential donor)
++ Specimen from that Patient, which was collected as a buccal swab
++ Organization of Typing Lab (aTypingLab, Inc)
++ Organization of donor registry (aDonorRegistry)
++ DiagnosticRequest for HLA-A,-B,-C typing of patient(donor)
+-->
+
+<Bundle xmlns="http://hl7.org/fhir">
+    <type value="transaction"/>
+<!--    now, each entry is an action to take in the transaction    -->
+
+    <entry>
+        <fullUrl value="urn:uuid:13f34265-335c-4853-bc38-0815315edafa"/>
+        <resource>
+          <Patient>
+             <text>
+                <div xmlns="http://www.w3.org/1999/xhtml">
+                    <h4>Donor </h4>
+                    <p>name: Mary Chalmers</p>
+                    <p>gender: female</p>
+                    <p>born: 1986-12-31</p>
+                </div>
+            </text>
+            <identifier>
+                <use value="usual"/>
+                <type>
+                    <coding>
+                        <system value="http://hl7.org/fhir/v2/0203"/>
+                        <code value="DR"/>
+                    </coding>
+                </type>
+                <system value="urn:oid:0.0.0.0.0.0.0"/>
+                <value value="12345"/>
+                <period>
+                  <start value="2012-11-10"/>
+                </period>
+                <assigner>
+                  <display value="aDonorRegistry"/>
+                </assigner>
+              </identifier>
+            <name>
+              <use value="official"/>
+              <family value="Chalmers"/>
+              <given value="Mary"/>
+            </name>
+            <gender value="female"/>
+            <birthDate value="1986-12-31"/>
+          </Patient>
+        </resource>
+        <!--    now, details about the action to take with the resource    -->
+        <request>
+          <method value="POST"/>
+          <url value="Patient"/>
+        </request>
+    </entry>
+
+    <entry>
+        <fullUrl value="urn:uuid:e44fbe33-6084-4ae2-a95e-8bc451c63340"/>
+        <resource>
+            <Specimen xmlns="http://hl7.org/fhir">
+                <text>
+                    <status value="generated"/>
+                    <div><pre>a buccal swab</pre></div>
+                </text>
+
+                <identifier>
+                    <system value="http://myorgsurl.com"/>
+                    <value value="123"/>
+                </identifier>
+
+                <accessionIdentifier>
+                    <system value="http://mylabsurl.com"/>
+                    <value value="456"/>
+                </accessionIdentifier>
+
+                <type>
+                    <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="258564008"/>
+                        <display value="Buccal smear sample"/>
+                    </coding>
+                </type>
+
+                <subject>
+                    <reference value="urn:uuid:13f34265-335c-4853-bc38-0815315edafa"/>
+                    <display value="Mary Chalmers"/>
+                </subject>
+
+                <collection>
+                    <collectedDateTime value="2016-11-10"/>
+                    <method>
+                        <coding>
+                            <system value="http://hl7.org/fhir/v2/0488"/>
+                            <code value="SWA"/>
+                        </coding>
+                    </method>
+                     <bodySite>
+                         <coding>
+                            <system value="http://snomed.info/sct"/>
+                            <code value="261063000"/>
+                            <display value="Buccal space"/>
+                         </coding>
+                         <text value="Buccal space"/>
+                      </bodySite>
+                </collection>
+            
+            </Specimen>
+        </resource>
+          <!--    now, details about the action to take with the resource    -->
+        <request>
+          <method value="POST"/>
+          <url value="Specimen"/>
+        </request>
+    </entry>
+
+    <entry>
+        <fullUrl value="urn:uuid:9243cc20-27bd-4f87-ba90-0328ed474950"/>
+        <resource>
+            <Organization>
+                <name value="aTypingLab Inc"/>
+                <alias value="aTL"/>
+                <address xmlns="http://hl7.org/fhir"> 
+                    <use value="work"/>
+                    <type value="both"/>
+                    <text value="123 Main St, Sometown, ND 99999"/>
+                    <line value="123 Main St"/>
+                    <city value="Sometown"/>
+                    <state value="ND"/>
+                    <postalCode value="99999"/>
+                    <country value="USA"/>
+                </address>
+                <telecom xmlns="http://hl7.org/fhir"> 
+                     <system value="phone"/>
+                     <value value="1-800-555-1234"/>
+                     <use value="work"/>
+                     <rank value="1"/>
+                </telecom>
+            </Organization>
+        </resource>
+    <!--    transaction details    -->
+        <request>
+            <method value="POST"/>
+            <url value="Organization"/>
+        </request>
+    </entry>
+
+    <entry>
+        <fullUrl value="urn:uuid:00ef18ad-ed04-4b2c-81ee-b69bb243f0d5"/>
+        <resource>
+            <Organization>
+                <name value="aDonorRegistry"/>
+                <alias value="ADR"/>
+                <address xmlns="http://hl7.org/fhir"> 
+                    <use value="work"/>
+                    <type value="both"/>
+                    <text value="456 Main St, Anytown ND, 00000"/>
+                    <line value="456 Main St"/>
+                    <city value="Anytown"/>
+                    <state value="ND"/>
+                    <postalCode value="00000"/>
+                    <country value="USA"/>
+                </address>
+                <telecom xmlns="http://hl7.org/fhir"> 
+                     <system value="phone"/>
+                     <value value="1-800-555-6789"/>
+                     <use value="work"/>
+                     <rank value="1"/>
+                </telecom>
+            </Organization>
+        </resource>
+    <!--    transaction details    -->
+        <request>
+            <method value="POST"/>
+            <url value="Organization"/>
+        </request>
+    </entry>
+
+    <entry>
+        <fullUrl value="urn:uuid:99309303-045e-4cf4-90d7-250d7a7476ea"/>
+        <resource>
+            <DiagnosticRequest>
+                <subject>
+                    <reference value="urn:uuid:13f34265-335c-4853-bc38-0815315edafa"/>
+                    <display value="Mary Chalmers"/>
+                </subject>
+                <requester> 
+                    <reference value="urn:uuid:00ef18ad-ed04-4b2c-81ee-b69bb243f0d5"/>
+                    <display value="aDonorRegistry"/>
+                </requester>
+                <performer>  
+                    <reference value="urn:uuid:9243cc20-27bd-4f87-ba90-0328ed474950"/>
+                    <display value="aTypingLab, Inc"/>
+                </performer>
+                 <authoredOn value="2016-11-15"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="13303-3"/>
+                        <display value="HLA-A+​B+​C (class I) [Type]"/>
+                    </coding>
+                </code>
+                <reasonCode>
+                    <text value="tissue typing for donor registry"/>
+                </reasonCode>
+            </DiagnosticRequest>
+        </resource>
+    <!--    transaction details    -->
+        <request>
+            <method value="POST"/>
+            <url value="DiagnosticOrder"/>
+        </request>
+    </entry>
+
+</Bundle>

@@ -1,0 +1,76 @@
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+   <id value="428"/>
+   <meta>
+      <versionId value="1"/>
+      <lastUpdated value="2016-12-19T05:48:53.000+00:00"/>
+   </meta>
+   <text>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <pre>
+        HLA-A,-B,-C genotyping report for Mary Chalmers (MRN:12345)
+        
+        LOCUS   ALLELE 1            ALLELE 2
+        HLA-A   HLA-A:01:01G        HLA-A*01:02
+        HLA-B   HLA-B*15:01:01G     HLA-B*57:01:01G
+        HLA-C   HLA-C*01:02:01G     HLA-C*03:04:01G
+        
+        Allele assignments based on IMGT/HLA 3.23
+        Effective date: 2015-12-15
+        Method: Sequencing of exons 2 and 3 of HLA Class I genes
+        Lab: aTypingLab Inc
+                    </pre>
+      </div>
+   </text>
+   <extension url="http://hl7.org/fhir/StructureDefinition/hla-genotyping-resultsAlleleDatabase">
+      <valueCodeableConcept>
+         <coding>
+            <system value="http://www.ebi.ac.uk/ipd/imgt/hla/"/>
+            <version value="3.23"/>
+         </coding>
+      </valueCodeableConcept>
+   </extension>
+   <status value="final"/>
+   <category>
+      <coding>
+         <system value="http://hl7.org/fhir/ValueSet/diagnostic-service-sections"/>
+         <code value="GE"/>
+         <display value="Genetics"/>
+      </coding>
+   </category>
+   <code>
+      <coding>
+         <system value="http://loinc.org"/>
+         <code value="13303-3"/>
+         <display value="HLA-A+​B+​C (class I) [Type]"/>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/402"/>
+      <display value="Mary Chalmers"/>
+   </subject>
+   <effectiveDateTime value="2016-12-15"/>
+   <issued value="2016-12-15T14:15:30-06:00"/>
+   <performer>
+      <reference value="Organization/404"/>
+      <display value="aTypingLab Inc"/>
+   </performer>
+   <request>
+      <reference value="DiagnosticRequest/406"/>
+   </request>
+   <specimen>
+      <reference value="Specimen/403"/>
+      <display value="buccal swab from Mary Chalmers"/>
+   </specimen>
+   <result>
+      <reference value="Observation/421"/>
+      <display value="HLA-A: HLA-A:01:01G+HLA-A*01:02"/>
+   </result>
+   <result>
+      <reference value="Observation/424"/>
+      <display value="HLA-B: HLA-B*15:01:01G+HLA-B*57:01:01G"/>
+   </result>
+   <result>
+      <reference value="Observation/427"/>
+      <display value="HLA-C: HLA-C*01:02:01G+HLA-C*03:04:01G"/>
+   </result>
+</DiagnosticReport>

@@ -1,0 +1,61 @@
+<Observation xmlns="http://hl7.org/fhir">
+   <id value="421"/>
+   <meta>
+      <versionId value="1"/>
+      <lastUpdated value="2016-12-19T05:48:53.000+00:00"/>
+   </meta>
+   <text>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <pre>HLA-A:01:01G+HLA-A*01:02</pre>
+      </div>
+   </text>
+   <extension url="http://hl7.org/fhir/StructureDefinition/observation-geneticsGene">
+      <valueCodeableConcept>
+         <coding>
+            <system value="http://www.genenames.org"/>
+            <code value="HGNC:4931"/>
+            <display value="HLA-A"/>
+         </coding>
+      </valueCodeableConcept>
+   </extension>
+   <extension url="http://hl7.org/fhir/StructureDefinition/observation-geneticsGenomicSourceClass">
+      <valueCodeableConcept>
+         <coding>
+            <system value="http://hl7.org/fhir/LOINC-48002-0-answerlist"/>
+            <code value="LA6683-2"/>
+            <display value="germline"/>
+         </coding>
+      </valueCodeableConcept>
+   </extension>
+   <status value="final"/>
+   <code>
+      <coding>
+         <system value="http://loinc.org"/>
+         <code value="57290-9"/>
+         <display value="HLA-A [Type] by High resolution"/>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/402"/>
+      <display value="Mary Chalmers"/>
+   </subject>
+   <effectiveDateTime value="2016-12-15"/>
+   <specimen>
+      <reference value="Specimen/403"/>
+      <display value="buccal swab from Mary Chalmers"/>
+   </specimen>
+   <related>
+      <type value="derived-from"/>
+      <target>
+         <reference value="Observation/419"/>
+         <display value="HLA-A*01:01:01G, exons 2 and 3"/>
+      </target>
+   </related>
+   <related>
+      <type value="derived-from"/>
+      <target>
+         <reference value="Observation/420"/>
+         <display value="HLA-A*01:02, exons 2 and 3"/>
+      </target>
+   </related>
+</Observation>

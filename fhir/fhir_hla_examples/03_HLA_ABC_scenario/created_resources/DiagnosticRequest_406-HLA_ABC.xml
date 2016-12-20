@@ -1,0 +1,26 @@
+<DiagnosticRequest xmlns="http://hl7.org/fhir">
+   <id value="406"/>
+   <meta>
+      <versionId value="1"/>
+      <lastUpdated value="2016-12-19T05:35:50.000+00:00"/>
+   </meta>
+   <code>
+      <coding>
+         <system value="http://loinc.org"/>
+         <code value="13303-3"/>
+         <display value="HLA-A+​B+​C (class I) [Type]"/>
+      </coding>
+   </code>
+   <subject>
+      <reference value="Patient/402"/>
+      <display value="Mary Chalmers"/>
+   </subject>
+   <requester>
+      <reference value="Organization/405"/>
+      <display value="aDonorRegistry"/>
+   </requester>
+   <performer>
+      <reference value="Organization/404"/>
+      <display value="aTypingLab, Inc"/>
+   </performer>
+</DiagnosticRequest>

@@ -1,0 +1,39 @@
+<Patient xmlns="http://hl7.org/fhir">
+   <id value="402"/>
+   <meta>
+      <versionId value="1"/>
+      <lastUpdated value="2016-12-19T05:35:50.000+00:00"/>
+   </meta>
+   <text>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h4>Donor </h4> 
+         <p>name: Mary Chalmers</p> 
+         <p>gender: female</p> 
+         <p>born: 1986-12-31</p> 
+      </div>
+   </text>
+   <identifier>
+      <use value="usual"/>
+      <type>
+         <coding>
+            <system value="http://hl7.org/fhir/v2/0203"/>
+            <code value="DR"/>
+         </coding>
+      </type>
+      <system value="urn:oid:0.0.0.0.0.0.0"/>
+      <value value="12345"/>
+      <period>
+         <start value="2012-11-10"/>
+      </period>
+      <assigner>
+         <display value="aDonorRegistry"/>
+      </assigner>
+   </identifier>
+   <name>
+      <use value="official"/>
+      <family value="Chalmers"/>
+      <given value="Mary"/>
+   </name>
+   <gender value="female"/>
+   <birthDate value="1986-12-31"/>
+</Patient>
