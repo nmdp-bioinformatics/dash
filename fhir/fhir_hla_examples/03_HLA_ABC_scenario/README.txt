@@ -29,7 +29,7 @@ FILES:
     found in the created_resources subdirectory:
 
     Patient_402-MaryChalmers.xml
-    Specimen_403_buccalswab.xml
+    Specimen_403-buccalswab.xml
     Organization_404-typinglab.xml
     Organization_405-registry.xml
     DiagnosticRequest_406-HLA_ABC.xml
