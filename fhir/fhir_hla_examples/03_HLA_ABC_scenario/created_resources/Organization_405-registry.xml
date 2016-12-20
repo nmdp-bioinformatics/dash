@@ -1,0 +1,25 @@
+<Organization xmlns="http://hl7.org/fhir">
+   <id value="405"/>
+   <meta>
+      <versionId value="1"/>
+      <lastUpdated value="2016-12-19T05:35:50.000+00:00"/>
+   </meta>
+   <name value="aDonorRegistry"/>
+   <alias value="ADR"/>
+   <telecom>
+      <system value="phone"/>
+      <value value="1-800-555-6789"/>
+      <use value="work"/>
+      <rank value="1"/>
+   </telecom>
+   <address>
+      <use value="work"/>
+      <type value="both"/>
+      <text value="456 Main St, Anytown ND, 00000"/>
+      <line value="456 Main St"/>
+      <city value="Anytown"/>
+      <state value="ND"/>
+      <postalCode value="00000"/>
+      <country value="USA"/>
+   </address>
+</Organization>
