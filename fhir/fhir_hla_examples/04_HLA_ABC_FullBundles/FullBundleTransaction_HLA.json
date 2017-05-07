@@ -4,10 +4,6 @@
   "fhir_comments": [
     "\nBob Milius - NMDP - 2017-03-25\n\nAssume these are already created ahead of time before the HLA report bundle is created.\nYou would use the resources created here for those in the report bundle.\nTransaction bundle that creates and links:\n+ Patient (potential donor, John Storm)\n+ Specimen from that Patient, which was collected as a buccal swab\n+ Organization of Typing Lab (aTypingLab, Inc)\n+ Organization of donor registry (aDonorRegistry)\n+ ProcedureRequest for HLA-A,-B,-C typing of patient(donor)\n\nThe second part of this bundle contains the resources that would be contained\nin a separate transaction bundle to be sent as the HLA typing report.\nand include the following:\n+ DiagnosticReport summarizing genotyping for HLA-A,-B,-C typing of patient(donor)\n+ Obervations for each genotype\n+ Observations for each allele\n+ Sequences for exons 2 and 3 for HLA-A,-B,-C\n"
   ],
-  "meta": {
-    "versionId": "1",
-    "lastUpdated": "2017-05-07T08:53:14.000+00:00"
-  },
   "type": "transaction",
   "entry": [
     {
