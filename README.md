@@ -1,4 +1,4 @@
-i
+<img src="https://raw.githubusercontent.com/nmdp-bioinformatics/dash/master/dashihiws.png">alt="DaSH IHIWS" />
 # DaSH IHIWS
 You are invited to participate in a data standards hackathon which will take place during the 17th workshop in the “Fred Farr Forum” room.  Thursday, Friday and Saturday Sept 7th-9th 9am-9pm
 
