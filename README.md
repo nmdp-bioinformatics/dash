@@ -1,17 +1,19 @@
-<img src="https://raw.githubusercontent.com/nmdp-bioinformatics/dash/master/dash7.png" alt="DaSH 7 Utrecht" />
+<!-- ![Data Standards Hackathon - DaSH]
+ -->
+![DASH10](https://raw.githubusercontent.com/nmdp-bioinformatics/dash/master/dash10.png)
+# DaSH10 Glasgow
+
+A two-day hackathon will be held in Glasgow, Scotland, the Friday and Saturday just before EFI 2020. The meeting will run all day on Friday 24th and Saturday 25th of April, 2020. This will allow people to attend the opening ceremony of the 34th European Immunogenetics and Histocompatibility Conference annual meeting at 5:30pm, or any other meetings planned on Sunday.
+People will hack on data standards to transfer HLA and KIR data, and create code to transfer, transform, annotate and report this data. As it is a hackathon, everyone is welcome to come and work on their own topic in a room of like-minded people. There have been nine previous DaSH events across America and Europe.
+Likely topics that will get worked on include
+* Development of Gene Feature Enumeration (GFE) tools
+* Development of PHYCuS (Public Haplotype frequencY Curation Service) which can be found at https://github.com/nmdp-bioinformatics/phycus
+* HL7-FHIR to:
+  - allow reporting of GL strings (https://glstring.org/) 
+   - facilitate conversion of HML into FHIR
+   - Updating the GL Service 
 
 
-## DaSH 7 Utrecht
 
-
-To focus activity at this event we have produced a list of topics, and will form teams around some of them, depending on what people want to work on. Each team should produce code collaboratively and have a functional demo at the end of the event.
-
-1. Modeling peptide processing and presentation pathways (NetChop/Chipper, NetMHC), NeoAntigen Prediction, Whole Genome Sequence Analysis
-2. HL7-FHIR (HML==> FHIR bundles), FHIR Clinical Genomics, Sync for Genes
-3. IHIWS follow up (GFE, ACT, KIR, Whole Gene HLA and KIR Analysis)
-4. Analysis of Primate MHC data using 17th IHIWS Informatics tools
-5. Haplotype Frequency Curation 
-
-As usual, there will be an informal meal the evening before the meeting. We will eat at De Zwarte Vosch (http://www.dezwartevosch.nl/) on Sunday 12th November. The meeting will take place at ‘In de Ruimte’ (http://www.inderuimte.org/), on Oudegracht 230, Utrecht. As usual, it will be two days of working, Monday 13th and Tuesday 14th, with lunch and dinner provided. The meeting closes at 4pm on Tuesday, with a dinner for those people staying on. This meeting is timed to allow people to move directly to the HL7-FHIR developer days, taking place in Amsterdam, November 15th to 17th. Please contact Michael Wright for more information: mwright@nmdp.org
-
-
+Further details:
+Please contact Michael Wright, mwright@nmdp.org or Martin Maiers mmaiers@nmdp.org.
