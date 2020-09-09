@@ -19,7 +19,7 @@ for guided discussions, as well as the opportunity for collaborative coding.
 
 # Registration and agenda
 
-![DASSH3 Agenda](https://github.com/nmdp-bioinformatics/dash/blob/master/Symposium%20%26%20Hackathon%20Registration%20details.pdf)
+[DASSH3 Agenda](https://github.com/nmdp-bioinformatics/dash/blob/master/Symposium%20%26%20Hackathon%20Registration%20details.pdf)
 
 Further details:
 Please contact Michael Wright, mwright@nmdp.org or Martin Maiers mmaiers@nmdp.org.
