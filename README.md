@@ -1,6 +1,6 @@
 <!-- ![Data Standards Hackathon - DaSH]
  -->
-![DASH10](https://raw.githubusercontent.com/nmdp-bioinformatics/dash/master/dassh3.png)
+![DASSH3](https://raw.githubusercontent.com/nmdp-bioinformatics/dash/master/dassh3.png)
 
 # DaSSH3 VIRTUAL - Data Standards Symposium and Hackathon for HLA 
 
