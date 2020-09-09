@@ -1,21 +1,19 @@
 <!-- ![Data Standards Hackathon - DaSH]
  -->
-![DASH10](https://raw.githubusercontent.com/nmdp-bioinformatics/dash/master/vh2.png)
+![DASH10](https://raw.githubusercontent.com/nmdp-bioinformatics/dash/master/dassh3.png)
 
-# DaSH10 VIRTUAL - Data Standards for HLA 
+# DaSSH3 VIRTUAL - Data Standards Symposium and Hackathon for HLA 
 
-A two-day hackathon will be held in cyberspace. The event will start at 0700 US Pacific Time Thursday 23rd and go for 48 hours ending at 0700 US Pacific time on Saturday 25th of April, 2020. This will allow people to attend from various parts of the globe and join as they are able.
+FHIR Symposium: mornings of Wednesday 16 & Thursday 17 September
 
-People will hack on data standards to transfer HLA and KIR data, and create code to transfer, transform, annotate and report this data. 
+We are holding two half-day online symposia, each day runs 9am to 1pm CDT.
 
-This hackathon will focus on three topics:
-* The development of a database of HLA and COVID-19 data to support global efforts in this area [HLACOVID19.org](http://hlacovid19.org)
-* The development of database tools for the [18th IHIW] (http://www.ihiw18.org)
-* The development of tools for validating and processing HLA genotyping results in [HML 1.0.1] (http://schemas.nmdp.org) format
+Data Standards Hackathon: 16 & 17 September and all-day 18 September
 
-There have been nine previous DaSH events across America and Europe.
-
-
+We are also holding a hackathon that will be focused on HLA & FHIR.
+• The hackathon will take place online, using GitHub, WebEx and slack.
+• The first two days will run 1pm to 5pm CDT, and there will be one channel set up
+for guided discussions, as well as the opportunity for collaborative coding.
 
 Further details:
 Please contact Michael Wright, mwright@nmdp.org or Martin Maiers mmaiers@nmdp.org.
