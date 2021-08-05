@@ -1,0 +1,49 @@
+{
+    "resourceType": "Observation",
+    "meta": {
+        "security": [{
+            "system": "http://cibmtr.org/codesystem/transplant-center",
+            "code": "rc_12002"
+        }]
+    },
+    "status": "final",
+    "category": [{
+        "coding": [{
+            "system": "http://loinc.org",
+            "code": "laboratory",
+            "display": "Laboratory"
+        }]
+    }],
+    "code": {
+        "coding": [{
+            "system": "http://loinc.org",
+            "code": "6690-2",
+            "display": "Leukocytes [#/volume] in Blood by Automated count"
+            }],
+        "text": "Leukocytes [#/volume] in Blood by Automated count"
+    },
+    "subject": {
+        "reference": "Patient/46986"
+    },
+    "effectiveDateTime": "2021-06-15T15:34:10+05:00",
+    "valueQuantity": {
+        "value": 5.1,
+        "unit": "billion per liter",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*9/L"
+    },
+    "referenceRange": [{
+        "low": {
+            "value": 4.5,
+            "unit": "billion per liter",
+            "system": "http://unitsofmeasure.org",
+            "code": "10*9/L"
+        },
+        "high": {
+            "value": 11,
+            "unit": "billion per liter",
+            "system": "http://unitsofmeasure.org",
+            "code": "10*9/L"
+        }
+    }]
+}

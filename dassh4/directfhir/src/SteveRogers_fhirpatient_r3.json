@@ -1,0 +1,21 @@
+{
+    "resourceType": "Patient",
+    "meta": {
+        "security": [
+            {
+                "system": "http://cibmtr.org/codesystem/transplant-center",
+                "code": "rc_12002"
+            }
+        ]
+    },
+    "text": {
+      "status": "empty"
+    },
+    "identifier": [
+      {
+        "use": "official",
+        "system": "http://cibmtr.org/identifier/CRID",
+        "value": "4598886"
+      }
+    ]
+  }

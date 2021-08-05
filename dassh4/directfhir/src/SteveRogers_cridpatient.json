@@ -1,0 +1,12 @@
+{
+    "ccn": "12002",
+    "patient": {
+        "firstName": "Steve",
+        "lastName": "Rogers",
+        "birthDate": "1925-07-04",
+        "gender": "M",
+        "ssn": "098-76-5432",
+        "race": ["2106-3"],
+        "ethnicity": "UNK"
+    }
+}
