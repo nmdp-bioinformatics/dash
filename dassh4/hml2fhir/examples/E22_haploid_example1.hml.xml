@@ -1,0 +1,100 @@
+<hml xmlns="http://schemas.nmdp.org/spec/hml/1.0.1" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://schemas.nmdp.org/spec/hml/1.0.1 http://schemas.nmdp.org/spec/hml/1.0.1/hml-1.0.1.xsd" 
+	version="1.0.1" 
+	project-name="REG_CONFIRM_DNR">
+	<hmlid root="999" extension="999-06252021151615-5"/>
+	<reporting-center reporting-center-id="999" reporting-center-context="999"/>
+	<sample id="3553000012345678916" center-code="999">
+		<collection-method>blood aliquots</collection-method>
+		<typing gene-family="HLA" date="2021-06-25">
+			<allele-assignment date="2021-06-25" allele-db="IMGT/HLA" allele-version="3.43.0">
+				<haploid locus="HLA-A" method="DNA" type="01:01"/>
+				<haploid locus="HLA-A" method="DNA" type="01:01"/>
+			</allele-assignment>
+			<typing-method>
+				<sbt-ngs locus="HLA-A"/>
+			</typing-method>
+		</typing>
+		<typing gene-family="HLA" date="2021-06-25">
+			<allele-assignment date="2021-06-25" allele-db="IMGT/HLA" allele-version="3.43.0">
+				<haploid locus="HLA-B" method="DNA" type="07:02"/>
+				<haploid locus="HLA-B" method="DNA" type="15:17"/>
+			</allele-assignment>
+			<typing-method>
+				<sbt-ngs locus="HLA-B"/>
+			</typing-method>
+		</typing>
+		<typing gene-family="HLA" date="2021-06-25">
+			<allele-assignment date="2021-06-25" allele-db="IMGT/HLA" allele-version="3.43.0">
+				<haploid locus="HLA-C" method="DNA" type="07:02"/>
+				<haploid locus="HLA-C" method="DNA" type="07:01"/>
+			</allele-assignment>
+			<typing-method>
+				<sbt-ngs locus="HLA-C"/>
+			</typing-method>
+		</typing>
+		<typing gene-family="HLA" date="2021-06-25">
+			<allele-assignment date="2021-06-25" allele-db="IMGT/HLA" allele-version="3.43.0">
+				<haploid locus="HLA-DRB1" method="DNA" type="15:01"/>
+				<haploid locus="HLA-DRB1" method="DNA" type="13:02"/>
+			</allele-assignment>
+			<typing-method>
+				<sbt-ngs locus="HLA-DRB1"/>
+			</typing-method>
+		</typing>
+		<typing gene-family="HLA" date="2021-06-25">
+			<allele-assignment date="2021-06-25" allele-db="IMGT/HLA" allele-version="3.43.0">
+				<haploid locus="HLA-DRB3" method="DNA" type="03:01"/>
+			</allele-assignment>
+			<typing-method>
+				<sbt-ngs locus="HLA-DRB3"/>
+			</typing-method>
+		</typing>
+		<typing gene-family="HLA" date="2021-06-25">
+			<allele-assignment date="2021-06-25" allele-db="IMGT/HLA" allele-version="3.43.0">
+				<haploid locus="HLA-DRB5" method="DNA" type="01:01"/>
+			</allele-assignment>
+			<typing-method>
+				<sbt-ngs locus="HLA-DRB5"/>
+			</typing-method>
+		</typing>
+		<typing gene-family="HLA" date="2021-06-25">
+			<allele-assignment date="2021-06-25" allele-db="IMGT/HLA" allele-version="3.43.0">
+				<haploid locus="HLA-DQA1" method="DNA" type="01:02"/>
+				<haploid locus="HLA-DQA1" method="DNA" type="01:02"/>
+			</allele-assignment>
+			<typing-method>
+				<sbt-ngs locus="HLA-DQA1"/>
+			</typing-method>
+		</typing>
+		<typing gene-family="HLA" date="2021-06-25">
+			<allele-assignment date="2021-06-25" allele-db="IMGT/HLA" allele-version="3.43.0">
+				<haploid locus="HLA-DQB1" method="DNA" type="06:02"/>
+				<haploid locus="HLA-DQB1" method="DNA" type="06:04"/>
+			</allele-assignment>
+			<typing-method>
+				<sbt-ngs locus="HLA-DQB1"/>
+			</typing-method>
+		</typing>
+		<typing gene-family="HLA" date="2021-06-25">
+			<allele-assignment date="2021-06-25" allele-db="IMGT/HLA" allele-version="3.43.0">
+				<haploid locus="HLA-DPA1" method="DNA" type="01:03"/>
+				<haploid locus="HLA-DPA1" method="DNA" type="01:03"/>
+			</allele-assignment>
+			<typing-method>
+				<sbt-ngs locus="HLA-DPA1"/>
+			</typing-method>
+		</typing>
+		<typing gene-family="HLA" date="2021-06-25">
+			<allele-assignment date="2021-06-25" allele-db="IMGT/HLA" allele-version="3.43.0">
+				<haploid locus="HLA-DPB1" method="DNA" type="02:01"/>
+				<haploid locus="HLA-DPB1" method="DNA" type="04:01"/>
+			</allele-assignment>
+			<typing-method>
+				<sbt-ngs locus="HLA-DPB1"/>
+			</typing-method>
+		</typing>
+	</sample>
+</hml>
