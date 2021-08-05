@@ -1,0 +1,58 @@
+<hml xmlns="http://schemas.nmdp.org/spec/hml/1.0.1" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	project-name="REG_CONFIRM_DNR" 
+	version="1.0.1" 
+	xsi:schemaLocation="http://schemas.nmdp.org/spec/hml/1.0.1 http://schemas.nmdp.org/spec/hml/1.0.1/hml-1.0.1.xsd">
+	<hmlid extension="999-07302021-1626" root="999"/>
+	<reporting-center reporting-center-id="999"/>
+	<sample center-code="999" id="6939123456789101116">
+		<collection-method>Whole Blood</collection-method>
+		<typing date="2021-07-29" gene-family="HLA">
+			<allele-assignment date="2021-07-29" allele-version="3.44.0" allele-db="IMGT/HLA">
+				<haploid type="02:01" method="DNA" locus="HLA-A"/>
+				<haploid type="26:01" method="DNA" locus="HLA-A"/>
+				<haploid type="40:01" method="DNA" locus="HLA-B"/>
+				<haploid type="52:01" method="DNA" locus="HLA-B"/>
+				<haploid type="03:04" method="DNA" locus="HLA-C"/>
+				<haploid type="12:02" method="DNA" locus="HLA-C"/>
+				<haploid type="04:01:01G" method="DNA" locus="HLA-DPB1"/>
+				<haploid type="04:02:01G" method="DNA" locus="HLA-DPB1"/>
+				<haploid type="04:02" method="DNA" locus="HLA-DQB1"/>
+				<haploid type="06:01" method="DNA" locus="HLA-DQB1"/>
+				<haploid type="08:01" method="DNA" locus="HLA-DRB1"/>
+				<haploid type="15:02" method="DNA" locus="HLA-DRB1"/>
+				<haploid type="01:02" method="DNA" locus="HLA-DRB5"/>
+			</allele-assignment>
+			<typing-method>
+				<sbt-sanger locus="HLA-A">
+					<amplification registered-name="Testing">
+					</amplification>
+				</sbt-sanger>
+				<sbt-sanger locus="HLA-B">
+					<amplification registered-name="Testing">
+					</amplification>
+				</sbt-sanger>
+				<sbt-sanger locus="HLA-C">
+					<amplification registered-name="Testing">
+					</amplification>
+				</sbt-sanger>
+				<sbt-sanger locus="HLA-DPB1">
+					<amplification registered-name="Testing">
+					</amplification>
+				</sbt-sanger>
+				<sbt-sanger locus="HLA-DRB1">
+					<amplification registered-name="Testing">
+					</amplification>
+				</sbt-sanger>
+				<sbt-sanger locus="HLA-DRB5">
+					<amplification registered-name="Testing">
+					</amplification>
+				</sbt-sanger>
+				<sbt-sanger locus="HLA-DQB1">
+					<amplification registered-name="Testing">
+					</amplification>
+				</sbt-sanger>
+			</typing-method>
+		</typing>
+	</sample>
+</hml>
