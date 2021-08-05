@@ -1,0 +1,791 @@
+{
+	"info": {
+		"_postman_id": "df81f53d-5fa1-47b5-a5ce-b73a03154df6",
+		"name": "Direct FHIR Testing - No Creds",
+		"description": "Direct FHIR testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Request Authorization Token",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "<Application Client Secret>",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "<Application Client ID>",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "api_cibmtr_fhir_ehr_client",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "<CIBMTR Service Account Username>",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "<CIBMTR Service Account Password>",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://nmdp.oktapreview.com/oauth2/ausaexcazhLhxKnJs0h7/v1/token",
+					"protocol": "https",
+					"host": [
+						"nmdp",
+						"oktapreview",
+						"com"
+					],
+					"path": [
+						"oauth2",
+						"ausaexcazhLhxKnJs0h7",
+						"v1",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register a CRID",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"const echoPostRequest = {\r",
+							"  url: 'https://nmdp.oktapreview.com/oauth2/ausaexcazhLhxKnJs0h7/v1/token',\r",
+							"  method: 'POST',\r",
+							"  header: {\r",
+							"    'Accept': 'application/json', \r",
+							"    'Content-Type': 'application/x-www-form-urlencoded', \r",
+							"    'Authorization': 'Basic <auth_string>'\r",
+							"  },\r",
+							"  body: {\r",
+							"    mode: 'urlencoded',\r",
+							"    urlencoded: [\r",
+							"        {key: \"grant_type\", value: \"password\"},\r",
+							"        {key: \"scope\", value: \"api_cibmtr_fhir_ehr_client\"},\r",
+							"        {key: \"username\", value: \"<CIBMTR Service Account Username>\"},\r",
+							"        {key: \"password\", value: \"<CIBMTR Service Account Password>\"}\r",
+							"    ]\r",
+							"  }\r",
+							"};\r",
+							"\r",
+							"pm.sendRequest(echoPostRequest, function (err, res) {\r",
+							"    console.log(err ? err : res.json());\r",
+							"        if (err === null) {\r",
+							"            console.log('Saving the token')\r",
+							"            var responseJson = res.json();\r",
+							"            pm.globals.set(\"okta_token\", responseJson.access_token);\r",
+							"        }\r",
+							"    });\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{okta_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"ccn\": \"12001\",\r\n  \"patient\": {\r\n    \"firstName\": \"Steve\",\r\n    \"lastName\": \"Rogers\",\r\n    \"birthDate\": \"1925-07-04\",\r\n    \"gender\": \"M\",\r\n    \"ssn\": \"098-76-5432\"\r\n    \"race\": [\"2106-3\"],\r\n    \"ethnicity\": \"UNK\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dev-api.nmdp.org/cibmtrehrclientbackendexttest/v1/CRID",
+					"protocol": "https",
+					"host": [
+						"dev-api",
+						"nmdp",
+						"org"
+					],
+					"path": [
+						"cibmtrehrclientbackendexttest",
+						"v1",
+						"CRID"
+					]
+				},
+				"description": "This request can either register for a new CRID, or can retreive a CRID that has already been created based on a match of the submitted data.  Both functions use the same PUT request API."
+			},
+			"response": []
+		},
+		{
+			"name": "POST New FHIR Patient Resource",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"const echoPostRequest = {\r",
+							"  url: 'https://nmdp.oktapreview.com/oauth2/ausaexcazhLhxKnJs0h7/v1/token',\r",
+							"  method: 'POST',\r",
+							"  header: {\r",
+							"    'Accept': 'application/json', \r",
+							"    'Content-Type': 'application/x-www-form-urlencoded', \r",
+							"    'Authorization': 'Basic <auth_string>'  },\r",
+							"  body: {\r",
+							"    mode: 'urlencoded',\r",
+							"    urlencoded: [\r",
+							"        {key: \"grant_type\", value: \"password\"},\r",
+							"        {key: \"scope\", value: \"api_cibmtr_fhir_ehr_client\"},\r",
+							"        {key: \"username\", value: \"<CIBMTR Service Account Username>\"},\r",
+							"        {key: \"password\", value: \"<CIBMTR Service Account Password>\"}\r",
+							"    ]\r",
+							"  }\r",
+							"};\r",
+							"\r",
+							"pm.sendRequest(echoPostRequest, function (err, res) {\r",
+							"    console.log(err ? err : res.json());\r",
+							"        if (err === null) {\r",
+							"            console.log('Saving the token')\r",
+							"            var responseJson = res.json();\r",
+							"            pm.globals.set(\"okta_token\", responseJson.access_token);\r",
+							"        }\r",
+							"    });\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{okta_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"resourceType\": \"Patient\",\r\n    \"meta\": {\r\n        \"security\": [\r\n            {\r\n                \"system\": \"http://cibmtr.org/codesystem/transplant-center\",\r\n                \"code\": \"rc_12001\"\r\n            }\r\n        ]\r\n    },\r\n    \"text\": {\r\n        \"status\": \"empty\"\r\n    },\r\n    \"identifier\": [\r\n        {\r\n            \"use\": \"official\",\r\n            \"system\": \"http://cibmtr.org/identifier/CRID\",\r\n            \"value\": \"3989144\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dev-api.nmdp.org/cibmtrehrclientbackendexttest/v1/Patient",
+					"protocol": "https",
+					"host": [
+						"dev-api",
+						"nmdp",
+						"org"
+					],
+					"path": [
+						"cibmtrehrclientbackendexttest",
+						"v1",
+						"Patient"
+					]
+				},
+				"description": "For the purposes of submitting data to CIBMTR, the Patient resource is primarily used for the CRID identifier.  If the Patient resource is submitted with any demographics or other personally idetifiable information, the API service will remove that information upon submission.   Other center specific identifiers can be added to the list of identifiers."
+			},
+			"response": []
+		},
+		{
+			"name": "POST New FHIR Observation Bundle",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"const echoPostRequest = {\r",
+							"  url: 'https://nmdp.oktapreview.com/oauth2/ausaexcazhLhxKnJs0h7/v1/token',\r",
+							"  method: 'POST',\r",
+							"  header: {\r",
+							"    'Accept': 'application/json', \r",
+							"    'Content-Type': 'application/x-www-form-urlencoded', \r",
+							"    'Authorization': 'Basic <auth_string>'  },\r",
+							"  body: {\r",
+							"    mode: 'urlencoded',\r",
+							"    urlencoded: [\r",
+							"        {key: \"grant_type\", value: \"password\"},\r",
+							"        {key: \"scope\", value: \"api_cibmtr_fhir_ehr_client\"},\r",
+							"        {key: \"username\", value: \"<CIBMTR Service Account Username>\"},\r",
+							"        {key: \"password\", value: \"<CIBMTR Service Account Password>\"}\r",
+							"    ]\r",
+							"  }\r",
+							"};\r",
+							"\r",
+							"pm.sendRequest(echoPostRequest, function (err, res) {\r",
+							"    console.log(err ? err : res.json());\r",
+							"        if (err === null) {\r",
+							"            console.log('Saving the token')\r",
+							"            var responseJson = res.json();\r",
+							"            pm.globals.set(\"okta_token\", responseJson.access_token);\r",
+							"        }\r",
+							"    });\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{okta_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"resourceType\": \"Observation\",\r\n    \"meta\": {\r\n        \"security\": [\r\n            {\r\n                \"system\": \"http://cibmtr.org/codesystem/transplant-center\",\r\n                \"code\": \"rc_12001\"\r\n            }\r\n        ]\r\n    },\r\n    \"status\": \"final\",\r\n    \"category\": [\r\n        {\r\n            \"coding\": [\r\n                {\r\n                    \"system\": \"http://hl7.org/fhir/observation-category\",\r\n                    \"code\": \"laboratory\",\r\n                    \"display\": \"Laboratory\"\r\n                }\r\n            ],\r\n            \"text\": \"The results of observations generated by laboratories.\"\r\n        }\r\n    ],\r\n    \"code\": {\r\n        \"coding\": [\r\n            {\r\n                \"system\": \"https://loinc.org\",\r\n                \"code\": \"6690-2\",\r\n                \"display\": \"Leukocytes [#/volume] in Blood by Automated count\"\r\n            }\r\n        ]\r\n    },\r\n    \"subject\": {\r\n        \"reference\": \"Patient/22834\"\r\n    },\r\n    \"effectiveDateTime\": \"2020-06-15T15:34:10+05:00\",\r\n    \"valueQuantity\": {\r\n        \"value\": 3.67,\r\n        \"unit\": \"billion per liter\",\r\n        \"system\": \"http://unitsofmeasure.org\",\r\n        \"code\": \"10*9/L\"\r\n    },\r\n    \"referenceRange\": [\r\n        {\r\n            \"low\": {\r\n                \"value\": 4.5,\r\n                \"unit\": \"billion per liter\",\r\n                \"system\": \"http://unitsofmeasure.org\",\r\n                \"code\": \"10*9/L\"\r\n            },\r\n            \"high\": {\r\n                \"value\": 11,\r\n                \"unit\": \"billion per liter\",\r\n                \"system\": \"http://unitsofmeasure.org\",\r\n                \"code\": \"10*9/L\"\r\n            }\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dev-api.nmdp.org/cibmtrehrclientbackendexttest/v1/Observation",
+					"protocol": "https",
+					"host": [
+						"dev-api",
+						"nmdp",
+						"org"
+					],
+					"path": [
+						"cibmtrehrclientbackendexttest",
+						"v1",
+						"Observation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Patient Resources for Transplant Center",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"const echoPostRequest = {\r",
+							"  url: 'https://nmdp.oktapreview.com/oauth2/ausaexcazhLhxKnJs0h7/v1/token',\r",
+							"  method: 'POST',\r",
+							"  header: {\r",
+							"    'Accept': 'application/json', \r",
+							"    'Content-Type': 'application/x-www-form-urlencoded', \r",
+							"    'Authorization': 'Basic <auth_string>'\r",
+							"  },\r",
+							"  body: {\r",
+							"    mode: 'urlencoded',\r",
+							"    urlencoded: [\r",
+							"        {key: \"grant_type\", value: \"password\"},\r",
+							"        {key: \"scope\", value: \"api_cibmtr_fhir_ehr_client\"},\r",
+							"        {key: \"username\", value: \"<CIBMTR Service Account Username>\"},\r",
+							"        {key: \"password\", value: \"<CIBMTR Service Account Password>\"}\r",
+							"    ]\r",
+							"  }\r",
+							"};\r",
+							"\r",
+							"pm.sendRequest(echoPostRequest, function (err, res) {\r",
+							"    console.log(err ? err : res.json());\r",
+							"        if (err === null) {\r",
+							"            console.log('Saving the token')\r",
+							"            var responseJson = res.json();\r",
+							"            pm.globals.set(\"okta_token\", responseJson.access_token);\r",
+							"        }\r",
+							"    });\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{okta_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev-api.nmdp.org/cibmtrehrclientbackendexttest/v1/Patient?_security=http://cibmtr.org/codesystem/transplant-center%7Crc_12001",
+					"protocol": "https",
+					"host": [
+						"dev-api",
+						"nmdp",
+						"org"
+					],
+					"path": [
+						"cibmtrehrclientbackendexttest",
+						"v1",
+						"Patient"
+					],
+					"query": [
+						{
+							"key": "_security",
+							"value": "http://cibmtr.org/codesystem/transplant-center%7Crc_12001",
+							"description": "To search for Patients, the security code|value must be provided indicated the center number"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Patient Resource by CRID",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"const echoPostRequest = {\r",
+							"  url: 'https://nmdp.oktapreview.com/oauth2/ausaexcazhLhxKnJs0h7/v1/token',\r",
+							"  method: 'POST',\r",
+							"  header: {\r",
+							"    'Accept': 'application/json', \r",
+							"    'Content-Type': 'application/x-www-form-urlencoded', \r",
+							"    'Authorization': 'Basic <auth_string>'\r",
+							"  },\r",
+							"  body: {\r",
+							"    mode: 'urlencoded',\r",
+							"    urlencoded: [\r",
+							"        {key: \"grant_type\", value: \"password\"},\r",
+							"        {key: \"scope\", value: \"api_cibmtr_fhir_ehr_client\"},\r",
+							"        {key: \"username\", value: \"<CIBMTR Service Account Username>\"},\r",
+							"        {key: \"password\", value: \"<CIBMTR Service Account Password>\"}\r",
+							"    ]\r",
+							"  }\r",
+							"};\r",
+							"\r",
+							"pm.sendRequest(echoPostRequest, function (err, res) {\r",
+							"    console.log(err ? err : res.json());\r",
+							"        if (err === null) {\r",
+							"            console.log('Saving the token')\r",
+							"            var responseJson = res.json();\r",
+							"            pm.globals.set(\"okta_token\", responseJson.access_token);\r",
+							"        }\r",
+							"    });\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{okta_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev-api.nmdp.org/cibmtrehrclientbackendexttest/v1/Patient?_security=http://cibmtr.org/codesystem/transplant-center%7Crc_12001&identifier=3989144",
+					"protocol": "https",
+					"host": [
+						"dev-api",
+						"nmdp",
+						"org"
+					],
+					"path": [
+						"cibmtrehrclientbackendexttest",
+						"v1",
+						"Patient"
+					],
+					"query": [
+						{
+							"key": "_security",
+							"value": "http://cibmtr.org/codesystem/transplant-center%7Crc_12001",
+							"description": "To search for Patients, the security code|value must be provided indicated the center number"
+						},
+						{
+							"key": "identifier",
+							"value": "3989144",
+							"description": "Other search parameters can be provided to narrow the search parameters such as the CRID identifier"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST New FHIR Observation Resource",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"const echoPostRequest = {\r",
+							"  url: 'https://nmdp.oktapreview.com/oauth2/ausaexcazhLhxKnJs0h7/v1/token',\r",
+							"  method: 'POST',\r",
+							"  header: {\r",
+							"    'Accept': 'application/json', \r",
+							"    'Content-Type': 'application/x-www-form-urlencoded', \r",
+							"    'Authorization': 'Basic <auth_string>'\r",
+							"  },\r",
+							"  body: {\r",
+							"    mode: 'urlencoded',\r",
+							"    urlencoded: [\r",
+							"        {key: \"grant_type\", value: \"password\"},\r",
+							"        {key: \"scope\", value: \"api_cibmtr_fhir_ehr_client\"},\r",
+							"        {key: \"username\", value: \"<CIBMTR Service Account Username>\"},\r",
+							"        {key: \"password\", value: \"<CIBMTR Service Account Password>\"}\r",
+							"    ]\r",
+							"  }\r",
+							"};\r",
+							"\r",
+							"pm.sendRequest(echoPostRequest, function (err, res) {\r",
+							"    console.log(err ? err : res.json());\r",
+							"        if (err === null) {\r",
+							"            console.log('Saving the token')\r",
+							"            var responseJson = res.json();\r",
+							"            pm.globals.set(\"okta_token\", responseJson.access_token);\r",
+							"        }\r",
+							"    });\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{okta_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"resourceType\": \"Observation\",\r\n  \"meta\": {\r\n    \"security\": [\r\n      {\r\n        \"system\": \"http://cibmtr.org/codesystem/transplant-center\",\r\n        \"code\": \"rc_12001\"\r\n      }\r\n    ]\r\n  },\r\n  \"status\": \"final\",\r\n  \"category\": [\r\n    {\r\n      \"coding\": [\r\n        {\r\n          \"system\": \"http://hl7.org/fhir/observation-category\",\r\n          \"code\": \"laboratory\",\r\n          \"display\": \"Laboratory\"\r\n        }\r\n      ],\r\n      \"text\": \"The results of observations generated by laboratories.\"\r\n    }\r\n  ],\r\n  \"code\": {\r\n    \"coding\": [\r\n      {\r\n        \"system\": \"https://loinc.org\",\r\n        \"code\": \"6690-2\",\r\n        \"display\": \"Leukocytes [#/volume] in Blood by Automated count\"\r\n      }\r\n    ]\r\n  },\r\n  \"subject\": {\r\n    \"reference\": \"Patient/5852\"\r\n  },\r\n  \"effectiveDateTime\": \"2020-06-15T15:34:10+05:00\",\r\n  \"valueQuantity\": {\r\n    \"value\": 3.67,\r\n    \"unit\": \"billion per liter\",\r\n    \"system\": \"http://unitsofmeasure.org\",\r\n    \"code\": \"10*9/L\"\r\n  },\r\n  \"referenceRange\": [\r\n    {\r\n      \"low\": {\r\n        \"value\": 4.5,\r\n        \"unit\": \"billion per liter\",\r\n        \"system\": \"http://unitsofmeasure.org\",\r\n        \"code\": \"10*9/L\"\r\n      },\r\n      \"high\": {\r\n        \"value\": 11,\r\n        \"unit\": \"billion per liter\",\r\n        \"system\": \"http://unitsofmeasure.org\",\r\n        \"code\": \"10*9/L\"\r\n      }\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dev-api.nmdp.org/cibmtrehrclientbackendexttest/v1/Observation",
+					"protocol": "https",
+					"host": [
+						"dev-api",
+						"nmdp",
+						"org"
+					],
+					"path": [
+						"cibmtrehrclientbackendexttest",
+						"v1",
+						"Observation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Observation Resources by Patient Resource ID",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"const echoPostRequest = {\r",
+							"  url: 'https://nmdp.oktapreview.com/oauth2/ausaexcazhLhxKnJs0h7/v1/token',\r",
+							"  method: 'POST',\r",
+							"  header: {\r",
+							"    'Accept': 'application/json', \r",
+							"    'Content-Type': 'application/x-www-form-urlencoded', \r",
+							"    'Authorization': 'Basic <auth_string>'\r",
+							"  },\r",
+							"  body: {\r",
+							"    mode: 'urlencoded',\r",
+							"    urlencoded: [\r",
+							"        {key: \"grant_type\", value: \"password\"},\r",
+							"        {key: \"scope\", value: \"api_cibmtr_fhir_ehr_client\"},\r",
+							"        {key: \"username\", value: \"<CIBMTR Service Account Username>\"},\r",
+							"        {key: \"password\", value: \"<CIBMTR Service Account Password>\"}\r",
+							"    ]\r",
+							"  }\r",
+							"};\r",
+							"\r",
+							"pm.sendRequest(echoPostRequest, function (err, res) {\r",
+							"    console.log(err ? err : res.json());\r",
+							"        if (err === null) {\r",
+							"            console.log('Saving the token')\r",
+							"            var responseJson = res.json();\r",
+							"            pm.globals.set(\"okta_token\", responseJson.access_token);\r",
+							"        }\r",
+							"    });\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{okta_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev-api.nmdp.org/cibmtrehrclientbackendexttest/v1/Observation?subject=5852",
+					"protocol": "https",
+					"host": [
+						"dev-api",
+						"nmdp",
+						"org"
+					],
+					"path": [
+						"cibmtrehrclientbackendexttest",
+						"v1",
+						"Observation"
+					],
+					"query": [
+						{
+							"key": "subject",
+							"value": "5852"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Observation Resources by CRID",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"const echoPostRequest = {\r",
+							"  url: 'https://nmdp.oktapreview.com/oauth2/ausaexcazhLhxKnJs0h7/v1/token',\r",
+							"  method: 'POST',\r",
+							"  header: {\r",
+							"    'Accept': 'application/json', \r",
+							"    'Content-Type': 'application/x-www-form-urlencoded', \r",
+							"    'Authorization': 'Basic <auth_string>'\r",
+							"  },\r",
+							"  body: {\r",
+							"    mode: 'urlencoded',\r",
+							"    urlencoded: [\r",
+							"        {key: \"grant_type\", value: \"password\"},\r",
+							"        {key: \"scope\", value: \"api_cibmtr_fhir_ehr_client\"},\r",
+							"        {key: \"username\", value: \"<CIBMTR Service Account Username>\"},\r",
+							"        {key: \"password\", value: \"<CIBMTR Service Account Password>\"}\r",
+							"    ]\r",
+							"  }\r",
+							"};\r",
+							"\r",
+							"pm.sendRequest(echoPostRequest, function (err, res) {\r",
+							"    console.log(err ? err : res.json());\r",
+							"        if (err === null) {\r",
+							"            console.log('Saving the token')\r",
+							"            var responseJson = res.json();\r",
+							"            pm.globals.set(\"okta_token\", responseJson.access_token);\r",
+							"        }\r",
+							"    });\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{okta_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev-api.nmdp.org/cibmtrehrclientbackendexttest/v1/Observation?subject:Patient.identifier=3989144",
+					"protocol": "https",
+					"host": [
+						"dev-api",
+						"nmdp",
+						"org"
+					],
+					"path": [
+						"cibmtrehrclientbackendexttest",
+						"v1",
+						"Observation"
+					],
+					"query": [
+						{
+							"key": "subject:Patient.identifier",
+							"value": "3989144"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
