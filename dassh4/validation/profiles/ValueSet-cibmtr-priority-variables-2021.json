@@ -1,0 +1,533 @@
+{
+  "resourceType": "ValueSet",
+  "id": "cibmtr-priority-variables-2021",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26508-2.html\">26508-2</a></td><td>Band form neutrophils/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/35332-6.html\">35332-6</a></td><td>Band form neutrophils/100 leukocytes in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/764-1.html\">764-1</a></td><td>Band form neutrophils/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30180-4.html\">30180-4</a></td><td>Basophils/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/706-2.html\">706-2</a></td><td>Basophils/100 leukocytes in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/707-0.html\">707-0</a></td><td>Basophils/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26446-5.html\">26446-5</a></td><td>Blasts/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/709-6.html\">709-6</a></td><td>Blasts/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26449-9.html\">26449-9</a></td><td>Eosinophils [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/711-2.html\">711-2</a></td><td>Eosinophils [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/712-0.html\">712-0</a></td><td>Eosinophils [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26450-7.html\">26450-7</a></td><td>Eosinophils/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/713-8.html\">713-8</a></td><td>Eosinophils/100 leukocytes in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/714-6.html\">714-6</a></td><td>Eosinophils/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/4576-5.html\">4576-5</a></td><td>Hemoglobin F/Hemoglobin.total in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/71865-0.html\">71865-0</a></td><td>Hemoglobin F/Hemoglobin.total [Pure mass fraction] in Blood by Electrophoresis</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/71864-3.html\">71864-3</a></td><td>Hemoglobin F/Hemoglobin.total [Pure mass fraction] in Blood by HPLC</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/71863-5.html\">71863-5</a></td><td>Hemoglobin F/Hemoglobin.total [Pure mass fraction] in Blood by Kleihauer-Betke method</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/32682-7.html\">32682-7</a></td><td>Hemoglobin F/Hemoglobin.total in Blood by Electrophoresis</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/38524-5.html\">38524-5</a></td><td>Hemoglobin F/Hemoglobin.total in Blood by Electrophoresis alkaline (pH 8.9)</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/42246-9.html\">42246-9</a></td><td>Hemoglobin F/Hemoglobin.total in Blood by HPLC</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/4633-4.html\">4633-4</a></td><td>Hemoglobin F/Hemoglobin.total in Blood by Kleihauer-Betke method</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/718-7.html\">718-7</a></td><td>Hemoglobin [Mass/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/59260-0.html\">59260-0</a></td><td>Hemoglobin [Moles/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30313-1.html\">30313-1</a></td><td>Hemoglobin [Mass/volume] in Arterial blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/14775-1.html\">14775-1</a></td><td>Hemoglobin [Mass/volume] in Arterial blood by Oximetry</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/20509-6.html\">20509-6</a></td><td>Hemoglobin [Mass/volume] in Blood by calculation</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/55782-7.html\">55782-7</a></td><td>Hemoglobin [Mass/volume] in Blood by Oximetry</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30351-1.html\">30351-1</a></td><td>Hemoglobin [Mass/volume] in Mixed venous blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/76768-1.html\">76768-1</a></td><td>Hemoglobin [Mass/volume] in Mixed venous blood by Oximetry</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30350-3.html\">30350-3</a></td><td>Hemoglobin [Mass/volume] in Venous blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/76769-9.html\">76769-9</a></td><td>Hemoglobin [Mass/volume] in Venous blood by Oximetry</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/75928-2.html\">75928-2</a></td><td>Hemoglobin [Moles/volume] in Arterial blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/93846-4.html\">93846-4</a></td><td>Hemoglobin [Moles/volume] in Venous blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/20570-8.html\">20570-8</a></td><td>Hematocrit [Volume Fraction] of Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/71833-8.html\">71833-8</a></td><td>Hematocrit [Pure volume fraction] of Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/71831-2.html\">71831-2</a></td><td>Hematocrit [Pure volume fraction] of Capillary blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/71829-6.html\">71829-6</a></td><td>Hematocrit [Pure volume fraction] of Venous blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/4544-3.html\">4544-3</a></td><td>Hematocrit [Volume Fraction] of Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/4545-0.html\">4545-0</a></td><td>Hematocrit [Volume Fraction] of Blood by Centrifugation</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/48703-3.html\">48703-3</a></td><td>Hematocrit [Volume Fraction] of Blood by Estimated</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/31100-1.html\">31100-1</a></td><td>Hematocrit [Volume Fraction] of Blood by Impedance</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/42908-4.html\">42908-4</a></td><td>Hematocrit [Volume Fraction] of Capillary blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/41654-5.html\">41654-5</a></td><td>Hematocrit [Volume Fraction] of Venous blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26474-7.html\">26474-7</a></td><td>Lymphocytes [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/731-0.html\">731-0</a></td><td>Lymphocytes [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/732-8.html\">732-8</a></td><td>Lymphocytes [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26478-8.html\">26478-8</a></td><td>Lymphocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/736-9.html\">736-9</a></td><td>Lymphocytes/100 leukocytes in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/737-7.html\">737-7</a></td><td>Lymphocytes/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30433-7.html\">30433-7</a></td><td>Metamyelocytes [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/739-3.html\">739-3</a></td><td>Metamyelocytes [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/28541-1.html\">28541-1</a></td><td>Metamyelocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/740-1.html\">740-1</a></td><td>Metamyelocytes/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/71668-8.html\">71668-8</a></td><td>Metamyelocytes/Leukocytes [Pure number fraction] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/40651-2.html\">40651-2</a></td><td>Metamyelocytes [Presence] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26484-6.html\">26484-6</a></td><td>Monocytes [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/742-7.html\">742-7</a></td><td>Monocytes [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/743-5.html\">743-5</a></td><td>Monocytes [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26485-3.html\">26485-3</a></td><td>Monocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/5905-5.html\">5905-5</a></td><td>Monocytes/100 leukocytes in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/744-3.html\">744-3</a></td><td>Monocytes/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30444-4.html\">30444-4</a></td><td>Myeloblasts [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/746-8.html\">746-8</a></td><td>Myeloblasts [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30445-1.html\">30445-1</a></td><td>Myeloblasts/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/747-6.html\">747-6</a></td><td>Myeloblasts/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30446-9.html\">30446-9</a></td><td>Myelocytes [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/748-4.html\">748-4</a></td><td>Myelocytes [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26498-6.html\">26498-6</a></td><td>Myelocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/749-2.html\">749-2</a></td><td>Myelocytes/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/71667-0.html\">71667-0</a></td><td>Myelocytes/Leukocytes [Pure number fraction] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26499-4.html\">26499-4</a></td><td>Neutrophils [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/751-8.html\">751-8</a></td><td>Neutrophils [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/753-4.html\">753-4</a></td><td>Neutrophils [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26511-6.html\">26511-6</a></td><td>Neutrophils/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/770-8.html\">770-8</a></td><td>Neutrophils/100 leukocytes in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/23761-0.html\">23761-0</a></td><td>Neutrophils/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30458-4.html\">30458-4</a></td><td>Plasma cells [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/24103-4.html\">24103-4</a></td><td>Plasma cells [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/13047-6.html\">13047-6</a></td><td>Plasma cells/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/79426-3.html\">79426-3</a></td><td>Plasma cells/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/28542-9.html\">28542-9</a></td><td>Platelet mean volume [Entitic volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/32623-1.html\">32623-1</a></td><td>Platelet mean volume [Entitic volume] in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26515-7.html\">26515-7</a></td><td>Platelets [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/777-3.html\">777-3</a></td><td>Platelets [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/49497-1.html\">49497-1</a></td><td>Platelets [#/volume] in Blood by Estimate</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/778-1.html\">778-1</a></td><td>Platelets [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30465-9.html\">30465-9</a></td><td>Prolymphocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/6746-2.html\">6746-2</a></td><td>Prolymphocytes/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/34926-6.html\">34926-6</a></td><td>Promonocytes [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/33855-8.html\">33855-8</a></td><td>Promonocytes [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30466-7.html\">30466-7</a></td><td>Promonocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/13599-6.html\">13599-6</a></td><td>Promonocytes/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26523-1.html\">26523-1</a></td><td>Promyelocytes [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/781-5.html\">781-5</a></td><td>Promyelocytes [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26524-9.html\">26524-9</a></td><td>Promyelocytes/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/783-1.html\">783-1</a></td><td>Promyelocytes/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/71666-2.html\">71666-2</a></td><td>Promyelocytes/Leukocytes [Pure number fraction] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26453-1.html\">26453-1</a></td><td>Erythrocytes [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/789-8.html\">789-8</a></td><td>Erythrocytes [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/790-6.html\">790-6</a></td><td>Erythrocytes [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/14196-0.html\">14196-0</a></td><td>Reticulocytes [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/60474-4.html\">60474-4</a></td><td>Reticulocytes [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/40665-2.html\">40665-2</a></td><td>Reticulocytes [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26464-8.html\">26464-8</a></td><td>Leukocytes [#/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/6690-2.html\">6690-2</a></td><td>Leukocytes [#/volume] in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/49498-9.html\">49498-9</a></td><td>Leukocytes [#/volume] in Blood by Estimate</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/804-5.html\">804-5</a></td><td>Leukocytes [#/volume] in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/1751-7.html\">1751-7</a></td><td>Albumin [Mass/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/61151-7.html\">61151-7</a></td><td>Albumin [Mass/volume] in Serum or Plasma by Bromocresol green (BCG) dye binding method</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/61152-5.html\">61152-5</a></td><td>Albumin [Mass/volume] in Serum or Plasma by Bromocresol purple (BCP) dye binding method</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/2862-1.html\">2862-1</a></td><td>Albumin [Mass/volume] in Serum or Plasma by Electrophoresis</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/24373-3.html\">24373-3</a></td><td>Ferritin [Mass/volume] in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/2276-4.html\">2276-4</a></td><td>Ferritin [Mass/volume] in Serum or Plasma</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/20567-4.html\">20567-4</a></td><td>Ferritin [Mass/volume] in Serum or Plasma by Immunoassay</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/11150-0.html\">11150-0</a></td><td>Blasts/100 cells in Bone marrow</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26505-8.html\">26505-8</a></td><td>Segmented neutrophils/100 leukocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/32200-8.html\">32200-8</a></td><td>Segmented neutrophils/100 leukocytes in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/769-0.html\">769-0</a></td><td>Segmented neutrophils/100 leukocytes in Blood by Manual count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/4679-7.html\">4679-7</a></td><td>Reticulocytes/100 erythrocytes in Blood</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/17849-1.html\">17849-1</a></td><td>Reticulocytes/100 erythrocytes in Blood by Automated count</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/31112-6.html\">31112-6</a></td><td>Reticulocytes/100 erythrocytes in Blood by Manual</td></tr></table></li></ul></div>"
+  },
+  "url": "http://fhir.nmdp.org/ig/cibmtr-reporting/ValueSet/cibmtr-priority-variables-2021",
+  "version": "0.1.4",
+  "name": "PriorityVariables2021",
+  "title": "CIBMTR Priority Variables Value Set (FY21)",
+  "status": "active",
+  "date": "2021-06-25T13:41:27-05:00",
+  "publisher": "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+  "contact": [
+    {
+      "name": "The Medical College of Wisconsin, Inc. and the National Marrow Donor Program",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.cibmtr.org"
+        }
+      ]
+    },
+    {
+      "name": "Bob Milius",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "bmilius@nmdp.org"
+        }
+      ]
+    }
+  ],
+  "description": "Priority Variables for CIBMTR (FY21)",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "26508-2",
+            "display": "Band form neutrophils/100 leukocytes in Blood"
+          },
+          {
+            "code": "35332-6",
+            "display": "Band form neutrophils/100 leukocytes in Blood by Automated count"
+          },
+          {
+            "code": "764-1",
+            "display": "Band form neutrophils/100 leukocytes in Blood by Manual count"
+          },
+          {
+            "code": "30180-4",
+            "display": "Basophils/100 leukocytes in Blood"
+          },
+          {
+            "code": "706-2",
+            "display": "Basophils/100 leukocytes in Blood by Automated count"
+          },
+          {
+            "code": "707-0",
+            "display": "Basophils/100 leukocytes in Blood by Manual count"
+          },
+          {
+            "code": "26446-5",
+            "display": "Blasts/100 leukocytes in Blood"
+          },
+          {
+            "code": "709-6",
+            "display": "Blasts/100 leukocytes in Blood by Manual count"
+          },
+          {
+            "code": "26449-9",
+            "display": "Eosinophils [#/volume] in Blood"
+          },
+          {
+            "code": "711-2",
+            "display": "Eosinophils [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "712-0",
+            "display": "Eosinophils [#/volume] in Blood by Manual count"
+          },
+          {
+            "code": "26450-7",
+            "display": "Eosinophils/100 leukocytes in Blood"
+          },
+          {
+            "code": "713-8",
+            "display": "Eosinophils/100 leukocytes in Blood by Automated count"
+          },
+          {
+            "code": "714-6",
+            "display": "Eosinophils/100 leukocytes in Blood by Manual count"
+          },
+          {
+            "code": "4576-5",
+            "display": "Hemoglobin F/Hemoglobin.total in Blood"
+          },
+          {
+            "code": "71865-0",
+            "display": "Hemoglobin F/Hemoglobin.total [Pure mass fraction] in Blood by Electrophoresis"
+          },
+          {
+            "code": "71864-3",
+            "display": "Hemoglobin F/Hemoglobin.total [Pure mass fraction] in Blood by HPLC"
+          },
+          {
+            "code": "71863-5",
+            "display": "Hemoglobin F/Hemoglobin.total [Pure mass fraction] in Blood by Kleihauer-Betke method"
+          },
+          {
+            "code": "32682-7",
+            "display": "Hemoglobin F/Hemoglobin.total in Blood by Electrophoresis"
+          },
+          {
+            "code": "38524-5",
+            "display": "Hemoglobin F/Hemoglobin.total in Blood by Electrophoresis alkaline (pH 8.9)"
+          },
+          {
+            "code": "42246-9",
+            "display": "Hemoglobin F/Hemoglobin.total in Blood by HPLC"
+          },
+          {
+            "code": "4633-4",
+            "display": "Hemoglobin F/Hemoglobin.total in Blood by Kleihauer-Betke method"
+          },
+          {
+            "code": "718-7",
+            "display": "Hemoglobin [Mass/volume] in Blood"
+          },
+          {
+            "code": "59260-0",
+            "display": "Hemoglobin [Moles/volume] in Blood"
+          },
+          {
+            "code": "30313-1",
+            "display": "Hemoglobin [Mass/volume] in Arterial blood"
+          },
+          {
+            "code": "14775-1",
+            "display": "Hemoglobin [Mass/volume] in Arterial blood by Oximetry"
+          },
+          {
+            "code": "20509-6",
+            "display": "Hemoglobin [Mass/volume] in Blood by calculation"
+          },
+          {
+            "code": "55782-7",
+            "display": "Hemoglobin [Mass/volume] in Blood by Oximetry"
+          },
+          {
+            "code": "30351-1",
+            "display": "Hemoglobin [Mass/volume] in Mixed venous blood"
+          },
+          {
+            "code": "76768-1",
+            "display": "Hemoglobin [Mass/volume] in Mixed venous blood by Oximetry"
+          },
+          {
+            "code": "30350-3",
+            "display": "Hemoglobin [Mass/volume] in Venous blood"
+          },
+          {
+            "code": "76769-9",
+            "display": "Hemoglobin [Mass/volume] in Venous blood by Oximetry"
+          },
+          {
+            "code": "75928-2",
+            "display": "Hemoglobin [Moles/volume] in Arterial blood"
+          },
+          {
+            "code": "93846-4",
+            "display": "Hemoglobin [Moles/volume] in Venous blood"
+          },
+          {
+            "code": "20570-8",
+            "display": "Hematocrit [Volume Fraction] of Blood"
+          },
+          {
+            "code": "71833-8",
+            "display": "Hematocrit [Pure volume fraction] of Blood by Automated count"
+          },
+          {
+            "code": "71831-2",
+            "display": "Hematocrit [Pure volume fraction] of Capillary blood"
+          },
+          {
+            "code": "71829-6",
+            "display": "Hematocrit [Pure volume fraction] of Venous blood"
+          },
+          {
+            "code": "4544-3",
+            "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
+          },
+          {
+            "code": "4545-0",
+            "display": "Hematocrit [Volume Fraction] of Blood by Centrifugation"
+          },
+          {
+            "code": "48703-3",
+            "display": "Hematocrit [Volume Fraction] of Blood by Estimated"
+          },
+          {
+            "code": "31100-1",
+            "display": "Hematocrit [Volume Fraction] of Blood by Impedance"
+          },
+          {
+            "code": "42908-4",
+            "display": "Hematocrit [Volume Fraction] of Capillary blood"
+          },
+          {
+            "code": "41654-5",
+            "display": "Hematocrit [Volume Fraction] of Venous blood"
+          },
+          {
+            "code": "26474-7",
+            "display": "Lymphocytes [#/volume] in Blood"
+          },
+          {
+            "code": "731-0",
+            "display": "Lymphocytes [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "732-8",
+            "display": "Lymphocytes [#/volume] in Blood by Manual count"
+          },
+          {
+            "code": "26478-8",
+            "display": "Lymphocytes/100 leukocytes in Blood"
+          },
+          {
+            "code": "736-9",
+            "display": "Lymphocytes/100 leukocytes in Blood by Automated count"
+          },
+          {
+            "code": "737-7",
+            "display": "Lymphocytes/100 leukocytes in Blood by Manual count"
+          },
+          {
+            "code": "30433-7",
+            "display": "Metamyelocytes [#/volume] in Blood"
+          },
+          {
+            "code": "739-3",
+            "display": "Metamyelocytes [#/volume] in Blood by Manual count"
+          },
+          {
+            "code": "28541-1",
+            "display": "Metamyelocytes/100 leukocytes in Blood"
+          },
+          {
+            "code": "740-1",
+            "display": "Metamyelocytes/100 leukocytes in Blood by Manual count"
+          },
+          {
+            "code": "71668-8",
+            "display": "Metamyelocytes/Leukocytes [Pure number fraction] in Blood by Manual count"
+          },
+          {
+            "code": "40651-2",
+            "display": "Metamyelocytes [Presence] in Blood"
+          },
+          {
+            "code": "26484-6",
+            "display": "Monocytes [#/volume] in Blood"
+          },
+          {
+            "code": "742-7",
+            "display": "Monocytes [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "743-5",
+            "display": "Monocytes [#/volume] in Blood by Manual count"
+          },
+          {
+            "code": "26485-3",
+            "display": "Monocytes/100 leukocytes in Blood"
+          },
+          {
+            "code": "5905-5",
+            "display": "Monocytes/100 leukocytes in Blood by Automated count"
+          },
+          {
+            "code": "744-3",
+            "display": "Monocytes/100 leukocytes in Blood by Manual count"
+          },
+          {
+            "code": "30444-4",
+            "display": "Myeloblasts [#/volume] in Blood"
+          },
+          {
+            "code": "746-8",
+            "display": "Myeloblasts [#/volume] in Blood by Manual count"
+          },
+          {
+            "code": "30445-1",
+            "display": "Myeloblasts/100 leukocytes in Blood"
+          },
+          {
+            "code": "747-6",
+            "display": "Myeloblasts/100 leukocytes in Blood by Manual count"
+          },
+          {
+            "code": "30446-9",
+            "display": "Myelocytes [#/volume] in Blood"
+          },
+          {
+            "code": "748-4",
+            "display": "Myelocytes [#/volume] in Blood by Manual count"
+          },
+          {
+            "code": "26498-6",
+            "display": "Myelocytes/100 leukocytes in Blood"
+          },
+          {
+            "code": "749-2",
+            "display": "Myelocytes/100 leukocytes in Blood by Manual count"
+          },
+          {
+            "code": "71667-0",
+            "display": "Myelocytes/Leukocytes [Pure number fraction] in Blood by Manual count"
+          },
+          {
+            "code": "26499-4",
+            "display": "Neutrophils [#/volume] in Blood"
+          },
+          {
+            "code": "751-8",
+            "display": "Neutrophils [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "753-4",
+            "display": "Neutrophils [#/volume] in Blood by Manual count"
+          },
+          {
+            "code": "26511-6",
+            "display": "Neutrophils/100 leukocytes in Blood"
+          },
+          {
+            "code": "770-8",
+            "display": "Neutrophils/100 leukocytes in Blood by Automated count"
+          },
+          {
+            "code": "23761-0",
+            "display": "Neutrophils/100 leukocytes in Blood by Manual count"
+          },
+          {
+            "code": "30458-4",
+            "display": "Plasma cells [#/volume] in Blood"
+          },
+          {
+            "code": "24103-4",
+            "display": "Plasma cells [#/volume] in Blood by Manual count"
+          },
+          {
+            "code": "13047-6",
+            "display": "Plasma cells/100 leukocytes in Blood"
+          },
+          {
+            "code": "79426-3",
+            "display": "Plasma cells/100 leukocytes in Blood by Manual count"
+          },
+          {
+            "code": "28542-9",
+            "display": "Platelet mean volume [Entitic volume] in Blood"
+          },
+          {
+            "code": "32623-1",
+            "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+          },
+          {
+            "code": "26515-7",
+            "display": "Platelets [#/volume] in Blood"
+          },
+          {
+            "code": "777-3",
+            "display": "Platelets [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "49497-1",
+            "display": "Platelets [#/volume] in Blood by Estimate"
+          },
+          {
+            "code": "778-1",
+            "display": "Platelets [#/volume] in Blood by Manual count"
+          },
+          {
+            "code": "30465-9",
+            "display": "Prolymphocytes/100 leukocytes in Blood"
+          },
+          {
+            "code": "6746-2",
+            "display": "Prolymphocytes/100 leukocytes in Blood by Manual count"
+          },
+          {
+            "code": "34926-6",
+            "display": "Promonocytes [#/volume] in Blood"
+          },
+          {
+            "code": "33855-8",
+            "display": "Promonocytes [#/volume] in Blood by Manual count"
+          },
+          {
+            "code": "30466-7",
+            "display": "Promonocytes/100 leukocytes in Blood"
+          },
+          {
+            "code": "13599-6",
+            "display": "Promonocytes/100 leukocytes in Blood by Manual count"
+          },
+          {
+            "code": "26523-1",
+            "display": "Promyelocytes [#/volume] in Blood"
+          },
+          {
+            "code": "781-5",
+            "display": "Promyelocytes [#/volume] in Blood by Manual count"
+          },
+          {
+            "code": "26524-9",
+            "display": "Promyelocytes/100 leukocytes in Blood"
+          },
+          {
+            "code": "783-1",
+            "display": "Promyelocytes/100 leukocytes in Blood by Manual count"
+          },
+          {
+            "code": "71666-2",
+            "display": "Promyelocytes/Leukocytes [Pure number fraction] in Blood by Manual count"
+          },
+          {
+            "code": "26453-1",
+            "display": "Erythrocytes [#/volume] in Blood"
+          },
+          {
+            "code": "789-8",
+            "display": "Erythrocytes [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "790-6",
+            "display": "Erythrocytes [#/volume] in Blood by Manual count"
+          },
+          {
+            "code": "14196-0",
+            "display": "Reticulocytes [#/volume] in Blood"
+          },
+          {
+            "code": "60474-4",
+            "display": "Reticulocytes [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "40665-2",
+            "display": "Reticulocytes [#/volume] in Blood by Manual count"
+          },
+          {
+            "code": "26464-8",
+            "display": "Leukocytes [#/volume] in Blood"
+          },
+          {
+            "code": "6690-2",
+            "display": "Leukocytes [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "49498-9",
+            "display": "Leukocytes [#/volume] in Blood by Estimate"
+          },
+          {
+            "code": "804-5",
+            "display": "Leukocytes [#/volume] in Blood by Manual count"
+          },
+          {
+            "code": "1751-7",
+            "display": "Albumin [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "61151-7",
+            "display": "Albumin [Mass/volume] in Serum or Plasma by Bromocresol green (BCG) dye binding method"
+          },
+          {
+            "code": "61152-5",
+            "display": "Albumin [Mass/volume] in Serum or Plasma by Bromocresol purple (BCP) dye binding method"
+          },
+          {
+            "code": "2862-1",
+            "display": "Albumin [Mass/volume] in Serum or Plasma by Electrophoresis"
+          },
+          {
+            "code": "24373-3",
+            "display": "Ferritin [Mass/volume] in Blood"
+          },
+          {
+            "code": "2276-4",
+            "display": "Ferritin [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "20567-4",
+            "display": "Ferritin [Mass/volume] in Serum or Plasma by Immunoassay"
+          },
+          {
+            "code": "11150-0",
+            "display": "Blasts/100 cells in Bone marrow"
+          },
+          {
+            "code": "26505-8",
+            "display": "Segmented neutrophils/100 leukocytes in Blood"
+          },
+          {
+            "code": "32200-8",
+            "display": "Segmented neutrophils/100 leukocytes in Blood by Automated count"
+          },
+          {
+            "code": "769-0",
+            "display": "Segmented neutrophils/100 leukocytes in Blood by Manual count"
+          },
+          {
+            "code": "4679-7",
+            "display": "Reticulocytes/100 erythrocytes in Blood"
+          },
+          {
+            "code": "17849-1",
+            "display": "Reticulocytes/100 erythrocytes in Blood by Automated count"
+          },
+          {
+            "code": "31112-6",
+            "display": "Reticulocytes/100 erythrocytes in Blood by Manual"
+          }
+        ]
+      }
+    ]
+  }
+}

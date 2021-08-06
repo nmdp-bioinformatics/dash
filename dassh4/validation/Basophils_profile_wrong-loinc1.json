@@ -1,0 +1,47 @@
+{
+    "resourceType": "Observation",
+    "meta": {
+      "profile": [
+        "http://fhir.nmdp.org/ig/cibmtr-reporting/StructureDefinition/cibmtr-obs-priority-variables"
+      ],
+      "security": [
+        {
+          "system": "http://terminology.cibmtr.org/codesystem/transplant-center",
+          "code": "rc_12002"
+        }
+      ]
+    },
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "laboratory"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "30180",
+          "display": "Basophils/100 leukocytes in Blood"
+        }
+      ]
+    },
+    "subject": {
+      "identifier": {
+        "system": "http://terminology.cibmtr.org/identifier/CRID",
+        "value": "1234567"
+      }
+    },
+    "effectiveDateTime": "2020-07-21T14:17:00Z",
+    "valueQuantity": {
+      "value": 1,
+      "unit": "percent",
+      "system": "http://unitsofmeasure.org",
+      "code": "%"
+    }
+  }
