@@ -3,7 +3,7 @@
   xmlns="http://schemas.nmdp.org/spec/hml/1.0.1"  
   xsi:schemaLocation="http://schemas.nmdp.org/spec/hml/1.0.1 http://schemas.nmdp.org/spec/hml/1.0.1/hml-1.0.1.xsd" 
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <hmlid root="12002" extension="78C1F488-F0AD-4346-8F44-608C5AA3C83D" />
+  <hmlid root="12002" extension="78C1F488-F0AD-4346-8F44-608C5AA3C83D"/>
   <reporting-center reporting-center-id="12002"/>
   <sample id="0000001" center-code="12002">
     <collection-method>Lavender</collection-method>

@@ -7,7 +7,7 @@
 	<hmlid root="12002" extension="D9830508-7910-42FD-A580-1779FFD919FF"/>
 	<reporting-center reporting-center-id="12002"/>
 	<sample id="99937ST0MA6SPB1SV23" center-code="12002">
-        <property name="CRID" value="1234567"/>
+        <property name="CRID" value="1234567"/>
         <property name="recipient-relationship" value="unrelated"/>
 		<collection-method>blood aliquots</collection-method>
 		<typing gene-family="HLA" date="2021-06-25">
