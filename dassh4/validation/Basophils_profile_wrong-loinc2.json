@@ -32,10 +32,7 @@
       ]
     },
     "subject": {
-      "identifier": {
-        "system": "http://terminology.cibmtr.org/identifier/CRID",
-        "value": "1234567"
-      }
+      "reference": "Patient/123"
     },
     "effectiveDateTime": "2020-07-21T14:17:00Z",
     "valueQuantity": {
