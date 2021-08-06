@@ -1,11 +1,13 @@
 <hml xmlns="http://schemas.nmdp.org/spec/hml/1.0.1" 
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-	project-name="REG_CONFIRM_DNR" 
+	project-name="RES_CIBMTR_FHIR_DONOR" 
 	version="1.0.1" 
 	xsi:schemaLocation="http://schemas.nmdp.org/spec/hml/1.0.1 http://schemas.nmdp.org/spec/hml/1.0.1/hml-1.0.1.xsd">
-	<hmlid extension="74A1FF41-3D12-4FE2-838D-8D51B6C00980" root="12002"/>
+	<hmlid extension="8B0843AB-A316-4DAD-A0BC-FDE2A04BFB0D" root="12002"/>
 	<reporting-center reporting-center-id="12002"/>
-	<sample center-code="12002" id="6939123456789101116">
+	<sample center-code="12002" id="6939123456789101116-1">
+        <property name="CRID" value="1111111"/>
+        <property name="recipient-relationship" value="mother"/>
 		<collection-method>Whole Blood</collection-method>
 		<typing date="2021-07-29" gene-family="HLA">
 			<allele-assignment date="2021-07-29" allele-version="3.44.0" allele-db="IMGT/HLA">
