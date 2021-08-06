@@ -1,12 +1,11 @@
 <hml xmlns="http://schemas.nmdp.org/spec/hml/1.0.1" 
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
   version="1.0.1" 
-  xsi:schemaLocation="http://schemas.nmdp.org/spec/hml/1.0.1 
-  http://schemas.nmdp.org/spec/hml/1.0.1/hml-1.0.1.xsd" 
-  project-name="REG_CONFIRM_DNR">
-  <hmlid root="12002" extension="49345DE4-6EDC-47D2-9F1B-46946634D994"/>
+  xsi:schemaLocation="http://schemas.nmdp.org/spec/hml/1.0.1 http://schemas.nmdp.org/spec/hml/1.0.1/hml-1.0.1.xsd" 
+  project-name="RES_CIBMTR_FHIR_RECIPIENT">
+  <hmlid root="12002" extension="1619CC94-889B-409F-A9BC-5701A03E7963"/>
   <reporting-center reporting-center-id="12002"/>
-  <sample id="987654321" center-code="12002">
+  <sample id="7654321" center-code="12002">
     <collection-method>Whole Blood</collection-method>
     <typing date="2021-07-29" gene-family="HLA">
       <allele-assignment date="2021-07-29" allele-db="IMGT/HLA" allele-version="3.43.0">

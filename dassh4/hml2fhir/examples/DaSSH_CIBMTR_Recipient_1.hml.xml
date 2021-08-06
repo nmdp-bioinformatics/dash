@@ -1,0 +1,75 @@
+<hml version="1.0.1" 
+  project-name="RES_CIBMTR_FHIR_RECIPIENT" 
+  xmlns="http://schemas.nmdp.org/spec/hml/1.0.1"  
+  xsi:schemaLocation="http://schemas.nmdp.org/spec/hml/1.0.1 http://schemas.nmdp.org/spec/hml/1.0.1/hml-1.0.1.xsd" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <hmlid root="12002" extension="78C1F488-F0AD-4346-8F44-608C5AA3C83D" />
+  <reporting-center reporting-center-id="12002"/>
+  <sample id="0000001" center-code="12002">
+    <collection-method>Lavender</collection-method>
+    <typing date="2018-07-24" gene-family="HLA">
+      <allele-assignment date="2018-07-24" allele-db="IMGT/HLA" allele-version="3.29.0">
+        <glstring>HLA-A*02:01/HLA-A*02:665/HLA-A*02:686/HLA-A*02:689+HLA-A*11:01/HLA-A*11:263</glstring>
+      </allele-assignment>
+      <typing-method>
+        <sbt-ngs locus="HLA-A" test-id="SBT-TE" test-id-source="NMDP" />
+      </typing-method>
+    </typing>
+    <typing date="2018-07-24" gene-family="HLA">
+      <allele-assignment date="2018-07-24" allele-db="IMGT/HLA" allele-version="3.29.0">
+        <glstring>HLA-B*35:01/HLA-B*35:332+HLA-B*40:01</glstring>
+      </allele-assignment>
+      <typing-method>
+        <sbt-ngs locus="HLA-B" test-id="SBT-TE" test-id-source="NMDP" />
+      </typing-method>
+    </typing>
+    <typing date="2018-07-24" gene-family="HLA">
+      <allele-assignment date="2018-07-24" allele-db="IMGT/HLA" allele-version="3.29.0">
+        <glstring>HLA-C*03:04+HLA-C*04:01</glstring>
+      </allele-assignment>
+      <typing-method>
+        <sbt-ngs locus="HLA-C" test-id="SBT-TE" test-id-source="NMDP" />
+      </typing-method>
+    </typing>
+    <typing date="2018-07-24" gene-family="HLA">
+      <allele-assignment date="2018-07-24" allele-db="IMGT/HLA" allele-version="3.29.0">
+        <glstring>HLA-DQB1*02:01/HLA-DQB1*02:02/HLA-DQB1*02:04/HLA-DQB1*02:05/HLA-DQB1*02:06/HLA-DQB1*02:07/HLA-DQB1*02:08/HLA-DQB1*02:09/HLA-DQB1*02:10/HLA-DQB1*02:11/HLA-DQB1*02:12/HLA-DQB1*02:13/HLA-DQB1*02:14/HLA-DQB1*02:15/HLA-DQB1*02:16/HLA-DQB1*02:17/HLA-DQB1*02:18N/HLA-DQB1*02:19/HLA-DQB1*02:20N/HLA-DQB1*02:21/HLA-DQB1*02:22/HLA-DQB1*02:25/HLA-DQB1*02:26/HLA-DQB1*02:27/HLA-DQB1*02:28/HLA-DQB1*02:29/HLA-DQB1*02:30/HLA-DQB1*02:33/HLA-DQB1*02:34/HLA-DQB1*02:35/HLA-DQB1*02:36/HLA-DQB1*02:37/HLA-DQB1*02:39/HLA-DQB1*02:40/HLA-DQB1*02:41/HLA-DQB1*02:42/HLA-DQB1*02:44/HLA-DQB1*02:45/HLA-DQB1*02:48/HLA-DQB1*02:49/HLA-DQB1*02:51/HLA-DQB1*02:53Q/HLA-DQB1*02:54/HLA-DQB1*02:56/HLA-DQB1*02:59/HLA-DQB1*02:60/HLA-DQB1*02:61/HLA-DQB1*02:62/HLA-DQB1*02:63/HLA-DQB1*02:64/HLA-DQB1*02:65/HLA-DQB1*02:67N/HLA-DQB1*02:68/HLA-DQB1*02:70/HLA-DQB1*02:71/HLA-DQB1*02:72/HLA-DQB1*02:73/HLA-DQB1*02:74/HLA-DQB1*02:75/HLA-DQB1*02:76/HLA-DQB1*02:78/HLA-DQB1*02:79/HLA-DQB1*02:80/HLA-DQB1*02:81/HLA-DQB1*02:82/HLA-DQB1*02:84/HLA-DQB1*02:85/HLA-DQB1*02:87/HLA-DQB1*02:88/HLA-DQB1*02:89/HLA-DQB1*02:91/HLA-DQB1*02:92/HLA-DQB1*02:94/HLA-DQB1*02:95/HLA-DQB1*02:96N/HLA-DQB1*02:97/HLA-DQB1*02:98/HLA-DQB1*02:99/HLA-DQB1*02:100/HLA-DQB1*02:101+HLA-DQB1*06:02/HLA-DQB1*06:11/HLA-DQB1*06:16/HLA-DQB1*06:19/HLA-DQB1*06:33/HLA-DQB1*06:37/HLA-DQB1*06:47/HLA-DQB1*06:48/HLA-DQB1*06:49/HLA-DQB1*06:50/HLA-DQB1*06:51/HLA-DQB1*06:68/HLA-DQB1*06:71/HLA-DQB1*06:74/HLA-DQB1*06:75N/HLA-DQB1*06:77N/HLA-DQB1*06:78/HLA-DQB1*06:79/HLA-DQB1*06:80/HLA-DQB1*06:82/HLA-DQB1*06:83/HLA-DQB1*06:84/HLA-DQB1*06:95/HLA-DQB1*06:97/HLA-DQB1*06:107/HLA-DQB1*06:109/HLA-DQB1*06:111/HLA-DQB1*06:112N/HLA-DQB1*06:113/HLA-DQB1*06:114/HLA-DQB1*06:115/HLA-DQB1*06:116/HLA-DQB1*06:117/HLA-DQB1*06:122/HLA-DQB1*06:124/HLA-DQB1*06:125/HLA-DQB1*06:126/HLA-DQB1*06:127/HLA-DQB1*06:131/HLA-DQB1*06:136/HLA-DQB1*06:137/HLA-DQB1*06:138/HLA-DQB1*06:147/HLA-DQB1*06:150/HLA-DQB1*06:151/HLA-DQB1*06:152/HLA-DQB1*06:159/HLA-DQB1*06:161/HLA-DQB1*06:163/HLA-DQB1*06:166/HLA-DQB1*06:174/HLA-DQB1*06:176/HLA-DQB1*06:178/HLA-DQB1*06:179N/HLA-DQB1*06:182/HLA-DQB1*06:183/HLA-DQB1*06:188/HLA-DQB1*06:192/HLA-DQB1*06:197/HLA-DQB1*06:198/HLA-DQB1*06:200/HLA-DQB1*06:208/HLA-DQB1*06:211/HLA-DQB1*06:213/HLA-DQB1*06:215/HLA-DQB1*06:216N/HLA-DQB1*06:219/HLA-DQB1*06:224/HLA-DQB1*06:225/HLA-DQB1*06:226/HLA-DQB1*06:227/HLA-DQB1*06:228/HLA-DQB1*06:233/HLA-DQB1*06:235/HLA-DQB1*06:237/HLA-DQB1*06:240</glstring>
+      </allele-assignment>
+      <typing-method>
+        <sbt-ngs locus="HLA-DQB1" test-id="SBT-TE" test-id-source="NMDP" />
+      </typing-method>
+    </typing>
+    <typing date="2018-07-24" gene-family="HLA">
+      <allele-assignment date="2018-07-24" allele-db="IMGT/HLA" allele-version="3.29.0">
+        <glstring>HLA-DRB1*03:01/HLA-DRB1*03:68N/HLA-DRB1*03:83/HLA-DRB1*03:104/HLA-DRB1*03:124/HLA-DRB1*03:127/HLA-DRB1*03:132/HLA-DRB1*03:137+HLA-DRB1*15:01/HLA-DRB1*15:86/HLA-DRB1*15:110/HLA-DRB1*15:113N/HLA-DRB1*15:139/HLA-DRB1*15:141/HLA-DRB1*15:145/HLA-DRB1*15:146</glstring>
+      </allele-assignment>
+      <typing-method>
+        <sbt-ngs locus="HLA-DRB1" test-id="SBT-TE" test-id-source="NMDP" />
+      </typing-method>
+    </typing>
+    <typing date="2018-07-24" gene-family="HLA">
+      <allele-assignment date="2018-07-24" allele-db="IMGT/HLA" allele-version="3.29.0">
+        <glstring>HLA-DRB3*01:01/HLA-DRB3*01:02/HLA-DRB3*01:03/HLA-DRB3*01:04/HLA-DRB3*01:05/HLA-DRB3*01:06/HLA-DRB3*01:07/HLA-DRB3*01:08/HLA-DRB3*01:09/HLA-DRB3*01:10/HLA-DRB3*01:11/HLA-DRB3*01:12/HLA-DRB3*01:13/HLA-DRB3*01:14/HLA-DRB3*01:15/HLA-DRB3*01:16/HLA-DRB3*01:17/HLA-DRB3*01:18/HLA-DRB3*01:19/HLA-DRB3*01:20/HLA-DRB3*01:21/HLA-DRB3*01:22/HLA-DRB3*01:23/HLA-DRB3*01:24/HLA-DRB3*01:25/HLA-DRB3*01:26N/HLA-DRB3*01:27/HLA-DRB3*01:28/HLA-DRB3*01:29/HLA-DRB3*01:30/HLA-DRB3*01:31/HLA-DRB3*01:32/HLA-DRB3*01:33/HLA-DRB3*01:34/HLA-DRB3*01:35/HLA-DRB3*01:36/HLA-DRB3*01:37/HLA-DRB3*01:38/HLA-DRB3*01:39/HLA-DRB3*01:40N/HLA-DRB3*01:41/HLA-DRB3*01:42/HLA-DRB3*01:43/HLA-DRB3*01:44/HLA-DRB3*01:45</glstring>
+      </allele-assignment>
+      <typing-method>
+        <sbt-ngs locus="HLA-DRB3" test-id="SBT-TE" test-id-source="NMDP" />
+      </typing-method>
+    </typing>
+    <typing date="2018-07-24" gene-family="HLA">
+      <allele-assignment date="2018-07-24" allele-db="IMGT/HLA" allele-version="3.29.0">
+          <haploid locus="HLA-DRB4" method="DNA" type="NNNN"/>
+      </allele-assignment>
+      <typing-method>
+        <sbt-ngs locus="HLA-DRB4" test-id="SBT-TE" test-id-source="NMDP" />
+      </typing-method>
+    </typing>
+    <typing date="2018-07-24" gene-family="HLA">
+      <allele-assignment date="2018-07-24" allele-db="IMGT/HLA" allele-version="3.29.0">
+        <glstring>HLA-DRB5*01:01/HLA-DRB5*01:17/HLA-DRB5*01:18/HLA-DRB5*01:19/HLA-DRB5*01:23/HLA-DRB5*01:24/HLA-DRB5*01:26/HLA-DRB5*01:29/HLA-DRB5*01:30/HLA-DRB5*01:33/HLA-DRB5*01:34</glstring>
+      </allele-assignment>
+      <typing-method>
+        <sbt-ngs locus="HLA-DRB5" test-id="SBT-TE" test-id-source="NMDP" />
+      </typing-method>
+    </typing>
+  </sample>
+</hml>

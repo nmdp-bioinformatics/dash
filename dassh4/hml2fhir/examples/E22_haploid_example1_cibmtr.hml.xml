@@ -3,10 +3,12 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xsi:schemaLocation="http://schemas.nmdp.org/spec/hml/1.0.1 http://schemas.nmdp.org/spec/hml/1.0.1/hml-1.0.1.xsd" 
 	version="1.0.1" 
-	project-name="REG_CONFIRM_DNR">
-	<hmlid root="12002" extension="51EE56E7-67FB-426F-92C2-EE8725B080D7"/>
-	<reporting-center reporting-center-id="12002" reporting-center-context="999"/>
-	<sample id="3553000012345678916" center-code="12002">
+	project-name="RES_CIBMTR_FHIR_DONOR">
+	<hmlid root="12002" extension="D9830508-7910-42FD-A580-1779FFD919FF"/>
+	<reporting-center reporting-center-id="12002"/>
+	<sample id="99937ST0MA6SPB1SV23" center-code="12002">
+        <property name="CRID" value="1234567"/>
+        <property name="recipient-relationship" value="unrelated"/>
 		<collection-method>blood aliquots</collection-method>
 		<typing gene-family="HLA" date="2021-06-25">
 			<allele-assignment date="2021-06-25" allele-db="IMGT/HLA" allele-version="3.43.0">

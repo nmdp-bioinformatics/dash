@@ -1,0 +1,74 @@
+<hml xmlns="http://schemas.nmdp.org/spec/hml/1.0.1" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0.1" 
+  xsi:schemaLocation="http://schemas.nmdp.org/spec/hml/1.0.1 http://schemas.nmdp.org/spec/hml/1.0.1/hml-1.0.1.xsd" 
+  project-name="RES_CIBMTR_FHIR_DONOR">
+  <!-- hmlid is a globally unique identifer for this hml file. It is a combination of root and extension, as determined by the center. In this example, root is using the center number, and extension is simply a guid -->
+  <hmlid root="12002" extension="4D279FB6-BB88-4FDE-9110-8A8EA564CA2E"/>
+  <!-- reporting-center-id identifies the entity/organization sending this HML data. -->
+  <reporting-center reporting-center-id="12002" reporting-center-context="CIBMTR"/>
+  <!-- Sample id MUST be the GRID if the project-name is RES_CIBMTR_FHIR_DONOR and if the relationship to the recipient is unrelated -->
+  <!-- Sample id could be a local identifier if the project-name is RES_CIBMTR_FHIR_DONOR and if relationship is not unrelated -->
+  <!-- Sample center code is the CIBMTR center number -->
+  <sample id="0000001" center-code="12002">
+    <!-- the following two property elements are needed for a DONOR to indicate which recipient is receiving the donation, and the donor's relationship to the recepient -->
+    <property name="CRID" value="1111111"/>
+    <property name="recipient-relationship" value="full-sibling"/>
+    <!-- -->
+    <collection-method>Buccal Swab</collection-method>
+    <typing date="2020-01-01" gene-family="HLA">
+      <allele-assignment date="2020-01-01" allele-db="IMGT/HLA" allele-version="3.31.0">
+        <!-- glstring must represent a single locus, and may include full 4-field nomenclature, and both allele and genotype ambibuity delimiters -->
+        <glstring>HLA-A*24:02:01:01/HLA-A*24:02:01:03+HLA-A*31:01:02:01</glstring>
+      </allele-assignment>
+      <!-- 
+        The 'typing-method' element encapsulates methods such as sso, ssp, sbt-sanger, and sbt-ngs. 
+        This example indicates that the method is sequence based typing using next-generation sequencing methods
+        test-id could be a kit name with version, or a method registered with the lab.
+        test-id-source could be the lab name, or the vendor of the kit. This is up to the how you keep track of your lab results.
+      -->
+      <typing-method>
+        <sbt-ngs locus="HLA-A" test-id="some_test_id" test-id-source="vendor_or_lab_name"/>
+      </typing-method>
+    </typing>
+    <typing date="2020-01-01" gene-family="HLA">
+      <allele-assignment date="2020-01-01" allele-db="IMGT/HLA" allele-version="3.31.0">
+        <glstring>HLA-B*07:02:01:02+HLA-B*38:01:01:01</glstring>
+      </allele-assignment>
+      <typing-method>
+        <sbt-ngs locus="HLA-B" test-id="some_test_id" test-id-source="vendor_or_lab_name"/>
+      </typing-method>
+    </typing>
+    <typing date="2020-01-01" gene-family="HLA">
+      <allele-assignment date="2020-01-01" allele-db="IMGT/HLA" allele-version="3.31.0">
+        <glstring>HLA-C*07:02:01:02+HLA-C*12:03:01:03</glstring>
+      </allele-assignment>
+      <typing-method>
+        <sbt-ngs locus="HLA-C" test-id="some_test_id" test-id-source="vendor_or_lab_name"/>
+      </typing-method>
+    </typing>
+    <typing date="2020-01-01" gene-family="HLA">
+      <allele-assignment date="2020-01-01" allele-db="IMGT/HLA" allele-version="3.31.0">
+        <glstring>HLA-DRB1*13:05:01:01+DRB1*14:54:01:02</glstring>
+      </allele-assignment>
+      <typing-method>
+        <sbt-ngs locus="HLA-DRB1" test-id="some_test_id" test-id-source="vendor_or_lab_name"/>
+      </typing-method>
+    </typing>
+    <typing date="2020-01-01" gene-family="HLA">
+      <allele-assignment date="2020-01-01" allele-db="IMGT/HLA" allele-version="3.31.0">
+        <glstring>HLA-DQB1*03:01+HLA-DQB1*05:03</glstring>
+      </allele-assignment>
+      <typing-method>
+        <sbt-ngs locus="HLA-DQB1" test-id="some_test_id" test-id-source="vendor_or_lab_name"/>
+      </typing-method>
+    </typing>
+    <typing date="2020-01-01" gene-family="HLA">
+      <allele-assignment date="2020-01-01" allele-db="IMGT/HLA" allele-version="3.31.0">
+        <glstring>HLA-DPB1*04:01+DPB1*04:02</glstring>
+      </allele-assignment>
+      <typing-method>
+        <sbt-ngs locus="HLA-DPB1" test-id="some_test_id" test-id-source="vendor_or_lab_name"/>
+      </typing-method>
+    </typing>
+  </sample>
+</hml>
