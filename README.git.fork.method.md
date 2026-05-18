@@ -1,4 +1,5 @@
 ## FORK METHOD
+Note: master might be main
 
 1. Log into Github web interface with your username-nmdp account
 
@@ -22,10 +23,8 @@ $ cd graph-imputation-match
 `$ git checkout master`
 
 make sure my fork (origin) master is up-to-date with upstream master
-```
-$ git pull upstream master
-$ git pull upstream main
-```
+
+`$ git pull upstream master`
 
 (if you forget you will have merge conflicts)
 
@@ -45,7 +44,6 @@ Commit changes to local feature branch
 
 ```
 $ git pull upstream master
-$ git pull upstream main
 $ git commit -m "made changes”
 ```
 
